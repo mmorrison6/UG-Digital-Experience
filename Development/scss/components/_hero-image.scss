@@ -1,0 +1,62 @@
+/* ===============================================
+HERO IMAGE SECTION ====================================== */
+
+.hero-image{
+    background-color: $lake-extra-light;
+
+    background-image:
+    linear-gradient(
+        rgba(0,0,0,0.1),
+        rgba(0,0,0, 0.25)),
+     url('../../images/home-hero.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100% !important;
+}
+
+.hero-image .hero-text{
+    color: #fff;
+    text-align: center;
+}
+
+.hero-image .hero-text h1{
+    font-size: 4.236em;
+    font-weight: 500;
+    color: $white;
+}
+
+.hero-image .hero-text p{
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 10px;
+}
+
+.hero-image .hero-btn{
+    text-decoration: none;
+    color: #fff;
+    background: #000;
+    padding: 10px 30px;
+    border-radius: 5px;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.hero-image .hero-btn:hover{
+    background: #fff;
+    color: #000;
+}
+
+/* Media Query Breakpoints - Hero Image Section
+
+@media only screen and (max-width: 415px) {}
+@media only screen and (max-width: 735px) {}
+@media only screen and (max-width: 768px) {}
+@media only screen and (max-width: 1024px) {}
+@media only screen and (max-wdith: 1200px) {}
+
+*/

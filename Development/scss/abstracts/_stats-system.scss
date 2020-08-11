@@ -1,0 +1,55 @@
+/* ===============================================
+STATISTICS SYSTEM w RESPONSIVE ====================================== */
+
+.stat-center {
+  text-align: center;
+}
+
+.stat-left {
+  text-align: left;
+}
+
+/* Stats Large */
+
+.stat-number-large {
+  font-size: 5.5em;
+  text-align: center;
+  font-family: Antenna Bold;
+}
+
+.stat-header-large {
+  font-size: 1.25em;
+}
+
+/* Stats Medium */
+
+.stat-number-medium {
+  font-size: 3em;
+  text-align: center;
+  font-family: Antenna Bold;
+}
+
+.stat-header-medium {
+  font-size: 1em;
+}
+
+/* Stats Small */
+
+.stat-header-small {
+  font-size: 1.5em;
+}
+
+#best-value-text {
+  font-size: 3em;
+  text-align: center;
+}
+
+/* Media Query Breakpoints - Hero Image Section
+
+@media only screen and (max-width: 415px) {}
+@media only screen and (max-width: 735px) {}
+@media only screen and (max-width: 768px) {}
+@media only screen and (max-width: 1024px) {}
+@media only screen and (max-wdith: 1200px) {}
+
+*/

@@ -1,0 +1,111 @@
+/* ===============================================
+PATTERN 2 MODULE ====================================== */
+
+.pattern-2-bg {
+  background-color: $lake-extra-light;
+  background-image:
+   url(../../images/pattern-2-bg-first-year-profile.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100% !important;
+  overflow: hidden;
+}
+
+.pattern-2-bg-affordability {
+  background-color: $lake-extra-light;
+  background-image:
+   url(../../images/pattern-2-bg-affordability.jpg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100% !important;
+  overflow: hidden;
+}
+
+.pattern-2-slidein-container {
+  width: 35%;
+  position: absolute;
+  left: -500px;
+}
+
+.pattern-2-slidein-container-right {
+  width: 35%;
+  position: absolute;
+  right: 50px;
+}
+
+.pattern-2-slidein-content-container {
+  height: 550px;
+  width: 100%;
+  background: rgba(0,0,0,.6);
+  overflow: scroll;
+
+    h3, p {
+      color: #ffffff
+    }
+
+}
+
+.pattern-2-slidein-border {
+  padding: 0;
+  margin: 0;
+  height: 20px;
+  width: 100%;
+  background-color: $maroon;
+}
+
+
+/* Pattern 2 Table Styles */
+
+.tuition-table {
+  width: 90%;
+}
+
+.c-table__row-white {
+  border-bottom: 1px solid white;
+}
+
+.c-table__cell-white {
+  border-right: 1px solid white;
+}
+
+.c-table__cell-white h6 {
+  color: white;
+}
+
+.no-border-right {
+  border-right: none !important;
+}
+
+.cell-heading-border {
+  border-top: 5px solid;
+
+}
+
+.cell-heading-border-white {
+  border-top: 5px solid #ffffff;
+
+}
+
+.table-circle-cells {
+  flex-shrink: 300px !important;
+}
+
+/* Media Query Breakpoints - Hero Image Section
+
+@media only screen and (max-width: 415px) {}
+@media only screen and (max-width: 735px) {}
+@media only screen and (max-width: 768px) {}
+@media only screen and (max-width: 1024px) {}
+@media only screen and (max-wdith: 1200px) {}
+
+*/

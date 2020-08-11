@@ -1,11 +1,37 @@
 {
   "dependencies": {
+    "animejs": "^3.2.0",
+    "bourbon-neat": "^4.0.0",
+    "browser-sync": "^2.26.10",
     "cache": "^2.3.1",
     "clear": "^0.1.0",
+    "gulp-changed": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssnano": "^2.1.3",
+    "gulp-file-include": "^2.2.2",
+    "gulp-html-replace": "^1.6.2",
+    "gulp-if": "^3.0.0",
+    "gulp-inject": "^5.0.5",
+    "gulp-minify-html": "^1.0.6",
+    "gulp-rename": "^2.0.0",
+    "gulp-replace": "^1.0.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-sequence": "^1.0.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-uglify": "^3.0.2",
+    "gulp-useref": "^4.0.1",
     "is-stream": "^2.0.0",
     "jquery": "^3.5.1",
     "lodash": "^4.17.19",
     "npm": "^6.14.6",
+    "require-dir": "^1.2.0",
+    "scrollmagic": "^2.0.7",
     "sudo": "^1.0.3"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-jshint": "^2.1.0",
+    "gulp-resolve-url": "0.0.2",
+    "jshint": "^2.11.1"
   }
 }

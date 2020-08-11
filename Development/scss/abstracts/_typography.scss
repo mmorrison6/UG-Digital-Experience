@@ -1,0 +1,480 @@
+/* ===============================================
+
+#page-content article { width: 93.103% !important; max-width: 93.103% !important; min-width: 93.103% !important; }
+
+/* ===============================================
+FONT-SIZE - RESET ============================= */
+
+/* Vertical Rhythm base integration */
+
+:root {
+  --baseline: 1.21052632em;
+  line-height: var(--baseline)
+}
+
+/* Document level adjustments */
+html { font-size: 16px; }
+
+body {
+  font-size: 100%;
+}
+
+body, h1, h2, h3, h4, h5, h6 {
+  font-size-adjust: 0.5;
+}
+
+.story-body {
+  max-width:700px;
+}
+
+/* Body Content */
+
+#page-content {
+  font-size: 1em;
+  /* equivalent to 16px */
+  line-height: 1.25;
+  /* equivalent to 20px */
+}
+
+@include phone-landscape {
+  #page-content {
+    font-size: 1em;
+    line-height: 1.375;
+  }
+}
+
+
+/* ===============================================
+HEADERS =================== */
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Antenna Bold", sans-serif;
+}
+
+p+h1, p+h2, p+h3, p+h4, p+h5, p+h6 {
+    margin-top: 2em;
+}
+
+h1 {
+  font-size: 4.22222222em;
+  line-height: 1.21052632em;
+  margin-top: 0.30263158em;
+  margin-bottom: 0.30263158em;
+}
+
+h2 {
+  font-size: 2.61111111em;
+  line-height: 1.46808511em;
+  margin-top: 0.4893617em;
+  margin-bottom: 0.4893617em;
+}
+
+h3 {
+   font-size: 1.61111111em;
+   line-height: 1.5862069em;
+   margin-top: 0.79310345em;
+   margin-bottom: 0em;
+}
+
+h4 {
+  font-size: 1em;
+  line-height: 1.27777778em;
+  margin-top: 1.27777778em;
+  margin-bottom: 0em;
+}
+
+h5 {
+   font-size: 1em;
+   line-height: 1.27777778em;
+   margin-top: 1.27777778em;
+   margin-bottom: 0em;
+	 text-transform: uppercase;
+}
+
+h6 {
+	font-size: .875em;
+	line-height: 1.222222em;
+	margin-bottom: .5rem;
+	text-transform: uppercase;
+  font-family: "Antenna Light", sans-serif;
+  letter-spacing: 0.025em;
+}
+
+p {
+	font-size: 1.25em;
+	font-family: "myriad-pro", sans-serif;
+	line-height: 1.65em;
+  margin-top: 0em;
+  margin-bottom: 1.27777778em;
+}
+
+footnote {
+  font-family: "Antenna Light", sans-serif;
+  line-height: 1.45;
+  font-size: .85em;
+  text-transform: uppercase;
+}
+
+details summary {
+  font-family: "Antenna Bold", sans-serif;
+  font-size: .85em;
+  text-transform: uppercase;
+}
+
+details p {
+  font-family: "myriad-pro", sans-serif;
+  font-size: .925em;
+  line-height: 1.65em;
+}
+
+@include tablet-portrait {
+  h1 {
+    font-size: 2.5em;
+    line-height: 1.125em;
+  }
+	h2 {
+		font-size: 2em;
+		line-height: 1.25em;
+	}
+	h3 {
+		font-size: 1.5em;
+		line-height: 1.25em;
+	}
+	h4 {
+		line-height: 1.11111em;
+	}
+}
+
+@include phone-landscape {
+  h1 {
+    font-size: 2em;
+    line-height: 1.25em;
+  }
+	h2 {
+		font-size: 1.625em;
+		line-height: 1.15em;
+	}
+	h3 {
+		font-size: 1.375em;
+		line-height: 1.4em;
+	}
+  h4 {
+    font-size: 1.275em;
+    line-height: 1.4em;
+  }
+	p {
+		font-size: 1.15em;
+		line-height: 1.65em;
+	}
+  p.intro {
+    font-size: 1.25em;
+    line-height: 1.65em;
+  }
+}
+
+
+/* ===============================================
+Links ======================================= */
+
+article a {
+	color: $maroon-dark;
+}
+
+.card-content a,
+article .card-content a,
+article #content-refer a {
+  color: $maroon;
+  font-family: 'Antenna Bold', sans-serif;
+  text-transform: uppercase;
+}
+
+article a:hover {
+	color: $maroon-light;
+}
+
+article #content-refer a {
+  color: $gold;
+  &:hover {
+    color: $gold-light;
+  }
+}
+
+main button {
+  margin: 0px 10px 10px 0px;
+  font-family: 'Antenna Bold', sans-serif;
+  display: inline-block;
+  color: $maroon;
+  text-transform: uppercase;
+  letter-spacing: .015em;
+  border: 1px solid $maroon;
+  white-space: normal;
+  background: none;
+  transition: all .2s;
+}
+
+main button:hover {
+  color: white;
+  background: $maroon;
+}
+
+/* ===============================================
+HOME ======================================= */
+
+#home h1 {
+	font-size: 4em;
+	line-height: 1.05em;
+	margin: 0 0 30px 0;
+}
+
+#home h2 {
+font-size: 1.85em;
+text-transform: uppercase;
+}
+
+#home h3 {
+  font-size: 1.5em;
+}
+
+#home h4 {
+  font-size: 1.15em;
+  font-family: "Antenna Light", sans-serif;
+  text-transform: uppercase;
+}
+
+#home h5 {
+  font-size: 1.15em;
+  font-family: "Antenna Bold", sans-serif;
+  text-transform: uppercase;
+}
+
+#home h5 {
+  font-size: 1.15em;
+  font-family: "Antenna Bold", sans-serif;
+  text-transform: uppercase;
+}
+
+#home span a {
+  font-family: 'Antenna Bold', sans-serif !important;
+  text-transform: uppercase;
+  font-size: 90%;
+  text-decoration: none;
+}
+
+#home span a:hover {
+  color: $maroon-light;
+}
+
+@include tablet-portrait {
+  #home h1 {
+    font-size: 2.5em;
+    line-height: 1.125em;
+  }
+}
+
+@include phone-landscape {
+#home  h1 {
+    font-size: 2em;
+    line-height: 1.25em;
+  }
+}
+
+
+/* ===============================================
+BLOCKQUOTES ===================================== */
+
+blockquote  {
+	display: inline-block;
+	font-family: 'Antenna Bold', sans-serif;
+	font-size: 1.25em;
+	font-weight: 700;
+	font-style: none;
+	letter-spacing: 0em;
+	line-height: 1.85;
+	color: $gray-extra-dark;
+  margin: 0 0 2rem 0;
+}
+
+.uppercase blockquote  {
+  font-family: 'Antenna Bold', sans-serif;
+	font-size: 1.65em;
+  text-transform: uppercase;
+}
+
+cite {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	font-family: 'Antenna Light', sans-serif;
+  font-style: normal;
+	font-size: .9em;
+	letter-spacing: 0;
+	line-height: 1.45;
+	text-transform: uppercase;
+}
+
+.uppercase cite {
+  font-size: 1.1em;
+}
+
+cite a {
+	font-family: 'Antenna Bold', sans-serif;
+	font-weight: bold;
+}
+
+
+
+/* ===============================================
+INFOBOXES ===================================== */
+
+.infobox {
+	padding: 1.75rem 1.75rem 1rem 1.75rem;
+	width: 100% !important;
+	background: $gray-extra-light;
+}
+
+
+/* ===============================================
+LISTS ========================================= */
+
+
+main article ol, main article ul {
+	margin: 1rem 0 1.75rem 1.5rem;
+	padding: 0;
+	list-style-type: square;
+	list-style-position: inside;
+}
+
+
+main ol li, main ul li {
+	margin: 7px 0;
+  font-size: 1.05em;
+	font-family: 'myriad-pro', sans-serif;
+	line-height: 1.45;
+}
+
+main ol, main ol {
+    counter-reset: ordered-list-counter;
+    list-style-type: none !important;
+}
+
+main ol li:before {
+    content: counter(ordered-list-counter, decimal)".";
+    counter-increment: ordered-list-counter;
+    margin-right: 5px;
+    font-family: 'Antenna Bold', sans-serif;
+    font-size: .975em;
+    font-weight: bold;
+		list-style-type: none !important;
+}
+
+.circle-number ol li::before {
+  content: counter(step-counter);
+  position: absolute;
+  left: 0;
+  font-size: 0.9em;
+  color: white;
+  font-weight: bold;
+  background-color: #333;
+  border-radius: 28px;
+  width: 28px;
+  height: 28px;
+  line-height: 28px;
+  text-align: center;
+  margin-top: -4px;
+}
+
+.circle-number ol li {
+  counter-increment: step-counter;
+  margin-bottom: 20px;
+}
+
+.circle-number ol li span {
+  font-family: "Antenna Bold", sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 1.2rem;
+}
+
+.circle-number ol li span::after {
+  content: '\A'; white-space: pre;
+}
+
+.circle-number ol {
+  position: relative;
+  padding-left: 42px;
+  list-style-type: none;
+  margin: 30px 0 30px 10px;
+  counter-reset: step-counter;
+}
+
+/* ===============================================
+NUMBERS ========================================= */
+
+.number-lg {
+  h2 {
+    font-family: "Antenna Bold", sans-serif;
+    font-size: 6em;
+    margin-bottom: -.75rem;
+  }
+  span {
+    font-family: "Antenna Light", sans-serif;
+    text-transform: uppercase;
+    font-size: 1.2em;
+  }
+}
+
+.number-md {
+  h2 {
+    font-family: "Antenna Bold", sans-serif;
+    font-size: 4.5em;
+    margin-bottom: -.5rem;
+  }
+  span {
+    font-family: "Antenna Light", sans-serif;
+    text-transform: uppercase;
+  }
+}
+/* ===============================================
+CALENDAR ====================================== */
+
+.calendar-event-info {
+	display: table;
+	margin: 10px 0 8px 0;
+	padding: 0 0 2px 0;
+	width: auto;
+	height: auto;
+}
+
+.calendar p { font-size: .9em; line-height: 1.6; }
+
+.calendar p.explainer {
+	display: block;
+	vertical-align: bottom;
+	margin: 0;
+	padding: 0 0 5px 0;
+	line-height: 1.35;
+}
+
+.calendar h6.category { margin: 10px 0; font-size: .975em; line-height: 1.45; }
+
+.calendar-box {
+	float: left;
+	margin: 0 10px 0 0;
+	width: 50px;
+	min-width: 50px;
+	max-width: 50px;
+}
+
+p.calendar-date, p.calendar-day {
+	margin: 0;
+	padding: 6px 0 5px;
+	width: 100%;
+	font-size: .7em !important;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	text-align: center;
+	background: $maroon-dark;
+}
+
+p.calendar-day { color: $gray-light; background: $gray-extra-dark; }
+
+p.calendar-date { border-radius: 4px 4px 0 0; }
