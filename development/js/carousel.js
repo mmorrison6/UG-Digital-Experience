@@ -571,11 +571,3 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
     window.van11yAccessibleCarrouselAria = attach;
 })(document);
-
-anime({
-  targets: '.pattern-2-slidein-container',
-  translateX: [
-    {value: 500, duration: 500}
-  ],
-  rotate: '1turn'
-});
