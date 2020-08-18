@@ -34,22 +34,34 @@ PATTERN 1 MODULE ====================================== */
   background-color: $lake-dark;
   position: relative;
   margin-bottom: 800px;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #test-section-2 {
   width: 100%;
   height: 100vh;
-  background-color: $lake-light;
+  background-image:
+   url(../../images/pattern-1-bg-learn-by-doing-radio.jpg);
   position: relative;
   margin-bottom: 1000px;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #test-section-3 {
   width: 100%;
   height: 100vh;
+  background-image:
+   url(../../images/pattern-1-bg-study-abroad.jpg);
   background-color: $opus-light;
   position: relative;
   margin-bottom: 1000px;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #reveal1 {
