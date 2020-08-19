@@ -91,7 +91,7 @@
 
   <!-- UG DIGITAL EXPERIENCE OVERVIEW TEXT -->
 
-  <div class="o-container--super p4 sm-mx3" id="overview-text-container">
+  <div class="o-container--super  sm-mx3" id="overview-text-container">
     <h2 class="px4 mb3 sm-mx0 md-mx0" id="overview-text-header">EXPERIENCE OVERVIEW</h2>
     <p class="px4 mx4 sm-mx0 md-mx0" id="overview-text-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, optio quas voluptates illum consectetur corporis id in pariatur repellendus necessitatibus quaerat ipsam delectus
       laboriosam itaque natus aliquam facere ab nesciunt enim dignissimos molestiae possimus molestias consequuntur unde! Officiis atque fuga sequi dolores voluptatum, magni sit nulla pariatur, in, ducimus sapiente totam! Error nulla assumenda iusto
@@ -146,33 +146,33 @@
     <div id="test-section-2" class="panel lake-light"></div>
     <div id="test-section-3" class="panel opus-light" style="overflow:hidden;"></div>
     <div class="pattern-1-drawer-container u-highest" id="reveal1">
-      <div class="pattern-1-drawer-content-container p4" style="display: inline-flex;">
+      <div class="pattern-1-drawer-content-container p3" style="display: inline-flex;">
         <div class="o-container--medium">
           <h2 class="mt0 mb2" style="font-size: 3.5em;">ACADEMICS</h2>
           <p><strong>At Loyola, you’ll</strong> dig deeply into what interests you and make your own discoveries. Our academic programs will challenge you to do more and be more. You’ll also have the option of further professional development with a
             dual degree, double major, or five-year joint bachelor’s and master’s degree.</p>
         </div>
-        <div class="o-container m0">
+        <div id="stat-carrousel" class="o-container--medium">
           <div class="container-fluid">
             <div class="js-carrousel  relative pb1">
               <div class="js-carrousel__container  mod--hidden mb1" style="margin-left: 5em; text-align: center;" data-carrousel-prefix-class="news" data-carrousel-transition="fade" data-carrousel-hx="h2" data-carrousel-span-text="Panneau"
                 data-carousel-hide-arrows-focus="true">
                 <div class="js-carrousel__content">
-                  <div class="px4" style="text-align: center;">
+                  <div class="px2" style="text-align: center;">
                     <h2 class="stat-number-large m0">80+</h2>
-                    <h3 class="stat-heading-large m0" style="text-transform: uppercase;">Undergraduate majors offered</h3>
+                    <h3 class="stat-header-large m0">Undergraduate majors offered</h3>
                   </div>
                 </div>
                 <div class="js-carrousel__content">
-                  <div class="px4" style="text-align: center;">
+                  <div class="px2" style="text-align: center;">
                     <h2 class="stat-number-large m0">14:1</h2>
-                    <h3 class="stat-header-large m0">STUDENT-TEACHER RATIO</h3>
+                    <h3 class="stat-header-large m0">Student-teacher ratio</h3>
                   </div>
                 </div>
                 <div class="js-carrousel__content">
-                  <div class="px4" style="text-align: center;">
+                  <div class="px2" style="text-align: center;">
                     <h2 class="stat-number-large m0">26</h2>
-                    <h3 class="stat-header-large m0">STUDENTS, PER CLASS</h3>
+                    <h3 class="stat-header-large m0">Students, per class</h3>
                     <h6 class="m0">On average</h6>
                   </div>
                 </div>
@@ -423,152 +423,38 @@
   <div class="pattern-3-bg p4">
     <img src="../Development/images/Gears_icon.png" alt="" height="20%" width="20%">
     <h2 class="pattern-3-header">ADMISSION</h2>
-    <div class="o-container" style="display: flex;">
-      <div class="app-requirements-table">
-        <div class="c-table">
-          <div class="c-table__row">
-            <div class="c-table__cell" style="border: none;">
-              <h6 style="font-family: antenna-black; font-size: 1.25em; padding-right: 3em;" class="mt2">APPLICATION <br> REQUIREMENTS</h6>
+    <div class="js-tabs" data-existing-hx="h3" data-tabs-prefix-class="example-tabs">
+      <ul class="js-tablist">
+         <li class="js-tablist__item">
+            <a href="#id_prospective" class="js-tablist__link" data-selected="1" aria-selected="true">Prospective Students</a>
+         </li>
+         <li class="js-tablist__item">
+            <a href="#id_current" class="js-tablist__link">Transfer Students</a>
+         </li>
+      </ul>
+      <div id="id_freshman" class="js-tabcontent">
+        <div class="o-container" style="display: flex;">
+          <div class="app-requirements-table">
+            <div class="c-table">
+              <div class="c-table__row">
+                <div class="c-table__cell" style="border: none;">
+                  <h6 style="font-family: antenna-black; font-size: 1.25em; padding-right: 3em;" class="mt2">FRESHMAN</h6>
+                </div>
+              </div>
             </div>
-            <div class="c-table__cell" style="background-color: #daa439; border: none; border-radius: 8px 0 0 0; display: block; padding: 2em;">
-              <h6 class="mt0" style="font-family: antenna-black; font-size: 1.25em; color: white;">FRESHMAN</h6>
-              <p class="table-body-text m0" style="color: white;">Applying to Loyola directly after high school</p>
-            </div>
-            <div class="c-table__cell" style="background-color: #0096a0; border: none; border-radius: 0 8px 0 0; display: block; padding: 2em;">
-              <h6 class="mt0" style="color: white; font-family: antenna-black; font-size: 1.25em;">TRANSFER</h6>
-              <p class="table-body-text m0" style="color: white;">
-                Completed high school
-              </p>
-              <p class="table-body-text" style="color: white;">
-                Enrolled in post-secondary institution
-              </p>
-            </div>
-          </div>
-          <div class="c-table__row c-table__row--heading cell-heading-border" style="height: 50px;">
-            <span class="c-table__cell">
-              <h6 class="m0">ONLINE APPLICATION</h6>
-            </span>
-            <span class="c-table__cell table-circle-cells"><svg height="20" width="20">
-                <circle cx="10" cy="10" r="8" stroke="white" stroke-width="3" fill="#0096a0" />
-              </svg>
-            </span>
-            <span class="c-table__cell no-border-right"><svg height="20" width="20">
-                <circle cx="10" cy="10" r="8" stroke="white" stroke-width="3" fill="#0096a0" /></span>
-          </div>
-          <div class="c-table__row" style="height: 50px;">
-            <span class="c-table__cell">
-              <h6 class="m0">OFFICIAL HIGH SCHOOL TRANSCRIPT</h6>
-            </span>
-            <span class="c-table__cell"><svg height="20" width="20">
-                <circle cx="10" cy="10" r="8" stroke="white" stroke-width="3" fill="#0096a0" />
-              </svg></span>
-            <span class="c-table__cell no-border-right"><svg height="20" width="20">
-                <circle cx="10" cy="10" r="8" fill="#0096a0" />
-              </svg></span>
-          </div>
-          <div class="c-table__row" style="height: 50px;">
-            <span class="c-table__cell">
-              <h6 class="m0">COLLEGE TRANSCRIPT(S)</h6>
-            </span>
-            <span class="c-table__cell"><svg height="20" width="20">
-                <circle cx="10" cy="10" r="8" stroke="black" stroke-width="3" fill="none" />
-              </svg></span>
-            <span class="c-table__cell no-border-right"><svg height="20" width="20">
-                <circle cx="10" cy="10" r="8" stroke="white" stroke-width="3" fill="#0096a0" />
-              </svg></span>
-          </div>
-          <div class="c-table__row" style="height: 50px;">
-            <span class="c-table__cell">
-              <H6 class="m0">STANDARDIZED TEST SCORE</H6>
-            </span>
-            <span class="c-table__cell"><svg height="20" width="20">
-                <circle cx="10" cy="10" r="8" stroke="black" stroke-width="3" fill="none" />
-              </svg></span>
-            <span class="c-table__cell no-border-right"><svg height="20" width="20">
-                <circle cx="10" cy="10" r="8" fill="#0096a0" />
-              </svg></span>
-          </div>
-          <div class="c-table__row" style="height: 50px;">
-            <span class="c-table__cell">
-              <H6 class="m0">RECOMMENDATION LETTER</H6>
-            </span>
-            <span class="c-table__cell"><svg height="20" width="20">
-                <circle cx="10" cy="10" r="8" stroke="white" stroke-width="3" fill="#0096a0" />
-              </svg></span>
-            <span class="c-table__cell no-border-right"><svg height="20" width="20">
-                <circle cx="10" cy="10" r="8" fill="#0096a0" />
-              </svg></span>
-          </div>
-          <div class="c-table__row" style="height: 50px;">
-            <span class="c-table__cell">
-              <H6 class="m0">ESSAY</H6>
-            </span>
-            <span class="c-table__cell"><svg height="20" width="20">
-                <circle cx="10" cy="10" r="8" stroke="black" stroke-width="3" fill="none" />
-              </svg></span>
-            <span class="c-table__cell no-border-right"><svg height="20" width="20">
-                <circle cx="10" cy="10" r="8" stroke="black" stroke-width="3" fill="none" />
-              </svg></span>
-          </div>
-          <div class="c-table__row" style="height: 50px;">
-            <span class="c-table__cell">
-              <H6 class="m0">RESUME</H6>
-            </span>
-            <span class="c-table__cell"><svg height="20" width="20">
-                <circle cx="10" cy="10" r="8" stroke="black" stroke-width="3" fill="none" />
-              </svg></span>
-            <span class="c-table__cell no-border-right"><svg height="20" width="20">
-                <circle cx="10" cy="10" r="8" stroke="black" stroke-width="3" fill="none" />
-              </svg></span>
           </div>
         </div>
       </div>
-
-      <div class="deadlines-table o-container--medium ml4 mr4" style="display: none;">
-        <div class="c-table">
-          <div class="c-table__row">
-            <div class="c-table__cell" style="border: none;">
-              <h6 style="font-family: antenna-black; font-size: 1.25em; padding-right: 3em;" class="mt2">DEADLINES</h6>
+      <div id="id_transfer" class="js-tabcontent">
+        <div class="o-container" style="display: flex;">
+          <div class="app-requirements-table">
+            <div class="c-table">
+              <div class="c-table__row">
+                <div class="c-table__cell" style="border: none;">
+                  <h6 style="font-family: antenna-black; font-size: 1.25em; padding-right: 3em;" class="mt2">TRANSFER</h6>
+                </div>
+              </div>
             </div>
-            <div class="c-table__cell" style="background-color: #daa439; border: none; border-radius: 8px 0 0 0; display: block; padding: 2em;">
-              <h6 class="mt0" style="font-family: antenna-black; font-size: 1.25em; color: white;">FRESHMAN</h6>
-            </div>
-            <div class="c-table__cell" style="background-color: #0096a0; border: none; border-radius: 0 8px 0 0; display: block; padding: 2em;">
-              <h6 class="mt0" style="color: white; font-family: antenna-black; font-size: 1.25em;">TRANSFER</h6>
-            </div>
-          </div>
-          <div class="c-table__row c-table__row--heading cell-heading-border" style="height: 50px;">
-            <span class="c-table__cell">
-              <h6 class="m0">ONLINE APPLICATION</h6>
-            </span>
-            <span class="c-table__cell table-circle-cells"><svg height="20" width="20">
-                <circle cx="10" cy="10" r="8" stroke="white" stroke-width="3" fill="#0096a0" />
-              </svg>
-            </span>
-            <span class="c-table__cell no-border-right"><svg height="20" width="20">
-                <circle cx="10" cy="10" r="8" stroke="white" stroke-width="3" fill="#0096a0" /></span>
-          </div>
-          <div class="c-table__row" style="height: 50px;">
-            <span class="c-table__cell">
-              <h6 class="m0">OFFICIAL HIGH SCHOOL TRANSCRIPT</h6>
-            </span>
-            <span class="c-table__cell"><svg height="20" width="20">
-                <circle cx="10" cy="10" r="8" stroke="white" stroke-width="3" fill="#0096a0" />
-              </svg></span>
-            <span class="c-table__cell no-border-right"><svg height="20" width="20">
-                <circle cx="10" cy="10" r="8" fill="#0096a0" />
-              </svg></span>
-          </div>
-          <div class="c-table__row" style="height: 50px;">
-            <span class="c-table__cell">
-              <h6 class="m0">COLLEGE TRANSCRIPT(S)</h6>
-            </span>
-            <span class="c-table__cell"><svg height="20" width="20">
-                <circle cx="10" cy="10" r="8" stroke="black" stroke-width="3" fill="none" />
-              </svg></span>
-            <span class="c-table__cell no-border-right"><svg height="20" width="20">
-                <circle cx="10" cy="10" r="8" stroke="white" stroke-width="3" fill="#0096a0" />
-              </svg></span>
           </div>
         </div>
       </div>

@@ -11,10 +11,22 @@ STATISTICS SYSTEM w RESPONSIVE ====================================== */
 
 /* Stats Large */
 
+.stat-number-extra-large {
+  font-size: 7em;
+  text-align: center;
+  font-family: Antenna Bold;
+  line-height: 1;
+}
+
+.stat-header-extra-large {
+  font-size: 1.25em;
+}
+
 .stat-number-large {
   font-size: 5.5em;
   text-align: center;
   font-family: Antenna Bold;
+  line-height: 1;
 }
 
 .stat-header-large {
@@ -27,6 +39,7 @@ STATISTICS SYSTEM w RESPONSIVE ====================================== */
   font-size: 3em;
   text-align: center;
   font-family: Antenna Bold;
+  line-height: 1;
 }
 
 .stat-header-medium {

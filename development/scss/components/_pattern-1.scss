@@ -18,8 +18,8 @@ PATTERN 1 MODULE ====================================== */
 }
 
 .pattern-1-drawer-container {
-  background-color: $white;
-  height: 40vh;
+  background-color: rgba(255,255,2555,.75);
+  height: 30vh;
   display: flex;
   width: 100% !important;
   position: fixed;
@@ -121,6 +121,17 @@ PATTERN 1 MODULE ====================================== */
 #student-life-stat-source {
   margin-top: -1em;
 }
+
+.pattern-1-drawer-content-container { width: 100%; }
+.js-carrousel__container.news-carrousel__container[style] {
+  margin-left: 2em !important;
+  margin-right: 2em !important;
+}
+#stat-carrousel.o-container--medium { width: 50%; max-width: 50%; }
+#stat-carrousel h2, #stat-carrousel h3,
+#stat-carrousel h4, #stat-carrousel h5,
+#stat-carrousel h6 { display: block; width: 100%; }
+#stat-carrousel h3 { text-transform: uppercase !important; }
 
 /* Media Query Breakpoints - Hero Image Section
 
