@@ -13,10 +13,10 @@
   padding: 0;
 }
 .example-tabs-tabs__item {
-  display: inline-block;
+  display: inline-flex;
   margin: 0 .5em 0 0;
 }
-.content-columns-varied .col-flex a.example-tabs-tabs__link {
+a.example-tabs-tabs__link {
   font-family: 'Antenna Bold', sans-serif !important;
   margin: 0;
   padding: .75em 1em .6em;
@@ -30,7 +30,7 @@
   cursor: pointer;
   transition: .2s;
 }
-.content-columns-varied .col-flex a.example-tabs-tabs__link:hover {
+a.example-tabs-tabs__link:hover {
   background: #e1e1e1;
 }
 [aria-selected="true"].example-tabs-tabs__link {
@@ -42,25 +42,39 @@
   background: #5D0024 !important;
   color: #ffffff !important;
 }
-.example-tabs-tabs__content {
-  background: #f2f2f2;
-  padding: 1em;
-}
 [aria-hidden="true"].example-tabs-tabs__content {
   display: none;
 }
-.content-columns-varied .col-flex .example-tabs-tabs__content img {
-  margin: 0 0 1.25em 0 !important;
+
+/* admission unique */
+
+#admission-panel.pattern-3-bg {
+  height: 42vh;
+  z-index: 10000;
 }
-.content-columns-varied .col-flex .example-tabs-tabs__content h4 {
-  display: inline-block;
+
+#admission-panel.pattern-3-bg .example-tabs-tabs__list {
+  margin-bottom: 2em;
+}
+
+a#label_id_freshman.example-tabs-tabs__link,
+a#label_id_transfer.example-tabs-tabs__link {
+  font-family: 'Antenna Black', sans-serif !important;
   margin: 0;
+  padding: 1em 1.5em;
+  font-size: 1em;
+  color: #ffffff;
+  border-radius: 4px;
+  border: none;
+  border-radius: 8px 0 0 0;
+  background: #daa439 !important;
+}
+a#label_id_transfer.example-tabs-tabs__link {
+  border-radius: 0 8px 0 0;
+  background: #0096A0 !important;
+}
+
+.requirements-table {
+  margin: 1em 0 7em;
   width: 100%;
-}
-.content-columns-varied .grid-wrapper .col-flex .example-tabs-tabs__content p {
-  margin: .5em 0;
-  font-size: 1.015em !important;
-}
-.content-columns-varied .grid-wrapper .col-flex .example-tabs-tabs__content p a {
-  font-size: .85em !important;
 }

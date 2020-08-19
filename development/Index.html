@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="css/styles.css">
 
   <!-- Javascript -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.0/anime.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
@@ -155,8 +155,181 @@
     </div>
   </div>
 
-  <!-- PATTERN 3 - ADMISSION -->
 
+  <script>
+    @@include('./js-two/accessible-tab-panel-aria.js')
+  </script>
+
+    <!-- PATTERN 3 - ADMISSION -->
+    <div id="admission-panel" class="pattern-3-bg o-container p4">
+      <!-- <img src="../Development/images/Gears_icon.png" alt="" height="20%" width="20%"> -->
+      <h2 class="pattern-3-header">ADMISSION</h2>
+      <div class="js-tabs" data-existing-hx="h3" data-tabs-prefix-class="example-tabs">
+        <ul class="js-tablist o-container">
+           <li class="js-tablist__item">
+              <a href="#id_freshman" class="js-tablist__link" data-selected="1" aria-selected="true">Prospective Students</a>
+           </li>
+           <li class="js-tablist__item">
+              <a href="#id_transfer" class="js-tablist__link">Transfer Students</a>
+           </li>
+        </ul>
+        <div id="id_freshman" class="js-tabcontent">
+          <div class="o-container" style="display: flex;">
+            <div class="requirements-table">
+              <div class="c-table">
+                <div class="c-table__row c-table__row--heading cell-heading-border">
+                  <span class="c-table__cell">
+                    <h6 class="m0">ONLINE APPLICATION</h6>
+                  </span>
+                  <span class="c-table__cell">
+                    <h6 class="m0">OFFICIAL HIGH SCHOOL TRANSCRIPT</h6>
+                  </span>
+                  <span class="c-table__cell">
+                    <h6 class="m0">COLLEGE TRANSCRIPT(S)</h6>
+                  </span>
+                  <span class="c-table__cell">
+                    <H6 class="m0">STANDARDIZED TEST SCORE</H6>
+                  </span>
+                  <span class="c-table__cell">
+                    <H6 class="m0">RECOMMENDATION LETTER</H6>
+                  </span>
+                  <span class="c-table__cell">
+                    <H6 class="m0">ESSAY</H6>
+                  </span>
+                  <span class="c-table__cell">
+                    <H6 class="m0">RESUME</H6>
+                  </span>
+                </div>
+              </div>
+
+              <div class="c-table__row c-table__row--heading cell-heading-border" style="height: 50px;">
+          <!-- ONLINE APPLICATION -->
+                <span class="c-table__cell">
+                  <svg height="20" width="20">
+                    <circle cx="10" cy="10" r="8" stroke="white" stroke-width="3" fill="#0096a0" />
+                  </svg>
+                </span>
+          <!-- OFFICIAL HIGH SCHOOL TRANSCRIPT -->
+                <span class="c-table__cell">
+                  <svg height="20" width="20">
+                    <circle cx="10" cy="10" r="8" stroke="white" stroke-width="3" fill="#0096a0" />
+                  </svg>
+                </span>
+          <!-- COLLEGE TRANSCRIPT(S) -->
+                <span class="c-table__cell">
+                  <svg height="20" width="20">
+                    <circle cx="10" cy="10" r="8" stroke="black" stroke-width="3" fill="none" />
+                  </svg>
+                </span>
+          <!-- STANDARDIZED TEST SCORE -->
+                <span class="c-table__cell">
+                  <svg height="20" width="20">
+                    <circle cx="10" cy="10" r="8" stroke="black" stroke-width="3" fill="none" />
+                  </svg>
+                </span>
+          <!-- RECOMMENDATION LETTER -->
+                <span class="c-table__cell">
+                  <svg height="20" width="20">
+                    <circle cx="10" cy="10" r="8" stroke="white" stroke-width="3" fill="#0096a0" />
+                  </svg>
+                </span>
+          <!-- ESSAY -->
+                <span class="c-table__cell">
+                  <svg height="20" width="20">
+                    <circle cx="10" cy="10" r="8" stroke="black" stroke-width="3" fill="none" />
+                  </svg>
+                </span>
+          <!-- ESSAY -->
+                <span class="c-table__cell">
+                  <svg height="20" width="20">
+                    <circle cx="10" cy="10" r="8" stroke="black" stroke-width="3" fill="none" />
+                  </svg>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="id_transfer" class="js-tabcontent">
+          <div class="o-container" style="display: flex;">
+            <div class="requirements-table">
+              <div class="c-table">
+                <div class="c-table__row c-table__row--heading cell-heading-border">
+                  <span class="c-table__cell">
+                    <h6 class="m0">ONLINE APPLICATION</h6>
+                  </span>
+                  <span class="c-table__cell">
+                    <h6 class="m0">OFFICIAL HIGH SCHOOL TRANSCRIPT</h6>
+                  </span>
+                  <span class="c-table__cell">
+                    <h6 class="m0">COLLEGE TRANSCRIPT(S)</h6>
+                  </span>
+                  <span class="c-table__cell">
+                    <H6 class="m0">STANDARDIZED TEST SCORE</H6>
+                  </span>
+                  <span class="c-table__cell">
+                    <H6 class="m0">RECOMMENDATION LETTER</H6>
+                  </span>
+                  <span class="c-table__cell">
+                    <H6 class="m0">ESSAY</H6>
+                  </span>
+                  <span class="c-table__cell">
+                    <H6 class="m0">RESUME</H6>
+                  </span>
+                </div>
+              </div>
+
+              <div class="c-table__row c-table__row--heading cell-heading-border" style="height: 50px;">
+          <!-- ONLINE APPLICATION -->
+                <span class="c-table__cell">
+                  <svg height="20" width="20">
+                    <circle cx="10" cy="10" r="8" stroke="white" stroke-width="3" fill="#0096a0" />
+                  </svg>
+                </span>
+          <!-- OFFICIAL HIGH SCHOOL TRANSCRIPT -->
+                <span class="c-table__cell">
+                  <svg height="20" width="20">
+                    <circle cx="10" cy="10" r="8" fill="#0096a0" />
+                  </svg>
+                </span>
+          <!-- COLLEGE TRANSCRIPT(S) -->
+                <span class="c-table__cell">
+                  <svg height="20" width="20">
+                    <circle cx="10" cy="10" r="8" stroke="white" stroke-width="3" fill="#0096a0" />
+                  </svg>
+                </span>
+          <!-- STANDARDIZED TEST SCORE -->
+                <span class="c-table__cell">
+                  <svg height="20" width="20">
+                    <circle cx="10" cy="10" r="8" fill="#0096a0" />
+                  </svg>
+                </span>
+          <!-- RECOMMENDATION LETTER -->
+                <span class="c-table__cell">
+                  <svg height="20" width="20">
+                    <circle cx="10" cy="10" r="8" fill="#0096a0" />
+                  </svg>
+                </span>
+          <!-- ESSAY -->
+                <span class="c-table__cell">
+                  <svg height="20" width="20">
+                    <circle cx="10" cy="10" r="8" stroke="black" stroke-width="3" fill="none" />
+                  </svg>
+                </span>
+          <!-- ESSAY -->
+                <span class="c-table__cell">
+                  <svg height="20" width="20">
+                    <circle cx="10" cy="10" r="8" stroke="black" stroke-width="3" fill="none" />
+                  </svg>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <!-- PATTERN 3 - ADMISSION -->
+<!--
   <div class="pattern-3-bg p4">
     <img src="../Development/images/Gears_icon.png" alt="" height="20%" width="20%">
     <h2 class="pattern-3-header">ADMISSION</h2>
@@ -311,6 +484,7 @@
       </div>
     </div>
   </div>
+-->
 
   <!-- PATTERN 2 - AFFORDABILITY -->
 
@@ -385,49 +559,6 @@
   </div>
 </div>
 
-      </div>
-    </div>
-  </div>
-
-  <!-- PATTERN 3 - ADMISSION -->
-
-  <div class="pattern-3-bg p4">
-    <img src="../Development/images/Gears_icon.png" alt="" height="20%" width="20%">
-    <h2 class="pattern-3-header">ADMISSION</h2>
-    <div class="js-tabs" data-existing-hx="h3" data-tabs-prefix-class="example-tabs">
-      <ul class="js-tablist">
-         <li class="js-tablist__item">
-            <a href="#id_prospective" class="js-tablist__link" data-selected="1" aria-selected="true">Prospective Students</a>
-         </li>
-         <li class="js-tablist__item">
-            <a href="#id_current" class="js-tablist__link">Transfer Students</a>
-         </li>
-      </ul>
-      <div id="id_freshman" class="js-tabcontent">
-        <div class="o-container" style="display: flex;">
-          <div class="app-requirements-table">
-            <div class="c-table">
-              <div class="c-table__row">
-                <div class="c-table__cell" style="border: none;">
-                  <h6 style="font-family: antenna-black; font-size: 1.25em; padding-right: 3em;" class="mt2">FRESHMAN</h6>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div id="id_transfer" class="js-tabcontent">
-        <div class="o-container" style="display: flex;">
-          <div class="app-requirements-table">
-            <div class="c-table">
-              <div class="c-table__row">
-                <div class="c-table__cell" style="border: none;">
-                  <h6 style="font-family: antenna-black; font-size: 1.25em; padding-right: 3em;" class="mt2">TRANSFER</h6>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
   </div>
