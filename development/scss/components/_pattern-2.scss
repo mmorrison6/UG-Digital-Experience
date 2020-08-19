@@ -67,7 +67,8 @@ PATTERN 2 MODULE ====================================== */
 /* Pattern 2 Table Styles */
 
 .tuition-table {
-  width: 90%;
+  width: 85%;
+  margin: 0 auto;
 }
 
 .c-table__row-white {
@@ -98,6 +99,14 @@ PATTERN 2 MODULE ====================================== */
 
 .table-circle-cells {
   flex-shrink: 300px !important;
+}
+
+.affordability-header-medium {
+  font-size: 1em;
+}
+
+.light-text {
+  color: #ffffff;
 }
 
 /* Media Query Breakpoints - Hero Image Section

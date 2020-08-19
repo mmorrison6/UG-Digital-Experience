@@ -44,6 +44,12 @@ STATISTICS SYSTEM w RESPONSIVE ====================================== */
   text-align: center;
 }
 
+.stat-source {
+  text-transform: uppercase;
+  font-style: italic;
+  font-size: 0.75em;
+}
+
 /* Media Query Breakpoints - Hero Image Section
 
 @media only screen and (max-width: 415px) {}

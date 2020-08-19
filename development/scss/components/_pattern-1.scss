@@ -86,6 +86,41 @@ PATTERN 1 MODULE ====================================== */
 								transform: none;
 			}
 
+#pattern-1-img-grid-left {
+  height: 65%;
+  width: 65%;
+  background-image:
+   url(../../images/pattern-1-bg-student-life-grid-left-lurec-bridge.jpg);
+  background-color: maroon;
+  background-position: 50% 90%;
+}
+
+#pattern-1-img-grid-right {
+  height: 65%;
+  width: 35%;
+  background-color: coral;
+}
+
+#pattern-1-img-grid-top-right {
+  height: 35%;
+  background-image:
+   url(../../images/pattern-1-bg-student-life-grid-right-gonclaves.jpg);
+  background-color: $gold;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#pattern-1-img-grid-bottom-right {
+  height: 65%;
+  background-image:
+   url(../../images/pattern-1-bg-student-life-grid-right-mens-soccer.jpg);
+  background-color: $lake;
+  background-position: 50% 20%;
+}
+
+#student-life-stat-source {
+  margin-top: -1em;
+}
 
 /* Media Query Breakpoints - Hero Image Section
 
