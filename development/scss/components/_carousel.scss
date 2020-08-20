@@ -257,49 +257,55 @@ kbd {
   border: solid 2px #8D0034; background: #8D0034;
 }
 
-/* ------------------- adjustmments -------------------- */
-
-.js-carrousel.news-carrousel { padding: 0 !important; }
-
-.js-carrousel.news-carrousel img { max-width: 100%; }
-
-#main-content-wrapper-full-width img.news-carrousel__button__img { float: right; width: 35% !important; height: 35% !important; }
-
-#main-content-wrapper-full-width .js-carrousel__button__next.news-carrousel__button__button img { float: right !important; }
-
-#main-content-wrapper-full-width .js-carrousel__button__previous.news-carrousel__button__button img { float: left !important; }
-
-.js-carrousel__content.news-carrousel__content.carrousel__content p {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: 0;
-  padding: .7em 1em 1em;
-  height: 40px;
-  min-height: 40px;
-  max-height: 40px;
-  font-family: 'Arial', sans-serif;
-  font-size: .825em;
-  line-height: 1.85;
-  color: #cccccc;
-  background: rgba(0,0,0,.75);
-  overflow-y: scroll;
-}
-
-.news-carrousel__control__list { bottom: 0; margin-top: 1em;}
-
-
 /* -------------- OVERIDES FOR UG -------------- */
 
-.js-carrousel relative pb1 news-carrousel {
-  width: 30em;
-  margin-left: 5em;
+#stat-carrousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
 }
 
-.js-carrousel__control__list news-carrousel__control__list {
-  margin-top: 2.5em;
+/* stat-carrousel typography */
+
+#stat-carrousel h2 { letter-spacing: -.05em; }
+
+#stat-carrousel.o-container--medium { width: 50%; max-width: 50%; }
+#stat-carrousel h2, #stat-carrousel h3,
+#stat-carrousel h4, #stat-carrousel h5,
+#stat-carrousel h6 { display: block; width: 100%; }
+#stat-carrousel h3 { text-transform: uppercase !important; }
+/* span */
+#stat-carrousel h2 span, #stat-carrousel h3 span,
+#stat-carrousel h4 span, #stat-carrousel h5 span,
+#stat-carrousel h6 span { font-family: 'Antenna Light', sans-serif }
+
+#stat-carrousel h3 { text-transform: uppercase !important; }
+
+/* all drawers - 100 wide */
+.pattern-1-drawer-content-container { width: 100%; }
+
+.news-carrousel {
+  margin-left: 2em !important;
+  margin-right: 2em !important;
+  padding: 0 !important;
 }
+
+.news-carrousel img { max-width: 100%; }
+
+.news-carrousel__control__list { display: block; bottom: 0; margin-top: 1em;}
+
+.news-carrousel__control__list__link[aria-selected=true] {
+  outline: 2px solid #febc18;
+  background: #8D0034;
+}
+
+/* pushes carousel away from content */
+.news-carrousel__container[style] {
+  margin-left: 2em !important;
+  margin-right: 2em !important;
+}
+/* pushes carousel away from content */
 
 /* -------------- media queries -------------- */
 
