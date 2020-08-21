@@ -87,8 +87,8 @@ PATTERN 1 MODULE ====================================== */
 			}
 
 #pattern-1-img-grid-left {
-  height: 65%;
-  width: 65%;
+  height: 100%;
+  width: 100%;
   background-image:
    url(../../images/pattern-1-bg-student-life-grid-left-lurec-bridge.jpg);
   background-color: maroon;
@@ -96,7 +96,7 @@ PATTERN 1 MODULE ====================================== */
 }
 
 #pattern-1-img-grid-right {
-  height: 65%;
+  height: 100%;
   width: 35%;
   background-color: coral;
 }
@@ -120,6 +120,14 @@ PATTERN 1 MODULE ====================================== */
 
 #student-life-stat-source {
   margin-top: -1em;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.active {
+  display: block;
 }
 
 /* Media Query Breakpoints - Hero Image Section

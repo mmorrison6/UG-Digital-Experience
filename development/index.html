@@ -19,8 +19,17 @@
 
 <body>
 
+  <!-- FOOTER -->
+  @@include('./partials/footer.html')
+
   <!-- HERO -->
-  @@include('./partials/hero-image.html')
+
+  <div class="hero-image">
+  <!-- @@include('./partials/hero-image-overlay.html') -->
+    <div class="hero-text">
+      <h1>LOYOLA UNIVERSITY CHICAGO</h1>
+    </div>
+  </div>
 
   <!-- OVERVIEW -->
   @@include('./partials/overview-panel.html')
@@ -37,10 +46,31 @@
   <!-- PATTERN 2 - OVERLAY - AFFORDABILITY -->
   @@include('./partials/pattern-two-affordability.html')
 
-  <!-- FOOTER -->
-  @@include('./partials/footer.html')
-
   <!-- SCRIPTS - SCROLLMAGIC / ANIME JS / WAYPOINT -->
+
+  <script>
+	// init controller
+	var controller = new ScrollMagic.Controller({globalSceneOptions: {duration: 100}});
+
+	// build scenes
+	new ScrollMagic.Scene({triggerElement: "#student-life-content",
+  triggerHook: 0.9, // show, when scrolled 10% into view
+  duration: "6000px", // hide 10% before exiting view (80% + 10% from bottom)
+  offset: 750, // move trigger to center of element
+})
+					.setClassToggle("#student-life-content", "active") // add class toggle
+					.addIndicators() // add indicators (requires plugin)
+					.addTo(controller);
+	new ScrollMagic.Scene({triggerElement: "#test-section-2"})
+					.setClassToggle("#learn-by-doing-content", "active") // add class toggle
+					.addIndicators() // add indicators (requires plugin)
+					.addTo(controller);
+	new ScrollMagic.Scene({triggerElement: "#test-section-3"})
+					.setClassToggle("#study-abroad-content", "active") // add class toggle
+					.addIndicators() // add indicators (requires plugin)
+					.addTo(controller);
+
+</script>
 
   <script>
     anime({
@@ -67,7 +97,7 @@
         offset: 800, // move trigger to center of element
       })
       .setClassToggle("#reveal1", "visible") // add class to reveal
-      .addIndicators() // add indicators (requires plugin)
+    //  .addIndicators() add indicators (requires plugin)
       .addTo(controller);
   </script>
 
@@ -94,7 +124,7 @@
           .setPin(slides[i], {
             pushFollowers: false
           })
-          .addIndicators() // add indicators (requires plugin)
+        //  .addIndicators() add indicators (requires plugin)
           .addTo(controller);
       }
     });
