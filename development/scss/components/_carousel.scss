@@ -260,17 +260,20 @@ kbd {
 /* -------------- OVERIDES FOR UG -------------- */
 
 #stat-carrousel {
+  box-sizing: border-box;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 0 20px;
   height: 100%;
+  overflow: hidden;
 }
 
 /* stat-carrousel typography */
 
 #stat-carrousel h2 { letter-spacing: -.05em; }
 
-#stat-carrousel.o-container--medium { width: 50%; max-width: 50%; }
+#stat-carrousel.o-container--medium { width: 50%; max-width: 100%; min-width: 50%; }
 #stat-carrousel h2, #stat-carrousel h3,
 #stat-carrousel h4, #stat-carrousel h5,
 #stat-carrousel h6 { display: block; width: 100%; }
@@ -285,13 +288,28 @@ kbd {
 /* all drawers - 100 wide */
 .pattern-1-drawer-content-container { width: 100%; }
 
-.news-carrousel {
-  margin-left: 2em !important;
-  margin-right: 2em !important;
+/* spacing */
+.js-carrousel, .news-carrousel,
+.js-carrousel__container.news-carrousel__container {
+  box-sizing: border-box;
+  margin-left: 5% !important;
+  margin-right: 5% !important;
   padding: 0 !important;
+  width: 90% !important;
+  min-width: 90% !important;
+  max-width: 90% !important;
+  display: flex;
 }
 
 .news-carrousel img { max-width: 100%; }
+
+.js-carrousel__button-container { opacity: 1; margin-left: 0; margin-right: 0; }
+
+.js-carrousel__button__previous { margin-left: 0; }
+
+.js-carrousel__button__previous { margin-right: 0; }
+
+.js-carrousel__button__previous, .js-carrousel__button__next { width: 50px; height: 50px; }
 
 .news-carrousel__control__list { display: block; bottom: 0; margin-top: 1em;}
 
@@ -299,12 +317,16 @@ kbd {
   outline: 2px solid #febc18;
   background: #8D0034;
 }
-
-/* pushes carousel away from content */
-.news-carrousel__container[style] {
-  margin-left: 2em !important;
-  margin-right: 2em !important;
+.carrousel__content,
+.js-carrousel__content[style] {
+  position: relative;
+  display: block;
+  width: 60%;
+  min-width: 60%;
+  max-width: 60%;
+  margin: 0 20%;
 }
+
 /* pushes carousel away from content */
 
 /* -------------- media queries -------------- */
