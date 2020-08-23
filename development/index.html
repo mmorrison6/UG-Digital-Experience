@@ -4,7 +4,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Undergrad Test</title>
+  <title>Undergraduate Admissions - Domestic Road Show</title>
   <meta name="description" content="Undergrad Digital Experience Testing site">
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
   <meta name="author" content="SitePoint">
@@ -15,21 +15,16 @@
   <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
   <script src="js/all.min.js"></script>
+  <script src="js-two/modaal.js"></script>
 </head>
 
 <body>
 
-  <!-- FOOTER -->
-  @@include('./partials/footer.html')
+  <!-- NAV -->
+  @@include('./partials/nav-contents.html')
 
   <!-- HERO -->
-
-  <div class="hero-image">
-  <!-- @@include('./partials/hero-image-overlay.html') -->
-    <div class="hero-text">
-      <h1>LOYOLA UNIVERSITY CHICAGO</h1>
-    </div>
-  </div>
+  @@include('./partials/hero-image.html')
 
   <!-- OVERVIEW -->
   @@include('./partials/overview-panel.html')
@@ -46,31 +41,32 @@
   <!-- PATTERN 2 - OVERLAY - AFFORDABILITY -->
   @@include('./partials/pattern-two-affordability.html')
 
+  <!-- FOOTER -->
+  @@include('./partials/footer.html')
+
   <!-- SCRIPTS - SCROLLMAGIC / ANIME JS / WAYPOINT -->
 
   <script>
-	// init controller
-	var controller = new ScrollMagic.Controller({globalSceneOptions: {duration: 100}});
-
+  // init controller
+  var controller = new ScrollMagic.Controller();
 	// build scenes
-	new ScrollMagic.Scene({triggerElement: "#student-life-content",
+	new ScrollMagic.Scene({triggerElement: "#content-toggle-1",
   triggerHook: 0.9, // show, when scrolled 10% into view
   duration: "6000px", // hide 10% before exiting view (80% + 10% from bottom)
-  offset: 750, // move trigger to center of element
+  offset: 800, // move trigger to center of element
 })
-					.setClassToggle("#student-life-content", "active") // add class toggle
-					.addIndicators() // add indicators (requires plugin)
-					.addTo(controller);
-	new ScrollMagic.Scene({triggerElement: "#test-section-2"})
-					.setClassToggle("#learn-by-doing-content", "active") // add class toggle
-					.addIndicators() // add indicators (requires plugin)
-					.addTo(controller);
-	new ScrollMagic.Scene({triggerElement: "#test-section-3"})
-					.setClassToggle("#study-abroad-content", "active") // add class toggle
-					.addIndicators() // add indicators (requires plugin)
-					.addTo(controller);
-
-</script>
+		.setClassToggle("#student-life-content", "active") // add class toggle
+		.addIndicators() // add indicators (requires plugin)
+		.addTo(controller);
+	new ScrollMagic.Scene({triggerElement: "#content-toggle-2"})
+		.setClassToggle("#learn-by-doing-content", "active") // add class toggle
+		.addIndicators() // add indicators (requires plugin)
+		.addTo(controller);
+	new ScrollMagic.Scene({triggerElement: "#content-toggle-3"})
+		.setClassToggle("#study-abroad-content", "active") // add class toggle
+		.addIndicators() // add indicators (requires plugin)
+		.addTo(controller);
+  </script>
 
   <script>
     anime({
@@ -86,9 +82,7 @@
   <script>
     // init controller
     var controller = new ScrollMagic.Controller();
-  </script>
 
-  <script>
     // build scene
     new ScrollMagic.Scene({
         triggerElement: "#scroll-initiator-1",
