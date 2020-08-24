@@ -32,10 +32,9 @@ footer {
 footer {
   #social-icons.o-grid__cell {
     margin: 0 .25em;
-    display: flex;
-    flex: 1;
-    align-items: flex-end;
     border-right: none;
+    flex: none;
+    justify-items: right;
     a {
       display: inline-flex;
       padding: .5em;

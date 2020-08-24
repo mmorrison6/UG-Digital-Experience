@@ -10,11 +10,12 @@
 .cta-container-fluid {
   margin: 0;
   padding: 3em 5%;
-  background: #e1e1e1;
+  background: #febc18;
 }
 
 .content-columns-varied .col-flex h2,
 .content-columns-varied .col-flex p,
+.content-columns-varied .col-flex p.audience-readout,
 .content-columns-varied .col-flex a {
   display: block;
   margin: 0;
@@ -23,7 +24,7 @@
   min-width: 100%;
   max-width: 100%;
   height: auto;
-  text-align: center !important;
+  text-align: left !important;
   text-transform: uppercase;
   text-decoration: none;
   color: #000000;
@@ -32,7 +33,7 @@
 .content-columns-varied .col-flex h2 {
   width: 100% !important;
   font-family: 'Arial Black', sans-serif;
-  font-size: 1.5em;
+  font-size: 3em;
   font-weight: bold;
   font-weight: 700;
   letter-spacing: -.0125em;
@@ -47,27 +48,35 @@
 }
 
 .content-columns-varied .col-flex h2 span a {
-  color: #8D0034;
+  color: #ffffff;
 }
 
 .content-columns-varied .col-flex p {
-  margin: .5em 0 0 0 !important;
+  margin: .5em 0 1em 0 !important;
+  width: 80%;
+  min-width: 80%;
+  max-width: 80%;
   font-family: 'Arial', sans-serif;
-  font-size: .9em;
+  font-size: 1.25em;
   font-weight: normal;
   font-weight: 400;
+  text-transform: none;
+}
+
+.content-columns-varied .col-flex p.audience-readout {
+ font-size: .9em;
 }
 
 /* buttons */
 .button {
   margin: 0;
-  padding: .5em 1em !important;
+  padding: .55em 1em !important;
   width: 100%;
   height: auto;
   font-family: 'Arial Black', sans-serif !important;
   font-weight: bold !important;
   font-weight: 700 !important;
-  font-size: 1em;
+  font-size: 1.25em;
   line-height: 1.45;
   color: #ffffff !important;
   text-align: center;

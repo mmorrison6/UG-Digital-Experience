@@ -1,19 +1,19 @@
 /* modaal button */
 .modal-button button#myBtn {
     position: absolute;
-    top: 10%;
-    right: 10%;
+    top: -7%;
+    right: 6em;
     display: block;
-    width: 170px;
-    height: 170px;
+    width: 185px;
+    height: 185px;
     border-radius: 50%;
     overflow: hidden;
     border: none;
     background: #ffffff;
     background-image: url('../images/ug-road-loyola-experience-gallery.png');
     background-size: 100% 100%;
-    transform: rotate(10deg);
-    box-shadow: 0px 0px 15px rgba(0,0,0,.35);
+    transform: rotate(0deg);
+    box-shadow: 0px 0px 5px rgba(0,0,0,.35);
 }
 
 .loyola-experience-icon {
@@ -118,9 +118,7 @@ nav.c-nav {
   margin: 0;
   width: auto;
   border-radius: 3em 3em 0 0;
-  background: rgba(255,255,255,.7);
-  box-shadow: inset 0px 0px 5px rgba(0,0,0,.65);
-
+  background: rgba(255,255,255,.825);
 }
 
 #table-numbers h4,
@@ -162,6 +160,10 @@ nav.c-nav {
   text-transform: uppercase;
 }
 
+.c-table__cell h6 {
+  font-family: 'Antenna Bold', sans-serif;
+}
+
 .c-table__cell h6 span {
   display: inline-table;
   margin: auto auto auto 5px;
@@ -188,6 +190,23 @@ nav.c-nav {
 
 /* tables */
 
+#key {
+  display: flex;
+  margin-bottom: 3em;
+  width: 100%;
+  span.key-name {
+    display: flex;
+    margin: 0 2em 0 0;
+    align-items: center;
+    h5 {
+      display: inline-block;
+      margin: .25em 0 0 .5em;
+      font-family: 'Antenna', sans-serif;
+      font-size: 1em;
+    }
+  }
+}
+
 #id_freshman[style],
 #id_transfer[style] {
   height: auto !important;
@@ -195,7 +214,7 @@ nav.c-nav {
 
 .requirements-table,
 .requirements-table.deadlines-table {
-  margin: 1em 0 2em;
+  margin: 1em 0 1em;
   .c-table {
     border-left: solid 1px #000000;
   }
@@ -263,7 +282,8 @@ nav.c-nav {
 }
 
 .example-tabs-tabs__list {
-  margin-bottom: 1em !important;
+  margin-top: 3.5em !important;
+  margin-bottom: 3em !important;
   height: 3em;
 }
 
@@ -325,4 +345,8 @@ a#label_id_transfer.example-tabs-tabs__link[aria-selected="true"]::after {
 
 .pattern-1-drawer-container {
   border-radius: 2em 2em 0 0;
+}
+
+.pattern-2-bg {
+  box-shadow: 0 -5px 5px rgba(0,0,0,1);
 }
