@@ -63,6 +63,15 @@ PATTERN 2 MODULE ====================================== */
   background-color: $maroon;
 }
 
+.slideout-number {
+  font-size: 4.5em;
+}
+
+.bottom {
+  position: relative;
+  bottom: 0;
+}
+
 .bounce {
   -moz-animation: bounce 2s infinite;
   -webkit-animation: bounce 2s infinite;

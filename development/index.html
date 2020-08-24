@@ -20,9 +20,6 @@
 
 <body>
 
-  <!-- NAV -->
-  @@include('./partials/nav-contents.html')
-
   <!-- HERO -->
   @@include('./partials/hero-image.html')
 
@@ -49,20 +46,29 @@
   <script>
   // init controller
   var controller = new ScrollMagic.Controller();
+
 	// build scenes
 	new ScrollMagic.Scene({triggerElement: "#content-toggle-1",
   triggerHook: 0.9, // show, when scrolled 10% into view
-  duration: "6000px", // hide 10% before exiting view (80% + 10% from bottom)
+  duration: "1655px", // hide 10% before exiting view (80% + 10% from bottom)
   offset: 800, // move trigger to center of element
 })
 		.setClassToggle("#student-life-content", "active") // add class toggle
 		.addIndicators() // add indicators (requires plugin)
 		.addTo(controller);
-	new ScrollMagic.Scene({triggerElement: "#content-toggle-2"})
+	new ScrollMagic.Scene({triggerElement: "#content-toggle-2",
+  triggerHook: 0.9, // show, when scrolled 10% into view
+  duration: "1850px", // hide 10% before exiting view (80% + 10% from bottom)
+  offset: 800, // move trigger to center of element
+})
 		.setClassToggle("#learn-by-doing-content", "active") // add class toggle
 		.addIndicators() // add indicators (requires plugin)
 		.addTo(controller);
-	new ScrollMagic.Scene({triggerElement: "#content-toggle-3"})
+	new ScrollMagic.Scene({triggerElement: "#content-toggle-3",
+  triggerHook: 0.9, // show, when scrolled 10% into view
+  duration: "1600px", // hide 10% before exiting view (80% + 10% from bottom)
+  offset: 800, // move trigger to center of element
+})
 		.setClassToggle("#study-abroad-content", "active") // add class toggle
 		.addIndicators() // add indicators (requires plugin)
 		.addTo(controller);
@@ -94,6 +100,23 @@
     //  .addIndicators() add indicators (requires plugin)
       .addTo(controller);
   </script>
+
+  <script>
+    // init controller
+    var controller = new ScrollMagic.Controller();
+
+    // build scene
+    new ScrollMagic.Scene({
+        triggerElement: "#scroll-initiator-2",
+        triggerHook: 0.9, // show, when scrolled 10% into view
+        duration: "500px", // hide 10% before exiting view (80% + 10% from bottom)
+        offset: 800, // move trigger to center of element
+      })
+      .setClassToggle("#reveal2", "visible") // add class to reveal
+      .addIndicators() add indicators (requires plugin) //
+      .addTo(controller);
+  </script>
+
 
   <script>
     $(function() { // wait for document ready
