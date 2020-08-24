@@ -1,0 +1,231 @@
+/* column-varied.css */
+
+/* exposure override */
+
+.story-rhythm {
+  margin-bottom: 0px !important;
+}
+
+/* wrapper */
+.cta-container-fluid {
+  margin: 0;
+  padding: 3em 5%;
+  background: #e1e1e1;
+}
+
+.content-columns-varied .col-flex h2,
+.content-columns-varied .col-flex p,
+.content-columns-varied .col-flex a {
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  height: auto;
+  text-align: center !important;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000000;
+}
+
+.content-columns-varied .col-flex h2 {
+  width: 100% !important;
+  font-family: 'Arial Black', sans-serif;
+  font-size: 1.5em;
+  font-weight: bold;
+  font-weight: 700;
+  letter-spacing: -.0125em;
+}
+
+.content-columns-varied .col-flex h2 span {
+  display: inline-block;
+  font-family: 'Arial Black', sans-serif;
+  font-weight: normal;
+  font-weight: 400;
+  letter-spacing: -.0125em;
+}
+
+.content-columns-varied .col-flex h2 span a {
+  color: #8D0034;
+}
+
+.content-columns-varied .col-flex p {
+  margin: .5em 0 0 0 !important;
+  font-family: 'Arial', sans-serif;
+  font-size: .9em;
+  font-weight: normal;
+  font-weight: 400;
+}
+
+/* buttons */
+.button {
+  margin: 0;
+  padding: .5em 1em !important;
+  width: 100%;
+  height: auto;
+  font-family: 'Arial Black', sans-serif !important;
+  font-weight: bold !important;
+  font-weight: 700 !important;
+  font-size: 1em;
+  line-height: 1.45;
+  color: #ffffff !important;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: none;
+  border-radius: .66em !important;
+  background: #8D0034 !important;
+  -webkit-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s;
+}
+
+/* buttons - color */
+.button, .button a { color: #ffffff !important; }
+.button-maroon .button { background: #8D0034 !important; }
+.button-patina .button { background: #0096A0 !important; }
+.button-gold .button { background: #FEBC18; background: #F3AD15 !important; }
+/* buttons - color - hover */
+.button-maroon .button:hover { background: #5D0024 !important; }
+.button-patina .button:hover { background: #00495C !important; }
+.button-gold .button:hover { background: #5D4B3F !important; }
+
+/* grid */
+
+.content-columns-varied .grid-wrapper,
+.content-columns-varied .grid-wrapper .col-flex,
+.content-columns-varied .grid-wrapper .col-flex a {
+  box-sizing: border-box;
+}
+
+/* columns varied */
+
+.content-columns-varied .grid-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(12, [col-start] 1fr);
+  -ms-grid-rows: auto;
+  grid-template-rows: auto;
+  width: 100%;
+}
+
+.content-columns-varied .grid-wrapper .col-flex {
+  margin: .75em 1.5em;
+  padding: 0;
+}
+
+/* four-column-build */
+
+.content-columns-varied.four-column-build .grid-wrapper .col-flex {
+  grid-column: span 3;
+  -ms-grid-column-span: 3;
+}
+/* four-column-build - ms support */
+.content-columns-varied.four-column-build .grid-wrapper .col-flex:nth-child(1) {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+}
+.content-columns-varied.four-column-build .grid-wrapper .col-flex:nth-child(2) {
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 3;
+}
+.content-columns-varied.four-column-build .grid-wrapper .col-flex:nth-child(3) {
+  -ms-grid-column: 7;
+  -ms-grid-column-span: 3;
+}
+.content-columns-varied.four-column-build .grid-wrapper .col-flex:nth-child(4) {
+  -ms-grid-column: 10;
+  -ms-grid-column-span: 3;
+}
+
+/* three-column-build */
+
+.content-columns-varied.three-column-build .grid-wrapper .col-flex {
+  grid-column: span 4;
+  -ms-grid-column-span: 4;
+}
+/* three-column-build - ms support */
+.content-columns-varied.three-column-build .grid-wrapper .col-flex:nth-child(1) {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+}
+.content-columns-varied.three-column-build .grid-wrapper .col-flex:nth-child(2) {
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 4;
+}
+.content-columns-varied.three-column-build .grid-wrapper .col-flex:nth-child(3) {
+  -ms-grid-column: 9;
+  -ms-grid-column-span: 4;
+}
+.content-columns-varied.three-column-build .col-flex:nth-child(4) {
+  display: none;
+}
+
+/* two-column-build */
+
+.content-columns-varied.two-column-build .grid-wrapper .col-flex {
+  grid-column: span 6;
+  -ms-grid-column-span: 6;
+}
+/* two-column-build - ms support */
+.content-columns-varied.two-column-build .grid-wrapper .col-flex:nth-child(1) {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 6;
+}
+.content-columns-varied.two-column-build .grid-wrapper .col-flex:nth-child(2) {
+  -ms-grid-column: 7;
+  -ms-grid-column-span: 6;
+}
+.content-columns-varied.two-column-build .col-flex:nth-child(3),
+.content-columns-varied.two-column-build .col-flex:nth-child(4) {
+  display: none;
+}
+
+/* one-column-build */
+
+.content-columns-varied.one-column-build .grid-wrapper .col-flex {
+  grid-column: span 12;
+  -ms-grid-column-span: 12;
+}
+/* one-column-build - ms support */
+.content-columns-varied.one-column-build .grid-wrapper .col-flex:nth-child(1) {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 12;
+}
+.content-columns-varied.one-column-build .grid-wrapper .col-flex:nth-child(2),
+.content-columns-varied.one-column-build .grid-wrapper .col-flex:nth-child(3),
+.content-columns-varied.one-column-build .grid-wrapper .col-flex:nth-child(4) {
+  display: none;
+}
+
+/* media queries ==================
+=================================*/
+
+/* 768 */
+@media only screen and (max-width: 768px) {
+  .content-columns-varied .col-flex h2 { margin: 0 0 1em 0 !important; }
+/* grid-wrapper - all columns - span12 */
+  .content-columns-varied .grid-wrapper { display: block; }
+/* *-column-build - all to span 12 - change display */
+  .content-columns-varied.two-column-build .grid-wrapper .col-flex,
+  .content-columns-varied.three-column-build .grid-wrapper .col-flex,
+  .content-columns-varied.four-column-build .grid-wrapper .col-flex,
+  .content-columns-varied.one-column-build .grid-wrapper .col-flex:nth-child(1),
+  .content-columns-varied.two-column-build .grid-wrapper .col-flex:nth-child(1),
+  .content-columns-varied.two-column-build .grid-wrapper .col-flex:nth-child(2),
+  .content-columns-varied.three-column-build .grid-wrapper .col-flex:nth-child(1),
+  .content-columns-varied.three-column-build .grid-wrapper .col-flex:nth-child(2),
+  .content-columns-varied.three-column-build .grid-wrapper .col-flex:nth-child(3),
+  .content-columns-varied.four-column-build .grid-wrapper .col-flex:nth-child(1),
+  .content-columns-varied.four-column-build .grid-wrapper .col-flex:nth-child(2),
+  .content-columns-varied.four-column-build .grid-wrapper .col-flex:nth-child(3),
+  .content-columns-varied.four-column-build .grid-wrapper .col-flex:nth-child(4) {
+    grid-column: span 12;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 12;
+  }
+}
+
+/* CSS END */
