@@ -271,7 +271,12 @@ kbd {
 
 /* stat-carrousel typography */
 
-#stat-carrousel h2 { letter-spacing: -.05em; }
+#stat-carrousel h2 {
+  font-family: 'AntennaComp Black', sans-serif;
+  font-size: 7em;
+  letter-spacing: .05em;
+  color: $patina;
+}
 
 #stat-carrousel.o-container--medium { width: 50%; max-width: 100%; min-width: 50%; }
 #stat-carrousel h2, #stat-carrousel h3,
