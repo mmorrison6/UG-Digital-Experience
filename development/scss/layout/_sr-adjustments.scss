@@ -9,11 +9,18 @@
     border-radius: 50%;
     overflow: hidden;
     border: none;
-    background: #ffffff;
-    background-image: url('../images/ug-road-loyola-experience-gallery.png');
+    background: $gold-dark;
     background-size: 100% 100%;
     transform: rotate(0deg);
     box-shadow: 0px 0px 5px rgba(0,0,0,.35);
+}
+
+#student-life.modal-button button#myBtn {
+  background-image: url('../images/ug-road-loyola-experience-student-life.png');
+}
+
+#virtual-tour.modal-button button#myBtn {
+  background-image: url('../images/ug-road-loyola-experience-tour.png');
 }
 
 .loyola-experience-icon {
@@ -24,6 +31,7 @@
     width: 100%;
   }
 }
+
 /* grid backgrounds */
 
 #test-section-1[style] {
