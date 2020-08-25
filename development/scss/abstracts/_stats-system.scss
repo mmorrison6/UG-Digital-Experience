@@ -9,7 +9,7 @@ STATISTICS SYSTEM w RESPONSIVE ====================================== */
   text-align: left;
 }
 
-/* Stats Large */
+/* Stats Extra Large - Patina - Used in Pattern-1 Drawer */
 
 .stat-number-extra-large {
   font-size: 7em;
@@ -22,6 +22,17 @@ STATISTICS SYSTEM w RESPONSIVE ====================================== */
   font-size: 1.25em;
 }
 
+.stat-number-xl-patina {
+  font-size: 7em;
+  text-align: center;
+  font-family: Antenna Bold;
+  line-height: 1.25;
+  color: $patina;
+}
+
+/* Stats Large */
+
+
 .stat-number-large {
   font-size: 5.5em;
   text-align: center;
@@ -31,6 +42,7 @@ STATISTICS SYSTEM w RESPONSIVE ====================================== */
 
 .stat-header-large {
   font-size: 1.25em;
+  line-height: 1.5;
 }
 
 /* Stats Medium */
