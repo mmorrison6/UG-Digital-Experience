@@ -105,21 +105,22 @@
 
 nav.c-nav {
   position: fixed;
-  height: 68px;
+  height: 86px;
   display: block;
   -webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.25);
   -moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.25);
   box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.25);
+  z-index: 10001;
 }
 
 .progress-container {
   width: 100%;
-  height: 12px;
-  background: #ccc;
+  height: 30px;
+  background: #e1e1e1;
 }
 
 .progress-bar {
-  height: 12px;
+  height: 20px;
   background: $patina;
   width: 0%;
 }
