@@ -1,7 +1,5 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
   <title>Undergraduate Admissions - Domestic Road Show</title>
@@ -17,36 +15,27 @@
   <script src="js/all.min.js"></script>
   <script src="js-two/modaal.js"></script>
 </head>
-
 <body>
-
+  <!-- FOOTER -->
+  @@include('./partials/nav-contents.html')
   <!-- HERO -->
   @@include('./partials/hero-image.html')
-
-  <!-- OVERVIEW -->
-  @@include('./partials/overview-panel.html')
-
   <!-- PATTERN 2 - OVERLAY - FIRST YEAR PROFILE -->
   @@include('./partials/pattern-two-first-year-profile.html')
-
   <!-- PATTERN 1 - DRAWER - ACADEMICS -->
   @@include('./partials/pattern-one-academics.html')
-
   <!-- PATTERN 3 - TABLE - ACADEMICS -->
   @@include('./partials/pattern-three-table-academics.html')
-
   <!-- PATTERN 2 - OVERLAY - AFFORDABILITY -->
   @@include('./partials/pattern-two-affordability.html')
-
+  <!-- CTA -->
+  @@include('./partials/cta-panel.html')
   <!-- FOOTER -->
   @@include('./partials/footer.html')
-
   <!-- SCRIPTS - SCROLLMAGIC / ANIME JS / WAYPOINT -->
-
   <script>
   // init controller
   var controller = new ScrollMagic.Controller();
-
 	// build scenes
 	new ScrollMagic.Scene({triggerElement: "#content-toggle-1",
   triggerHook: 0.9, // show, when scrolled 10% into view
@@ -56,7 +45,6 @@
 		.setClassToggle("#student-life-content", "active") // add class toggle
 		.addIndicators() // add indicators (requires plugin)
 		.addTo(controller);
-
     new ScrollMagic.Scene({triggerElement: "#content-toggle-hide",
     triggerHook: 0.9, // show, when scrolled 10% into view
     duration: "6000px", // hide 10% before exiting view (80% + 10% from bottom)
@@ -65,7 +53,6 @@
   		.setClassToggle("#academics-content", "hidden") // add class toggle
   		.addIndicators() // add indicators (requires plugin)
   		.addTo(controller);
-
 	new ScrollMagic.Scene({triggerElement: "#content-toggle-2",
   triggerHook: 0.9, // show, when scrolled 10% into view
   duration: "1850px", // hide 10% before exiting view (80% + 10% from bottom)
@@ -83,7 +70,6 @@
 		.addIndicators() // add indicators (requires plugin)
 		.addTo(controller);
   </script>
-
   <script>
     anime({
       targets: '.pattern-2-slidein-container',
@@ -94,7 +80,6 @@
       easing: 'spring(1, 80, 50, 0)'
     });
   </script>
-
   <script>
     // init controller
     var controller = new ScrollMagic.Controller();
@@ -110,7 +95,6 @@
     .addIndicators() // add indicators (requires plugin)
       .addTo(controller);
   </script>
-
   <script>
     $(function() { // wait for document ready
       // init
@@ -122,7 +106,6 @@
           // Normally 100% would work for this, but here 200% is used, as Panel 3 is shown for more than 100% of scrollheight due to the pause.
         }
       });
-
       // get all slides
       var slides = document.querySelectorAll("div.panel");
 
@@ -139,9 +122,6 @@
       }
     });
   </script>
-
   <script src="js-two/accessible-tab-panel-aria.js"></script>
-
 </body>
-
 </html>
