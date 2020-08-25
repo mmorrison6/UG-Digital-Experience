@@ -63,6 +63,31 @@ PATTERN 2 MODULE ====================================== */
   background-color: $maroon;
 }
 
+.slideout-number {
+  font-size: 4.5em;
+}
+
+.bottom {
+  position: relative;
+  bottom: 0;
+}
+
+.bounce {
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
 
 /* Pattern 2 Table Styles */
 
@@ -109,12 +134,4 @@ PATTERN 2 MODULE ====================================== */
   color: #ffffff;
 }
 
-/* Media Query Breakpoints - Hero Image Section
-
-@media only screen and (max-width: 415px) {}
-@media only screen and (max-width: 735px) {}
-@media only screen and (max-width: 768px) {}
-@media only screen and (max-width: 1024px) {}
-@media only screen and (max-wdith: 1200px) {}
-
-*/
+}

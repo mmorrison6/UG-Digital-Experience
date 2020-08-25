@@ -4,7 +4,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Undergrad Test</title>
+  <title>Undergraduate Admissions - Domestic Road Show</title>
   <meta name="description" content="Undergrad Digital Experience Testing site">
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
   <meta name="author" content="SitePoint">
@@ -15,15 +15,24 @@
   <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
   <script src="js/all.min.js"></script>
+  <script src="js-two/modaal.js"></script>
 </head>
 
 <body>
 
+<<<<<<< HEAD
   <!-- FOOTER -->
   @@include('./partials/nav-contents.html')
 
   <!-- HERO -->
   @@include('./partials/hero-image.html')
+=======
+  <!-- HERO -->
+  @@include('./partials/hero-image.html')
+
+  <!-- OVERVIEW -->
+  @@include('./partials/overview-panel.html')
+>>>>>>> 78b4b0e2c478d57ef76153659153c46006990124
 
   <!-- PATTERN 2 - OVERLAY - FIRST YEAR PROFILE -->
   @@include('./partials/pattern-two-first-year-profile.html')
@@ -37,37 +46,57 @@
   <!-- PATTERN 2 - OVERLAY - AFFORDABILITY -->
   @@include('./partials/pattern-two-affordability.html')
 
+<<<<<<< HEAD
   <!-- CTA -->
   @@include('./partials/cta-panel.html')
 
+=======
+>>>>>>> 78b4b0e2c478d57ef76153659153c46006990124
   <!-- FOOTER -->
   @@include('./partials/footer.html')
 
   <!-- SCRIPTS - SCROLLMAGIC / ANIME JS / WAYPOINT -->
 
   <script>
-	// init controller
-	var controller = new ScrollMagic.Controller({globalSceneOptions: {duration: 100}});
+  // init controller
+  var controller = new ScrollMagic.Controller();
 
 	// build scenes
-	new ScrollMagic.Scene({triggerElement: "#student-life-content",
+	new ScrollMagic.Scene({triggerElement: "#content-toggle-1",
   triggerHook: 0.9, // show, when scrolled 10% into view
-  duration: "6000px", // hide 10% before exiting view (80% + 10% from bottom)
-  offset: 750, // move trigger to center of element
+  duration: "1655px", // hide 10% before exiting view (80% + 10% from bottom)
+  offset: 800, // move trigger to center of element
 })
-					.setClassToggle("#student-life-content", "active") // add class toggle
-					.addIndicators() // add indicators (requires plugin)
-					.addTo(controller);
-	new ScrollMagic.Scene({triggerElement: "#test-section-2"})
-					.setClassToggle("#learn-by-doing-content", "active") // add class toggle
-					.addIndicators() // add indicators (requires plugin)
-					.addTo(controller);
-	new ScrollMagic.Scene({triggerElement: "#test-section-3"})
-					.setClassToggle("#study-abroad-content", "active") // add class toggle
-					.addIndicators() // add indicators (requires plugin)
-					.addTo(controller);
+		.setClassToggle("#student-life-content", "active") // add class toggle
+		.addIndicators() // add indicators (requires plugin)
+		.addTo(controller);
 
-</script>
+    new ScrollMagic.Scene({triggerElement: "#content-toggle-hide",
+    triggerHook: 0.9, // show, when scrolled 10% into view
+    duration: "6000px", // hide 10% before exiting view (80% + 10% from bottom)
+    offset: 800, // move trigger to center of element
+  })
+  		.setClassToggle("#academics-content", "hidden") // add class toggle
+  		.addIndicators() // add indicators (requires plugin)
+  		.addTo(controller);
+
+	new ScrollMagic.Scene({triggerElement: "#content-toggle-2",
+  triggerHook: 0.9, // show, when scrolled 10% into view
+  duration: "1850px", // hide 10% before exiting view (80% + 10% from bottom)
+  offset: 800, // move trigger to center of element
+})
+		.setClassToggle("#learn-by-doing-content", "active") // add class toggle
+		.addIndicators() // add indicators (requires plugin)
+		.addTo(controller);
+	new ScrollMagic.Scene({triggerElement: "#content-toggle-3",
+  triggerHook: 0.9, // show, when scrolled 10% into view
+  duration: "640px", // hide 10% before exiting view (80% + 10% from bottom)
+  offset: 800, // move trigger to center of element
+})
+		.setClassToggle("#study-abroad-content", "active") // add class toggle
+		.addIndicators() // add indicators (requires plugin)
+		.addTo(controller);
+  </script>
 
   <script>
     anime({
@@ -83,9 +112,7 @@
   <script>
     // init controller
     var controller = new ScrollMagic.Controller();
-  </script>
 
-  <script>
     // build scene
     new ScrollMagic.Scene({
         triggerElement: "#scroll-initiator-1",
@@ -94,7 +121,7 @@
         offset: 800, // move trigger to center of element
       })
       .setClassToggle("#reveal1", "visible") // add class to reveal
-    //  .addIndicators() add indicators (requires plugin)
+    .addIndicators() // add indicators (requires plugin)
       .addTo(controller);
   </script>
 
