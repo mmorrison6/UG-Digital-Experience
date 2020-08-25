@@ -1,3 +1,12 @@
+<script>
+window.onscroll = function() {myFunction()};
+function myFunction() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("progressBar").style.width = scrolled + "%";
+}
+</script>
 <nav class="c-nav" style="width: 100%;">
   <ul class="c-nav--inline">
     <span class="c-nav__content u-window-box--none">
@@ -7,5 +16,9 @@
     <li class="c-nav__item">Item 2</li>
     <li class="c-nav__item">Item 3</li>
     <li class="c-nav__item">Item 4</li>
+    <li class="c-nav__item" style="margin-top: 5px; float: right !important;">Loyola University Chicago</li>
   </ul>
+  <div class="progress-container">
+    <div class="progress-bar" id="progressBar"></div>
+  </div>
 </nav>
