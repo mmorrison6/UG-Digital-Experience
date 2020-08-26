@@ -34,6 +34,7 @@ body {
 #virtual-tour.modal-button button#myBtn {
   background-image: url('../images/ug-road-loyola-experience-tour.png');
 }
+
 #overview-overlay .loyola-experience-inset img {
   margin-top: -1em;
   width: 150px;
@@ -51,14 +52,28 @@ body {
   overflow: hidden;
 }
 
-/*
-#reveal-1[style],
-.pattern-1-drawer-content-container[style],
-#academics-content[style],
-#student-life-content[style],
-#learn-by-doing-content[style],
-#study-abroad-content[style] { display: none !important; }
-*/
+.pattern-1-drawer-container {
+  border-radius: 2em 2em 0 0;
+}
+
+.pattern-2-bg {
+  box-shadow: 0 -5px 5px rgba(0,0,0,1);
+}
+
+#reveal1.pattern-1-drawer-container,
+.pattern-1-drawer-content-container,
+#academics-content,
+#student-life-content,
+#learn-by-doing-content,
+#study-abroad-content {
+  display: none !important;
+}
+
+.pattern-1-drawer-content-container[style] .container-fluid {
+  padding-top: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
 
 /* drawer images */
 #academics-content .content-columns-varied .col-flex img,
@@ -68,6 +83,10 @@ body {
 #admission-panel .content-columns-varied .col-flex img {
   width: 200px;
   margin-right: 1em;
+}
+
+#admission-panel .content-columns-varied .col-flex img {
+  margin-top: -3em;
 }
 
 /* grid backgrounds */
@@ -347,9 +366,9 @@ body {
 }
 
 .example-tabs-tabs__item {
-  display: inline;
+  display: inline-blockflex;
   margin: 0 1.125em 0 0;
-  width: auto !important;
+  width: 35% !important;
 }
 
 a#label_id_freshman.example-tabs-tabs__link,
@@ -400,12 +419,4 @@ a#label_id_transfer.example-tabs-tabs__link[aria-selected="true"]::after {
   border-right: 0;
 }
 
-/* drawer */
-
-.pattern-1-drawer-container {
-  border-radius: 2em 2em 0 0;
-}
-
-.pattern-2-bg {
-  box-shadow: 0 -5px 5px rgba(0,0,0,1);
-}
+/* CSS - END */
