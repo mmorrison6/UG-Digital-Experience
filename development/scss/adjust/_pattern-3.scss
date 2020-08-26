@@ -1,0 +1,70 @@
+/* ===============================================
+PATTERN 3 MODULE ====================================== */
+
+.pattern-3-bg {
+  background-color: $gold;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 85vh;
+  display: block;
+  position: relative;
+}
+
+.table-body-text {
+  font-size: 1em;
+}
+
+.pattern-3-header {
+  font-family: antenna-black;
+  font-size: 4em;
+  font-weight: bolder;
+}
+
+.app-requirements-table {
+  width: 45%;
+}
+
+.c-table__row {
+  border-bottom: 1px solid;
+}
+
+.c-table__row-white {
+  border-bottom: 1px solid white;
+}
+
+.c-table__cell {
+  border-right: 1px solid;
+}
+
+.c-table__cell-white {
+  border-right: 1px solid white;
+}
+
+.no-border-right {
+  border-right: none !important;
+}
+
+.cell-heading-border {
+  border-top: 5px solid;
+
+}
+
+.cell-heading-border-white {
+  border-top: 5px solid #ffffff;
+
+}
+
+.table-circle-cells {
+  flex-shrink: 300px !important;
+}
+
+/* Media Query Breakpoints - Hero Image Section
+
+@media only screen and (max-width: 415px) {}
+@media only screen and (max-width: 735px) {}
+@media only screen and (max-width: 768px) {}
+@media only screen and (max-width: 1024px) {}
+@media only screen and (max-wdith: 1200px) {}
+
+*/
