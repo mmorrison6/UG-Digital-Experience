@@ -15,21 +15,25 @@
   <script src="js/all.min.js"></script>
 </head>
 <body>
-  <!-- FOOTER -->
+  <!-- MAIN NAV -->
   <nav id="main-nav" class="container-fluid">
   <ul>
+    <!--
     <li class="nav-item">
       <img class="nav-image" src="images/luc-logo-vertical-nav.png">
     </li>
-    <li class="nav-item">Item 1</li>
-    <li class="nav-item">Item 2</li>
-    <li class="nav-item">Item 3</li>
-    <li class="nav-item">Item 4</li>
-    <li class="nav-item" style="float: right !important;">Loyola University Chicago</li>
+    -->
+    <li class="nav-item"><a>Item 1</a></li>
+    <li class="nav-item"><a>Item 2</a></li>
+    <li class="nav-item"><a>Item 3</a></li>
+    <li class="nav-item"><a>Item 4</a></li>
+    <li class="nav-item brand" style="float: right !important;">
+      <a>Loyola University Chicago</a>
+    </li>
+    <div class="progress-container">
+      <div class="progress-bar" id="progressBar"></div>
+    </div>
   </ul>
-  <div class="progress-container">
-    <div class="progress-bar" id="progressBar"></div>
-  </div>
 </nav>
 
   <!-- HERO -->
@@ -92,6 +96,36 @@
 </div>
 
 </div>
+
+  <!-- FOOTER -->
+  <!-- FOOTER -->
+<footer class="container-fluid">
+	<nav>
+		<ul class="nav-list">
+	    <li class="nav-item"><a href="###"><span class="sm-hide xs-hide">Come </span>Visit</a></li>
+	    <li class="nav-item"><a href="###">Apply<span class="sm-hide xs-hide"> Now</span></a></li>
+	    <li class="nav-item"><a href="###"><span class="sm-hide xs-hide">Get </span>Info</a></li>
+	    <li class="nav-item"><a href="###"><span class="sm-hide xs-hide">Check </span>Status</a></li>
+		</ul>
+		<div id="social-icons">
+			<a target="_blank" href="###" class="icon-fb" title="Follow Us on Facebook"></a>
+			<!-- TWITTER -->
+			<a target="_blank" href="###" class="icon-tw" title="Follow Us on Twitter"></a>
+			<!-- FLICKR -->
+			<a target="_blank" href="###" class="icon-fl" title="Follow Us on Fdivckr"></a>
+			<!-- LINKEDIN -->
+			<!-- RSS -->
+			<!-- YOUTUBE -->
+			<a target="_blank" href="###" class="icon-yt" title="Follow Us on You Tube"></a>
+			<!-- PINTEREST -->
+			<!-- INSTAGRAM -->
+			<a target="_blank" href="###" class="icon-ig" title="Follow Us on Instagram"></a>
+			<!-- BLOG -->
+			<a target="_blank" href="http://blogs.luc.edu/uao/" class="icon-blog" title="Read Our Blog"></a>
+			<!-- GOOGLE+ -->
+		</div>
+	</nav>
+</footer>
 
   <!-- PATTERN 2 - OVERLAY - FIRST YEAR PROFILE -->
   <!-- PATTERN 2 - FIRST YEAR PROFILE -->
@@ -1047,59 +1081,6 @@ href="https://www.luc.edu/">Apply with the common app</a>
   </div>
 </div>
 
-  <!-- FOOTER -->
-  <!-- FOOTER -->
-<footer class="container-fluid">
-	<nav class="container">
-	  <!-- MODAAL -->
-	  <!-- NAME HERE -->
-<!-- Trigger/Open The Modal -->
-<div id="virtual-tour" class="modal-button">
-  <button id="myBtn"></button>
-</div>
-<div id="myModal" class="modal">
-  <span class="close cursor" onclick="closeModal()">&times;</span>
-  <!-- Modal content -->
-  <div class="modal-content">
-    <style>
-  	   #post > div.col-12.clearfix.z3[style] { display: none !important; }
-		</style>
-		<iframe class="exposure-post-embed" src="https://loyolachicago.exposure.co/categories/enrollment?embed=true" style="margin: 0; padding: 0; width: 100%; height: 1000px;">
-		</iframe>
-  </div>
-</div>
-
-	  <div class="content-columns-varied one-column-build"><!-- column-build -->
-	    <div class="grid-wrapper">
-	      <div class="grid-item col-flex">
-					<div class="nav-list">
-				    <a class="nav-item" href="###"><span class="sm-hide xs-hide">Come </span>Visit</a>
-				    <a class="nav-item" href="###">Apply<span class="sm-hide xs-hide"> Now</span></a>
-				    <a class="nav-item" href="###"><span class="sm-hide xs-hide">Get </span>Info</a>
-				    <a class="nav-item" href="###"><span class="sm-hide xs-hide">Check </span>Status</a>
-					</div>
-					<div id="social-icons">
-						<a target="_blank" href="###" class="icon-fb" title="Follow Us on Facebook"></a>
-						<!-- TWITTER -->
-						<a target="_blank" href="###" class="icon-tw" title="Follow Us on Twitter"></a>
-						<!-- FLICKR -->
-						<a target="_blank" href="###" class="icon-fl" title="Follow Us on Fdivckr"></a>
-						<!-- LINKEDIN -->
-						<!-- RSS -->
-						<!-- YOUTUBE -->
-						<a target="_blank" href="###" class="icon-yt" title="Follow Us on You Tube"></a>
-						<!-- PINTEREST -->
-						<!-- INSTAGRAM -->
-						<a target="_blank" href="###" class="icon-ig" title="Follow Us on Instagram"></a>
-						<!-- BLOG -->
-						<a target="_blank" href="http://blogs.luc.edu/uao/" class="icon-blog" title="Read Our Blog"></a>
-						<!-- GOOGLE+ -->
-					</div>
-				</div>
-			</div>
-		</div>
-	</nav>
-</footer>
 
   <!-- SCRIPTS - SCROLLMAGIC / ANIME JS / WAYPOINT -->
   <script>
@@ -1189,6 +1170,9 @@ href="https://www.luc.edu/">Apply with the common app</a>
       }
     });
   </script>
-  <!-- <script src="js-two/accessible-tab-panel-aria.js"></script> -->
+  <script src="js/carousel.js"></script>
+  <script src="js/modal.js"></script>
+  <script src="js/progress-bar.js"></script>
+  <script src="js/tabs.js"></script>
 </body>
 </html>

@@ -1,45 +1,109 @@
 nav {
+  position: fixed;
   display: flex;
+  box-sizing: border-box;
   width: 100%;
-  height: 100%;
+  height: auto;
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
-  overflow-y: auto;
   background: $gold;
-  align-items: center;
   -webkit-overflow-scrolling: touch;
-  ul {
-    display: block;
-    li.nav-item {
-      display: inline-block;
-      height: 1em;
-      padding: .5em;
-      font-family: 'Antenna Bold', sans-serif;
-      font-size: 1em;
-      color: inherit;
-      line-height: 1.2;
-      text-decoration: none;
-      text-transform: uppercase;
-      cursor: pointer;
-        img.nav-image {
-          width: 100%;
-          height: 100%;
-        }
-      }
-    }
-  }
-
-/* ug - overrides */
-
-
-li.c-nav__item {
-  font-family: 'Antenna Bold', sans-serif;
-  font-size: .85em;
-  color: #000000 !important;
-  text-transform: uppercase;
+  -webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.25);
+  -moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.25);
+  box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.25);
+  z-index: 10001;
 }
 
-nav.c-nav .c-nav--inline .c-nav__content {
+nav ul {
+  display: block;
+  margin: 0;
   padding: 0;
+  width: 100%;
+  height: auto;
+}
+
+li.nav-item {
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  height: auto;
+  list-style-type: none;
+  cursor: pointer;
+}
+
+li.nav-item a {
+  display: block;
+  margin: 0;
+  padding: 1em;
+  font-family: 'Antenna Bold', sans-serif;
+  font-size: 1em;
+  text-align: center;
+  color: #000000;
+  line-height: 1;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: $gold;
+  transition: .2s;
+}
+
+li.nav-item a:hover {
+  background: darken($gold,15%);
+}
+
+li.nav-item.brand a:hover {
+  background: $gold;
+}
+
+li img.nav-image {
+  padding: 0;
+  width: 30px;
+  height: auto;
+}
+
+/* footer nav */
+
+footer nav {
+  position: relative;
+  background: $gray-extra-dark;
+}
+
+footer li.nav-item a {
+  line-height: 1.35;
+  color: $gray;
+  border-right: solid 1px $gray-light;
+  background: $gray-extra-dark;
+}
+
+footer li.nav-item a:hover {
+  background: darken($gray-extra-dark,5%);
+}
+
+footer li.nav-item a span {
+  display: inline-block;
+  text-align: center;
+}
+
+footer li.nav-item a:hover span {
+  background: none;
+}
+
+/* progress bar */
+
+.progress-container {
+  display: block;
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 20px;
+  background: #e1e1e1;
+}
+
+.progress-bar {
+  margin: 0;
+  padding: 0;
+  height: 20px;
+  background: $patina;
+  width: 0%;
 }

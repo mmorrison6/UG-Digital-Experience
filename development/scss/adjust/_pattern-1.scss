@@ -126,14 +126,17 @@ PATTERN 1 MODULE ====================================== */
   width: 100%;
   background-image:
    url(../../images/pattern-1-bg-student-life-grid-left-lurec-bridge.jpg);
-  background-color: maroon;
-  background-position: 50% 90%;
+  background-color: $maroon;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
 }
 
 #pattern-1-img-grid-right {
   height: 100%;
   width: 35%;
-  background-color: coral;
+  background-color: $patina;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
 }
 
 #pattern-1-img-grid-top-right {
@@ -141,7 +144,8 @@ PATTERN 1 MODULE ====================================== */
   background-image:
    url(../../images/pattern-1-bg-student-life-grid-right-gonclaves.jpg);
   background-color: $gold;
-  background-size: contain;
+  background-size: cover;
+  background-position: 50% 50%;
   background-repeat: no-repeat;
 }
 
@@ -150,7 +154,8 @@ PATTERN 1 MODULE ====================================== */
   background-image:
    url(../../images/pattern-1-bg-student-life-grid-right-mens-soccer.jpg);
   background-color: $lake;
-  background-position: 50% 20%;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
 }
 
 #student-life-stat-source {

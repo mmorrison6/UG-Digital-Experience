@@ -1,22 +1,14 @@
 footer {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  display: block;
+}
+
+footer nav {
+  position: relative;
   background: $gray-extra-dark;
 }
-a.nav-item {
-  display: inline-flex;
-  margin: 0;
-  padding: 1em;
-  font-family: 'Antenna', sans-serif;
-  font-size: 1.25em;
-  line-height: 1.25;
+footer li.nav-item a {
   color: $gray;
-  text-align: center;
-  text-transform: uppercase;
-  text-decoration: none;
   border-right: solid 1px $gray-light;
-  transition: .2s;
   span {
     display: block;
     text-align: center;
