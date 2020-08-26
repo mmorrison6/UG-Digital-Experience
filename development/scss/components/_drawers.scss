@@ -89,3 +89,39 @@ aside.o-drawer {
     visibility: visible;
   }
 }
+
+/* UG OVERRIDES */
+
+/* drawers */
+
+.pattern-1-drawer-container {
+  height: 40vh !important;
+  border-radius: 2em;
+  overflow: hidden;
+}
+
+.pattern-1-drawer-container {
+  border-radius: 2em 2em 0 0;
+}
+
+.pattern-2-bg {
+  box-shadow: 0 -5px 5px rgba(0,0,0,1);
+}
+
+/* drawer images - svgs */
+#academics-content .content-columns-varied .col-flex img,
+#student-life-content .content-columns-varied .col-flex img,
+#learn-by-doing-content .content-columns-varied .col-flex img,
+#study-abroad-content .content-columns-varied .col-flex img,
+#admission-panel .content-columns-varied .col-flex img,
+#academics-content-mobile .content-columns-varied .col-flex img,
+#student-life-content-mobile .content-columns-varied .col-flex img,
+#learn-by-doing-content-mobile .content-columns-varied .col-flex img,
+#study-abroad-content-mobile .content-columns-varied .col-flex img {
+  width: 200px !important;
+  margin-right: 1em;
+}
+
+#admission-panel .content-columns-varied .col-flex img {
+  margin-top: -3em;
+}

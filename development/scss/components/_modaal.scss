@@ -14,16 +14,20 @@
 }
 
 .modal-button button#myBtn {
-	position: absolute;
-	top: 10%;
-	right: 10%;
-	display: block;
-	width: 100px;
-	height: 100px;
-	border-radius: 50%;
-	overflow: hidden;
-	border: 0;
-	background: $maroon;
+  position: absolute;
+  top: -7%;
+  right: 6em;
+  display: block;
+  width: 185px;
+  height: 185px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: none;
+  background: $gold-dark;
+  background-size: 100% 100%;
+  transform: rotate(0deg);
+  box-shadow: 0px 0px 5px rgba(0,0,0,.35);
+  z-index: +1;
 }
 
 /* Modal Content */
@@ -57,4 +61,14 @@
   color: #ffffff;
   text-decoration: none;
   cursor: pointer;
+}
+
+/* modaal buttons - specific backgrounds */
+
+#student-life.modal-button button#myBtn {
+  background-image: url('../images/ug-road-loyola-experience-student-life.png');
+}
+
+#virtual-tour.modal-button button#myBtn {
+  background-image: url('../images/ug-road-loyola-experience-tour.png');
 }

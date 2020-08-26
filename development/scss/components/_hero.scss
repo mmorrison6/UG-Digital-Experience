@@ -30,7 +30,7 @@ HERO IMAGE SECTION ====================================== */
     color: $white;
 }
 
-.hero-image .hero-text p{
+.hero-image .hero-text p {
     font-size: 30px;
     font-weight: 500;
     line-height: 10px;
@@ -49,6 +49,73 @@ HERO IMAGE SECTION ====================================== */
 .hero-image .hero-btn:hover{
     background: #fff;
     color: #000;
+}
+
+/* UG ADD */
+
+/* hero-image -- overlay */
+
+.hero-image {
+  height: 100vh;
+}
+
+.hero-image #overview-overlay {
+  position: absolute;
+  bottom: calc(0 - 50px);
+  display: block;
+  padding: 3em;
+  margin: 0;
+  width: 80%;
+  border-radius: 3em 3em 0 0;
+  background: rgba(255,255,255,.825);
+  align-self: flex-end;
+}
+
+.hero-image h1 {
+  position: absolute;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+}
+
+#overview-text-paragraph > p {
+  font-size: 1.35em;
+  line-height: 1.8;
+}
+
+.hero-image #overview-overlay h4 {
+  font-family: 'Antenna', sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  span {
+    font-family: 'Antenna Light', sans-serif;
+    font-style: italic;
+  }
+}
+
+/* UG OVERRIDES */
+
+.loyola-experience-inset {
+  display: inline;
+  img {
+  margin: 0;
+  padding: 0 20px 0 0;
+  min-width: 20em;
+  }
+}
+
+.hero-text {
+  display: flex;
+  align-self: center;
+  width: 100% !important;
+  min-width: 100% !important;
+}
+
+.hero-image .hero-text h1 {
+  width: 100% !important;
+  min-width: 100% !important;
+  font-size: 4.5em;
+  text-shadow: 0px 0px 15px rgba(0,0,0,.5);
 }
 
 /* Media Query Breakpoints - Hero Image Section

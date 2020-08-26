@@ -38,7 +38,7 @@ li.nav-item {
 li.nav-item a {
   display: block;
   margin: 0;
-  padding: 1em;
+  padding: 1.5em;
   font-family: 'Antenna Bold', sans-serif;
   font-size: 1em;
   text-align: center;
@@ -79,7 +79,8 @@ footer li.nav-item a {
 }
 
 footer li.nav-item a:hover {
-  background: darken($gray-extra-dark,5%);
+  background: $patina;
+  color: #ffffff;
 }
 
 footer li.nav-item a span {
@@ -89,6 +90,63 @@ footer li.nav-item a span {
 
 footer li.nav-item a:hover span {
   background: none;
+}
+
+/* social */
+
+footer {
+  #social-icons {
+    margin: 0 .25em;
+    padding: 0 1.5em;
+    border-right: none;
+    display: flex;
+    flex: none;
+    justify-items: right;
+    align-items: center;
+    :hover {
+      background: $patina;
+    }
+    a {
+      display: inline-flex;
+      align-self: center;
+      justify-items: center;
+      padding: .5em;
+      margin: 0 .35em;
+      width: 1.25em;
+      height: 1.25em;
+      text-decoration: none;
+      border-radius: 50%;
+      background: $gray-dark;
+      transition: .2s;
+    }
+    i {
+      align-self: center;
+      width: 100%;
+      font-size: 1.5em;
+      line-height: 1;
+      color: #e1e1e1;
+      text-align: center;
+    }
+  }
+}
+
+footer #social-icons a i.fa.fa-facebook {
+  margin-left: -1px;
+  font-size: 1.4em;
+}
+footer #social-icons a i.fa.fa-flickr {
+  margin-left: 1px;
+  font-size: 1.4em;
+}
+footer #social-icons a i.fa.fa-youtube {
+  font-size: 1.4em;
+}
+footer #social-icons a i.fa.fa-quote-right {
+  font-size: 1em;
+}
+footer #social-icons a i.fa.fa-at {
+  margin-left: -1px;
+  font-size: 1.4em;
 }
 
 /* progress bar */

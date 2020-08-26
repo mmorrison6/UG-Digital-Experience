@@ -7,21 +7,42 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
   <meta name="author" content="SitePoint">
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- Javascript -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.0/anime.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
-  <script src="js/all.min.js"></script>
+  <script>
+  // Get the modal
+  var modal = document.getElementById("myModal");
+  // Get the button that opens the modal
+  var btn = document.getElementById("myBtn");
+  // Get the <span> element that closes the modal
+  var span = document.getElementsByClassName("close")[0];
+  // When the user clicks the button, open the modal
+  btn.onclick = function() {
+    modal.style.display = "block";
+  }
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function() {
+    modal.style.display = "none";
+  }
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+  </script>
 </head>
 <body>
   <!-- MAIN NAV -->
   @@include('./partials/nav-contents.html')
   <!-- HERO -->
   @@include('./partials/hero-image.html')
-  <!-- FOOTER -->
-  @@include('./partials/footer.html')
   <!-- PATTERN 2 - OVERLAY - FIRST YEAR PROFILE -->
+  <section id="drawers-wrapper">
   @@include('./partials/pattern-two-first-year-profile.html')
   <!-- PATTERN 1 - DRAWER - ACADEMICS -->
   @@include('./partials/pattern-one-academics.html')
@@ -30,7 +51,12 @@
   <!-- PATTERN 2 - OVERLAY - AFFORDABILITY -->
   @@include('./partials/pattern-two-affordability.html')
   <!-- CTA -->
+  </section>
   @@include('./partials/cta-panel.html')
+  <!-- FOOTER -->
+  @@include('./partials/mobile-drawer-content.html')
+  <!-- FOOTER -->
+  @@include('./partials/footer.html')
 
   <!-- SCRIPTS - SCROLLMAGIC / ANIME JS / WAYPOINT -->
   <script>
@@ -121,7 +147,6 @@
     });
   </script>
   <script src="js/carousel.js"></script>
-  <script src="js/modal.js"></script>
   <script src="js/progress-bar.js"></script>
   <script src="js/tabs.js"></script>
 </body>

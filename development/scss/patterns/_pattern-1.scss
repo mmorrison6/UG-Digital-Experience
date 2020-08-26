@@ -200,6 +200,95 @@ PATTERN 1 MODULE ====================================== */
   }
 }
 
+/* UG OVERRIDES */
+
+/* grid backgrounds */
+
+#test-section-1[style] {
+  width: 100% !important;
+  min-width: 100% !important;
+  max-width: 100% !important;
+}
+
+#pattern-1-img-grid-left,
+#pattern-1-img-grid-top-right,
+#pattern-1-img-grid-bottom-right {
+  background-size: cover;
+  border: solid 2em #ffffff;
+  border-left: none ;
+}
+
+#pattern-1-img-grid-top-right,
+#pattern-1-img-grid-bottom-right {
+  border-left: none ;
+  border-right: none;
+}
+
+#pattern-1-img-grid-bottom-right {
+  border-top: none;
+}
+
+/* UG ADD */
+
+/* caption overlay */
+
+.caption-overlay-mobile-wrapper {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+.caption-overlay,
+.caption-overlay-mobile {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  width: 25%;
+  border-top: solid 10px $maroon;
+  background: rgba(0,0,0,.7);
+  align-items: center;
+  p {
+    padding: 1em;
+    font-size: 1em;
+    line-height: 1.5;
+    color: $gray-light;
+  }
+}
+
+.stat-overlay.bg-gold {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 1em;
+  width: 25%;
+  border-radius: 0 0 1.5em 0;
+  background: $gold;
+  align-items: center;
+}
+
+.caption-overlay p,
+.stat-overlay.bg-gold h2,
+.stat-overlay.bg-gold h6 {
+  width: 100%;
+  line-height: 1.5;
+}
+
+.stat-overlay.bg-gold h2 {
+  text-align: left;
+  line-height: 1.25;
+}
+
+.caption-overlay-mobile-wrapper > div.stat-overlay.bg-gold > h2 {
+  margin: 0 !important;
+}
+
 /* Media Query Breakpoints - Hero Image Section
 
 @media only screen and (max-width: 415px) {}
