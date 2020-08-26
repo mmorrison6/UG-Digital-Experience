@@ -46,7 +46,7 @@ a.example-tabs-tabs__link:hover {
   display: none;
 }
 
-/* admission unique */
+/* UG ADD */
 
 #admission-panel.pattern-3-bg {
   height: 100vh;
@@ -74,7 +74,66 @@ a#label_id_transfer.example-tabs-tabs__link {
   background: #0096A0 !important;
 }
 
-.requirements-table {
-  margin: 1em 0 7em;
-  width: 100%;
+.js-tablist {
+  display: block;
+}
+
+.example-tabs-tabs__list {
+  margin-top: 3.5em !important;
+  margin-bottom: 3em !important;
+  height: 3em;
+}
+
+.example-tabs-tabs__item {
+  display: inline-blockflex;
+  margin: 0 1.125em 0 0;
+  width: 35% !important;
+}
+
+a#label_id_freshman.example-tabs-tabs__link,
+a#label_id_transfer.example-tabs-tabs__link {
+  padding: 1.25em 1em;
+  outline: none 0;
+}
+
+a#label_id_freshman.example-tabs-tabs__link {
+  background: #cb8e3d !important;
+}
+
+a#label_id_transfer.example-tabs-tabs__link {
+  background: #cb8e3d !important;
+}
+
+.example-tabs-tabs__link {
+  position: relative;
+}
+
+a#label_id_freshman.example-tabs-tabs__link[aria-selected="true"],
+a#label_id_transfer.example-tabs-tabs__link[aria-selected="true"] {
+  padding: 1.25em 1em 3.65em 1em;
+  color: #ffffff;
+  background: #8D0034 !important;
+  outline: none 0;
+}
+
+a#label_id_freshman.example-tabs-tabs__link[aria-selected="true"]::before,
+a#label_id_transfer.example-tabs-tabs__link[aria-selected="true"]::before,
+a#label_id_freshman.example-tabs-tabs__link[aria-selected="true"]::after,
+a#label_id_transfer.example-tabs-tabs__link[aria-selected="true"]::after {
+  position: absolute;
+  top: 3.5em;
+  left: -1.175em;
+  bottom: 0;
+  content: '';
+  width: 50%;
+  border-bottom: 2.35em solid #febc18;
+  border-bottom-color: #febc18;
+  border-right: 2em solid transparent;
+}
+
+a#label_id_freshman.example-tabs-tabs__link[aria-selected="true"]::after,
+a#label_id_transfer.example-tabs-tabs__link[aria-selected="true"]::after {
+  left: calc(50% - 1.175em);
+  border-left: 2.35em solid transparent;
+  border-right: 0;
 }
