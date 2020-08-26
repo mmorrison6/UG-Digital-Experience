@@ -1,24 +1,4 @@
 footer {
-  display: block;
-}
-
-footer nav {
-  position: relative;
-  background: $gray-extra-dark;
-}
-footer li.nav-item a {
-  color: $gray;
-  border-right: solid 1px $gray-light;
-  span {
-    display: block;
-    text-align: center;
-  }
-  :hover {
-    background: $brick;
-  }
-}
-
-footer {
   #social-icons {
     margin: 0 .25em;
     border-right: none;
