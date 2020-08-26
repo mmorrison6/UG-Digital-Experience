@@ -260,6 +260,7 @@ kbd {
 /* -------------- OVERIDES FOR UG -------------- */
 
 #stat-carrousel {
+  position: relative;
   box-sizing: border-box;
   display: flex;
   align-items: center;
@@ -278,10 +279,9 @@ kbd {
   color: $patina;
 }
 
-#stat-carrousel.o-container--medium { width: 50%; max-width: 100%; min-width: 50%; }
 #stat-carrousel h2, #stat-carrousel h3,
 #stat-carrousel h4, #stat-carrousel h5,
-#stat-carrousel h6 { display: block; width: 100%; }
+#stat-carrousel h6 { display: block; width: 100%; text-align: center !important; }
 #stat-carrousel h3 { text-transform: uppercase !important; }
 /* span */
 #stat-carrousel h2 span, #stat-carrousel h3 span,

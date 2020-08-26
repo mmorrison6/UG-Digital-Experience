@@ -22,13 +22,13 @@
 #virtual-tour.modal-button button#myBtn {
   background-image: url('../images/ug-road-loyola-experience-tour.png');
 }
-
-.loyola-experience-icon {
+#overview-overlay .loyola-experience-inset img,
+.content-columns-varied .col-flex .loyola-experience-icon img {
   margin-top: -1em;
   width: 150px;
   height: auto;
   img {
-    width: 100%;
+    width: 3em;
   }
 }
 

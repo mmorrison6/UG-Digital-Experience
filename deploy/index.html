@@ -13,29 +13,19 @@
   <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
   <script src="js/all.min.js"></script>
-  <script src="js-two/modaal.js"></script>
 </head>
 <body>
   <!-- FOOTER -->
-  <script>
-window.onscroll = function() {myFunction()};
-function myFunction() {
-  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-  var scrolled = (winScroll / height) * 100;
-  document.getElementById("progressBar").style.width = scrolled + "%";
-}
-</script>
-<nav class="c-nav" style="width: 100%;">
-  <ul class="c-nav--inline">
-    <span class="c-nav__content u-window-box--none">
-      <img class="o-image" src="images/luc-logo-vertical-nav.png">
-    </span>
-    <li href="#test-section-2" class="c-nav__item">Item 1</li>
-    <li class="c-nav__item">Item 2</li>
-    <li class="c-nav__item">Item 3</li>
-    <li class="c-nav__item">Item 4</li>
-    <li class="c-nav__item" style="margin-top: 5px; float: right !important;">Loyola University Chicago</li>
+  <nav id="main-nav" class="container-fluid">
+  <ul>
+    <li class="nav-item">
+      <img class="nav-image" src="images/luc-logo-vertical-nav.png">
+    </li>
+    <li class="nav-item">Item 1</li>
+    <li class="nav-item">Item 2</li>
+    <li class="nav-item">Item 3</li>
+    <li class="nav-item">Item 4</li>
+    <li class="nav-item" style="float: right !important;">Loyola University Chicago</li>
   </ul>
   <div class="progress-container">
     <div class="progress-bar" id="progressBar"></div>
@@ -46,36 +36,53 @@ function myFunction() {
   <div class="hero-image">
   <!-- OVERVIEW OVERLAY -->
   <!-- HERO OVERLAY -->
-<div id="overview-overlay">
-  <div class="loyola-experience-inset">
-    <img src="images/2020-loyola-experience-mark.png">
-  </div>
-  <div class="o-container--super" id="overview-text-container">
-    <p class="mx0" id="overview-text-paragraph">
-      <span class="leadin">
-        Shaped by it's vibrant community
-      </span> a tradition of academic excellence, and a commitment to responsible leadership, Loyola offers you an educational experience that is like no other. With two main campuses in Chicago, we provide access to numerous cultural institutions and hundreds of internships and networking opportunities.
-    </p>
-    <div class="o-grid mx0">
-      <div class="o-grid__cell" style="min-width: 30%;">
-        <h2 class="m0 stat-number-medium" style="text-transform: uppercase;">Best Value</h2>
-        <h4 class="m0 mt1 stat-header-medium">— U.S. News & world report 2020</h4>
+<div id="overview-overlay" class="content-columns-varied eight-column-four-column-build"><!-- column-build -->
+  <div class="grid-wrapper">
+    <div class="grid-item col-flex">
+      <div class="loyola-experience-inset">
+        <img src="images/2020-loyola-experience-mark.png">
       </div>
-      <div class="o-grid__cell">
-        <h2 class="m0 stat-number-medium">#49</h2>
-        <h4 class="m0 mt1 stat-header-medium">under-graduate teaching</h4>
+      <div id="overview-text-paragraph">
+        <p>
+          <span class="leadin">
+            Shaped by it's vibrant community
+          </span> a tradition of academic excellence, and a commitment to responsible leadership, Loyola offers you an educational experience that is like no other. With two main campuses in Chicago, we provide access to numerous cultural institutions and hundreds of internships and networking opportunities.
+        </p>
       </div>
-      <div class="o-grid__cell">
-        <h2 class="m0 stat-number-medium">17,159</h2>
-        <h4 class="m0 mt1 stat-header-medium">students total</h4>
-      </div>
-      <div class="o-grid__cell">
-        <h2 class="m0 stat-number-medium">47</h2>
-        <h4 class="m0 mt1 stat-header-medium">states</h4>
-      </div>
-      <div class="o-grid__cell">
-        <h2 class="m0 stat-number-medium">48</h2>
-        <h4 class="m0 mt1 stat-header-medium">countries</h4>
+    </div>
+    <div id="stat-carrousel" class="grid-item col-flex">
+      <div class="js-carrousel">
+        <div class="js-carrousel__container" style="text-align: center;"
+          data-carrousel-prefix-class="news"
+          data-carrousel-transition="fade"
+          data-carrousel-hx="h2"
+          data-carrousel-span-text="Panneau"
+          data-carousel-hide-arrows-focus="false"
+          data-carrousel-btn-previous-img="images/ui-arrow-carrousel-previous-maroon.png"
+          data-carrousel-btn-next-img="images/ui-arrow-carrousel-next-maroon.png"
+          data-carrousel-btn-previous-text="See previous content"
+          data-carrousel-btn-next-text="See next content">
+          <div class="js-carrousel__content">
+            <h2 class="stat-number-medium" style="text-transform: uppercase;">Best Value</h2>
+            <h4 class="stat-header-medium">— U.S. News & world report 2020</h4>
+          </div>
+          <div class="js-carrousel__content">
+            <h2 class="stat-number-medium">#49</h2>
+            <h4 class="stat-header-medium">under-graduate teaching</h4>
+          </div>
+          <div class="js-carrousel__content">
+            <h2 class="stat-number-medium">17,159</h2>
+            <h4 class="stat-header-medium">students total</h4>
+          </div>
+          <div class="js-carrousel__content">
+            <h2 class="stat-number-medium">47</h2>
+            <h4 class="stat-header-medium">states</h4>
+          </div>
+          <div class="js-carrousel__content">
+            <h2 class="stat-number-medium">48</h2>
+            <h4 class="stat-header-medium">countries</h4>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -482,13 +489,16 @@ function myFunction() {
 
   <!-- PATTERN 3 - TABLE - ACADEMICS -->
   <!-- PATTERN 3 - TABLE - ADMISSION -->
-  <div id="admission-panel" class="pattern-3-bg o-container p4">
-    <div class="loyola-experience-icon">
-      <img src="images/ug-road-gears-icon.png">
-    </div>
-    <h2 class="pattern-3-header mb1">ADMISSION</h2>
-    <!-- MODAAL -->
-    <!-- NAME HERE -->
+  <div id="admission-panel" class="container-fluid">
+    <div class="content-columns-varied one-column-build"><!-- column-build -->
+      <div class="grid-wrapper">
+        <div class="grid-item col-flex">
+          <div class="loyola-experience-icon">
+            <img src="images/ug-road-gears-icon.png">
+          </div>
+          <h2 class="pattern-3-header mb1">ADMISSION</h2>
+          <!-- MODAAL -->
+          <!-- NAME HERE -->
 <!-- Trigger/Open The Modal -->
 <div id="student-life" class="modal-button">
   <button id="myBtn"></button>
@@ -527,305 +537,289 @@ window.onclick = function(event) {
 }
 </script>
 
-    <div class="js-tabs" data-existing-hx="h3" data-tabs-prefix-class="example-tabs">
-      <ul class="js-tablist o-container">
-         <li class="js-tablist__item">
-            <a href="#id_freshman" class="js-tablist__link" data-selected="1" aria-selected="true">I am a prospective Student</a>
-         </li>
-         <li class="js-tablist__item">
-            <a href="#id_transfer" class="js-tablist__link">I am a transfer student</a>
-         </li>
-      </ul>
-<!-- FRESHMAN REQUIREMENTS -->
-      <div id="id_freshman" class="js-tabcontent" style="height: 45vh;">
-        <div class="o-container" style="display: flex;">
-          <div class="requirements-table">
-            <p><em>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam gravida leo massa.</em></p>
-            <div class="o-container">
-              <h3>Applications requirements</h3>
-              <div id="key">
-                <span class="key-name">
-                  <svg height="20" width="20" 100xauto height>
-                    <circle cx="10" cy="10" r="8" stroke="#0096a0" stroke-width="3" fill="#0096a0" />
-                  </svg>
-                  <h5>Required</h5>
-                </span>
-                <span class="key-name">
-                  <svg height="20" width="20">
-                    <circle cx="10" cy="10" r="8" stroke="white" stroke-width="3" fill="#0096a0" />
-                  </svg>
-                  <h5>Upon request</h5>
-                </span>
-                <span class="key-name">
-                  <svg height="20" width="20">
-                    <circle cx="10" cy="10" r="8" stroke="black" stroke-width="3" fill="none" />
-                  </svg>
-                  <h5>Optional</h5>
-                </span>
-                <span class="key-name">
-                  <svg height="20" width="20">
-                    <circle cx="10" cy="10" r="8" stroke="black" stroke-width="3" fill="#000000" />
-                  </svg>
-                  <h5>?????</h5>
-                </span>
+          <div class="js-tabs" data-existing-hx="h3" data-tabs-prefix-class="example-tabs">
+            <ul class="js-tablist container-fluid">
+               <li class="js-tablist__item">
+                  <a href="#id_freshman" class="js-tablist__link" data-selected="1" aria-selected="true">I am a prospective Student</a>
+               </li>
+               <li class="js-tablist__item">
+                  <a href="#id_transfer" class="js-tablist__link">I am a transfer student</a>
+               </li>
+            </ul>
+      <!-- FRESHMAN TABLES -->
+      <!-- FRESHMAN REQUIREMENTS -->
+            <div id="id_freshman" class="js-tabcontent" style="height: 45vh;">
+              <div class="o-container" style="display: flex;">
+                <div class="requirements-table">
+                  <p><em>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam gravida leo massa.</em></p>
+                  <div class="o-container">
+                    <h3>Applications requirements</h3>
+                    <div id="key">
+                      <span class="key-name">
+                        <svg height="20" width="20" 100xauto height>
+                          <circle cx="10" cy="10" r="8" stroke="#0096a0" stroke-width="3" fill="#0096a0" />
+                        </svg>
+                        <h5>Required</h5>
+                      </span>
+                      <span class="key-name">
+                        <svg height="20" width="20">
+                          <circle cx="10" cy="10" r="8" stroke="white" stroke-width="3" fill="#0096a0" />
+                        </svg>
+                        <h5>Upon request</h5>
+                      </span>
+                      <span class="key-name">
+                        <svg height="20" width="20">
+                          <circle cx="10" cy="10" r="8" stroke="black" stroke-width="3" fill="none" />
+                        </svg>
+                        <h5>Optional</h5>
+                      </span>
+                      <span class="key-name">
+                        <svg height="20" width="20">
+                          <circle cx="10" cy="10" r="8" stroke="black" stroke-width="3" fill="#000000" />
+                        </svg>
+                        <h5>?????</h5>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="c-table">
+                    <div class="c-table__row c-table__row--heading cell-heading-border">
+                      <span class="c-table__cell">
+                        <h6 class="m0">ONLINE APPLICATION</h6>
+                        <span class="key-symbol">
+                          <svg height="20" width="20">
+                            <circle cx="10" cy="10" r="8" stroke="white" stroke-width="3" fill="#0096a0" />
+                          </svg>
+                        </span>
+                      </span>
+                      <span class="c-table__cell">
+                        <h6 class="m0">OFFICIAL HIGH SCHOOL TRANSCRIPT</h6>
+                        <span class="key-symbol">
+                          <svg height="20" width="20">
+                            <circle cx="10" cy="10" r="8" stroke="white" stroke-width="3" fill="#0096a0" />
+                          </svg>
+                        </span>
+                      </span>
+                      <span class="c-table__cell">
+                        <h6 class="m0">COLLEGE TRANSCRIPT(S)</h6>
+                        <span class="key-symbol">
+                          <svg height="20" width="20">
+                            <circle cx="10" cy="10" r="8" stroke="black" stroke-width="3" fill="none" />
+                          </svg>
+                        </span>
+                      </span>
+                      <span class="c-table__cell">
+                        <H6 class="m0">STANDARDIZED TEST SCORE</H6>
+                        <span class="key-symbol">
+                          <svg height="20" width="20">
+                            <circle cx="10" cy="10" r="8" stroke="black" stroke-width="3" fill="none" />
+                          </svg>
+                        </span>
+                      </span>
+                      <span class="c-table__cell">
+                        <H6 class="m0">RECOMMENDATION LETTER</H6>
+                        <span class="key-symbol">
+                          <svg height="20" width="20">
+                            <circle cx="10" cy="10" r="8" stroke="white" stroke-width="3" fill="#0096a0" />
+                          </svg>
+                        </span>
+                      </span>
+                      <span class="c-table__cell">
+                        <H6 class="m0">ESSAY</H6>
+                        <span class="key-symbol">
+                          <svg height="20" width="20">
+                            <circle cx="10" cy="10" r="8" stroke="black" stroke-width="3" fill="none" />
+                          </svg>
+                        </span>
+                      </span>
+                      <span class="c-table__cell">
+                        <H6 class="m0">RESUME</H6>
+                        <span class="key-symbol">
+                          <svg height="20" width="20">
+                            <circle cx="10" cy="10" r="8" stroke="black" stroke-width="3" fill="none" />
+                          </svg>
+                        </span>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+      <!-- FRESHMAN DEADLINES -->
+              <div class="o-container" style="display: flex;">
+                <div class="requirements-table deadlines-table">
+                  <h3>Deadlines</h3>
+                  <div class="c-table">
+                    <div class="c-table__row c-table__row--heading cell-heading-border">
+                      <span class="c-table__cell">
+                        <h6 class="m0">ADMISSION APPLICATION / Priority <span><span>1</span></span></h6>
+                        <span class="key-symbol">
+                          <h6 class="m0">December 1</h6>
+                        </span>
+                      </span>
+                      <span class="c-table__cell">
+                        <h6 class="m0">ADMISSION APPLICATION / Spring <span><span>1</span></span></h6>
+                        <span class="key-symbol">
+                          <h6 class="m0">NA</h6>
+                        </span>
+                      </span>
+                      <span class="c-table__cell">
+                        <h6 class="m0">ADMISSION APPLICATION / Fall <span><span>1</span></span></h6>
+                        <span class="key-symbol">
+                          <h6 class="m0">NA</h6>
+                        </span>
+                      </span>
+                      <span class="c-table__cell">
+                        <H6 class="m0">SCHOLARSHIP APPLICATION</H6>
+                        <span class="key-symbol">
+                          <h6 class="m0">February 1 <span><span>2</span></span></h6>
+                        </span>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="o-container">
+                <p class="footnote"><sup><strong>1</strong> Admission is rolling.</p>
+                <p class="footnote"><sup><strong>2</strong> The application for admission is the application for merit scholarships. Students must be admitted by Feb.1 to be considered.</p>
               </div>
             </div>
-            <div class="c-table">
-              <div class="c-table__row c-table__row--heading cell-heading-border">
-                <span class="c-table__cell">
-                  <h6 class="m0">ONLINE APPLICATION</h6>
-                  <span class="key-symbol">
-                    <svg height="20" width="20">
-                      <circle cx="10" cy="10" r="8" stroke="white" stroke-width="3" fill="#0096a0" />
-                    </svg>
-                  </span>
-                </span>
-                <span class="c-table__cell">
-                  <h6 class="m0">OFFICIAL HIGH SCHOOL TRANSCRIPT</h6>
-                  <span class="key-symbol">
-                    <svg height="20" width="20">
-                      <circle cx="10" cy="10" r="8" stroke="white" stroke-width="3" fill="#0096a0" />
-                    </svg>
-                  </span>
-                </span>
-                <span class="c-table__cell">
-                  <h6 class="m0">COLLEGE TRANSCRIPT(S)</h6>
-                  <span class="key-symbol">
-                    <svg height="20" width="20">
-                      <circle cx="10" cy="10" r="8" stroke="black" stroke-width="3" fill="none" />
-                    </svg>
-                  </span>
-                </span>
-                <span class="c-table__cell">
-                  <H6 class="m0">STANDARDIZED TEST SCORE</H6>
-                  <span class="key-symbol">
-                    <svg height="20" width="20">
-                      <circle cx="10" cy="10" r="8" stroke="black" stroke-width="3" fill="none" />
-                    </svg>
-                  </span>
-                </span>
-                <span class="c-table__cell">
-                  <H6 class="m0">RECOMMENDATION LETTER</H6>
-                  <span class="key-symbol">
-                    <svg height="20" width="20">
-                      <circle cx="10" cy="10" r="8" stroke="white" stroke-width="3" fill="#0096a0" />
-                    </svg>
-                  </span>
-                </span>
-                <span class="c-table__cell">
-                  <H6 class="m0">ESSAY</H6>
-                  <span class="key-symbol">
-                    <svg height="20" width="20">
-                      <circle cx="10" cy="10" r="8" stroke="black" stroke-width="3" fill="none" />
-                    </svg>
-                  </span>
-                </span>
-                <span class="c-table__cell">
-                  <H6 class="m0">RESUME</H6>
-                  <span class="key-symbol">
-                    <svg height="20" width="20">
-                      <circle cx="10" cy="10" r="8" stroke="black" stroke-width="3" fill="none" />
-                    </svg>
-                  </span>
-                </span>
+      <!-- TRANSFER TABLES -->
+      <!-- TRANSFER REQUIREMENTS -->
+            <div id="id_transfer" class="js-tabcontent" style="height: 45vh;">
+              <div class="o-container" style="display: flex;">
+                <div class="requirements-table">
+                  <p><em>Transfer students can bring a maximum of 64 credits from a two-year college.</em></p>
+                  <div class="o-container">
+                    <h3>Applications requirements</h3>
+                    <div id="key">
+                      <span class="key-name">
+                        <svg height="20" width="20">
+                          <circle cx="10" cy="10" r="8" stroke="#0096a0" stroke-width="3" fill="#0096a0" />
+                        </svg>
+                        <h5>Required</h5>
+                      </span>
+                      <span class="key-name">
+                        <svg height="20" width="20">
+                          <circle cx="10" cy="10" r="8" stroke="white" stroke-width="3" fill="#0096a0" />
+                        </svg>
+                        <h5>Upon request</h5>
+                      </span>
+                      <span class="key-name">
+                        <svg height="20" width="20">
+                          <circle cx="10" cy="10" r="8" stroke="black" stroke-width="3" fill="none" />
+                        </svg>
+                        <h5>Optional</h5>
+                      </span>
+                      <span class="key-name">
+                        <svg height="20" width="20">
+                          <circle cx="10" cy="10" r="8" stroke="black" stroke-width="3" fill="#000000" />
+                        </svg>
+                        <h5>?????</h5>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="c-table">
+                    <div class="c-table__row c-table__row--heading cell-heading-border">
+                      <span class="c-table__cell">
+                        <h6 class="m0">ONLINE APPLICATION</h6>
+                        <span class="key-symbol">
+                          <svg height="20" width="20">
+                            <circle cx="10" cy="10" r="8" stroke="white" stroke-width="3" fill="#0096a0" />
+                          </svg>
+                        </span>
+                      </span>
+                      <span class="c-table__cell">
+                        <h6 class="m0">OFFICIAL HIGH SCHOOL TRANSCRIPT</h6>
+                        <span class="key-symbol">
+                          <svg height="20" width="20">
+                            <circle cx="10" cy="10" r="8" stroke="#0096a0" stroke-width="3" fill="#0096a0" />
+                          </svg>
+                        </span>
+                      </span>
+                      <span class="c-table__cell">
+                        <h6 class="m0">COLLEGE TRANSCRIPT(S)</h6>
+                        <span class="key-symbol">
+                          <svg height="20" width="20">
+                            <circle cx="10" cy="10" r="8" stroke="white" stroke-width="3" fill="#0096a0" />
+                          </svg>
+                        </span>
+                      </span>
+                      <span class="c-table__cell">
+                        <H6 class="m0">STANDARDIZED TEST SCORE</H6>
+                        <span class="key-symbol">
+                          <svg height="20" width="20">
+                            <circle cx="10" cy="10" r="8" stroke="#0096a0" stroke-width="3" fill="#0096a0" />
+                          </svg>
+                        </span>
+                      </span>
+                      <span class="c-table__cell">
+                        <H6 class="m0">RECOMMENDATION LETTER</H6>
+                        <span class="key-symbol">
+                          <svg height="20" width="20">
+                            <circle cx="10" cy="10" r="8" stroke="black" stroke-width="3" fill="none" />
+                          </svg>
+                        </span>
+                      </span>
+                      <span class="c-table__cell">
+                        <H6 class="m0">ESSAY</H6>
+                        <span class="key-symbol">
+                          <svg height="20" width="20">
+                            <circle cx="10" cy="10" r="8" stroke="black" stroke-width="3" fill="none" />
+                          </svg>
+                        </span>
+                      </span>
+                      <span class="c-table__cell">
+                        <H6 class="m0">RESUME</H6>
+                        <span class="key-symbol">
+                          <svg height="20" width="20">
+                            <circle cx="10" cy="10" r="8" stroke="black" stroke-width="3" fill="none" />
+                          </svg>
+                        </span>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+      <!-- TRANSFER DEADLINES -->
+              <div class="o-container" style="display: flex;">
+                <div class="requirements-table">
+                  <h3>Deadlines</h3>
+                  <div class="c-table">
+                    <div class="c-table__row c-table__row--heading cell-heading-border">
+                      <span class="c-table__cell">
+                        <h6 class="m0">ADMISSION APPLICATION / Priority <span><span>1</span></span></h6>
+                        <span class="key-symbol">
+                          <h6 class="m0">NA</h6>
+                        </span>
+                      </span>
+                      <span class="c-table__cell">
+                        <h6 class="m0">ADMISSION APPLICATION / Spring <span><span>1</span></span></h6>
+                        <span class="key-symbol">
+                          <h6 class="m0">December 1</h6>
+                        </span>
+                      </span>
+                      <span class="c-table__cell">
+                        <h6 class="m0">ADMISSION APPLICATION / Fall <span><span>1</span></span></h6>
+                        <span class="key-symbol">
+                          <h6 class="m0">June 1</h6>
+                        </span>
+                      </span>
+                      <span class="c-table__cell">
+                        <H6 class="m0">SCHOLARSHIP APPLICATION</H6>
+                        <span class="key-symbol">
+                          <h6 class="m0">See Notes <span><span>2</span></span></h6>
+                        </span>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="o-container">
+                <p class="footnote"><sup><strong>1</strong> Admission is rolling.</p>
+                <p class="footnote"><sup><strong>2</strong> All transfer students with 20 college credits or more completed at the time of application are automatically considered for Loyola’s Transfer Merit Scholarships. Merit awards are renewable for up to three years for undergrads. Loyola also offers Phi Theta Kappa scholarships for students transferring from two-year community colleges.</p>
               </div>
             </div>
+        <!-- close tabs - admission -->
           </div>
-        </div>
-<!-- FRESHMAN DEADLINES -->
-        <div class="o-container" style="display: flex;">
-          <div class="requirements-table deadlines-table">
-            <h3>Deadlines</h3>
-            <div class="c-table">
-              <div class="c-table__row c-table__row--heading cell-heading-border">
-                <span class="c-table__cell">
-                  <h6 class="m0">ADMISSION APPLICATION / Priority <span><span>1</span></span></h6>
-                  <span class="key-symbol">
-                    <h6 class="m0">December 1</h6>
-                  </span>
-                </span>
-                <span class="c-table__cell">
-                  <h6 class="m0">ADMISSION APPLICATION / Spring <span><span>1</span></span></h6>
-                  <span class="key-symbol">
-                    <h6 class="m0">NA</h6>
-                  </span>
-                </span>
-                <span class="c-table__cell">
-                  <h6 class="m0">ADMISSION APPLICATION / Fall <span><span>1</span></span></h6>
-                  <span class="key-symbol">
-                    <h6 class="m0">NA</h6>
-                  </span>
-                </span>
-                <span class="c-table__cell">
-                  <H6 class="m0">SCHOLARSHIP APPLICATION</H6>
-                  <span class="key-symbol">
-                    <h6 class="m0">February 1 <span><span>2</span></span></h6>
-                  </span>
-                </span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="o-container">
-          <p class="footnote"><sup><strong>1</strong> Admission is rolling.</p>
-          <p class="footnote"><sup><strong>2</strong> The application for admission is the application for merit scholarships. Students must be admitted by Feb.1 to be considered.</p>
-        </div>
-      </div>
-<!-- TRANSFER REQUIREMENTS -->
-      <div id="id_transfer" class="js-tabcontent" style="height: 45vh;">
-        <div class="o-container" style="display: flex;">
-          <div class="requirements-table">
-            <p><em>Transfer students can bring a maximum of 64 credits from a two-year college.</em></p>
-            <div class="o-container">
-              <h3>Applications requirements</h3>
-              <div id="key">
-                <span class="key-name">
-                  <svg height="20" width="20">
-                    <circle cx="10" cy="10" r="8" stroke="#0096a0" stroke-width="3" fill="#0096a0" />
-                  </svg>
-                  <h5>Required</h5>
-                </span>
-                <span class="key-name">
-                  <svg height="20" width="20">
-                    <circle cx="10" cy="10" r="8" stroke="white" stroke-width="3" fill="#0096a0" />
-                  </svg>
-                  <h5>Upon request</h5>
-                </span>
-                <span class="key-name">
-                  <svg height="20" width="20">
-                    <circle cx="10" cy="10" r="8" stroke="black" stroke-width="3" fill="none" />
-                  </svg>
-                  <h5>Optional</h5>
-                </span>
-                <span class="key-name">
-                  <svg height="20" width="20">
-                    <circle cx="10" cy="10" r="8" stroke="black" stroke-width="3" fill="#000000" />
-                  </svg>
-                  <h5>?????</h5>
-                </span>
-              </div>
-            </div>
-            <div class="c-table">
-              <div class="c-table__row c-table__row--heading cell-heading-border">
-                <span class="c-table__cell">
-                  <h6 class="m0">ONLINE APPLICATION</h6>
-                  <span class="key-symbol">
-                    <svg height="20" width="20">
-                      <circle cx="10" cy="10" r="8" stroke="white" stroke-width="3" fill="#0096a0" />
-                    </svg>
-                  </span>
-                </span>
-                <span class="c-table__cell">
-                  <h6 class="m0">OFFICIAL HIGH SCHOOL TRANSCRIPT</h6>
-                  <span class="key-symbol">
-                    <svg height="20" width="20">
-                      <circle cx="10" cy="10" r="8" stroke="#0096a0" stroke-width="3" fill="#0096a0" />
-                    </svg>
-                  </span>
-                </span>
-                <span class="c-table__cell">
-                  <h6 class="m0">COLLEGE TRANSCRIPT(S)</h6>
-                  <span class="key-symbol">
-                    <svg height="20" width="20">
-                      <circle cx="10" cy="10" r="8" stroke="white" stroke-width="3" fill="#0096a0" />
-                    </svg>
-                  </span>
-                </span>
-                <span class="c-table__cell">
-                  <H6 class="m0">STANDARDIZED TEST SCORE</H6>
-                  <span class="key-symbol">
-                    <svg height="20" width="20">
-                      <circle cx="10" cy="10" r="8" stroke="#0096a0" stroke-width="3" fill="#0096a0" />
-                    </svg>
-                  </span>
-                </span>
-                <span class="c-table__cell">
-                  <H6 class="m0">RECOMMENDATION LETTER</H6>
-                  <span class="key-symbol">
-                    <svg height="20" width="20">
-                      <circle cx="10" cy="10" r="8" stroke="black" stroke-width="3" fill="none" />
-                    </svg>
-                  </span>
-                </span>
-                <span class="c-table__cell">
-                  <H6 class="m0">ESSAY</H6>
-                  <span class="key-symbol">
-                    <svg height="20" width="20">
-                      <circle cx="10" cy="10" r="8" stroke="black" stroke-width="3" fill="none" />
-                    </svg>
-                  </span>
-                </span>
-                <span class="c-table__cell">
-                  <H6 class="m0">RESUME</H6>
-                  <span class="key-symbol">
-                    <svg height="20" width="20">
-                      <circle cx="10" cy="10" r="8" stroke="black" stroke-width="3" fill="none" />
-                    </svg>
-                  </span>
-                </span>
-              </div>
-            </div>
-          </div>
-        </div>
-<!-- TRANSFER DEADLINES -->
-        <div class="o-container" style="display: flex;">
-          <div class="requirements-table">
-            <h3>Deadlines</h3>
-            <div class="c-table">
-              <div class="c-table__row c-table__row--heading cell-heading-border">
-                <span class="c-table__cell">
-                  <h6 class="m0">ADMISSION APPLICATION / Priority <span><span>1</span></span></h6>
-                  <span class="key-symbol">
-                    <h6 class="m0">NA</h6>
-                  </span>
-                </span>
-                <span class="c-table__cell">
-                  <h6 class="m0">ADMISSION APPLICATION / Spring <span><span>1</span></span></h6>
-                  <span class="key-symbol">
-                    <h6 class="m0">December 1</h6>
-                  </span>
-                </span>
-                <span class="c-table__cell">
-                  <h6 class="m0">ADMISSION APPLICATION / Fall <span><span>1</span></span></h6>
-                  <span class="key-symbol">
-                    <h6 class="m0">June 1</h6>
-                  </span>
-                </span>
-                <span class="c-table__cell">
-                  <H6 class="m0">SCHOLARSHIP APPLICATION</H6>
-                  <span class="key-symbol">
-                    <h6 class="m0">See Notes <span><span>2</span></span></h6>
-                  </span>
-                </span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="o-container">
-          <p class="footnote"><sup><strong>1</strong> Admission is rolling.</p>
-          <p class="footnote"><sup><strong>2</strong> All transfer students with 20 college credits or more completed at the time of application are automatically considered for Loyola’s Transfer Merit Scholarships. Merit awards are renewable for up to three years for undergrads. Loyola also offers Phi Theta Kappa scholarships for students transferring from two-year community colleges.</p>
-        </div>
-      </div>
-  <!-- close tabs - admission -->
-    </div>
-    <div class="o-container--super" style="opacity: .25; margin: 2.5em 0; width: 100%; height: 1px; background: #000000;"></div>
-    <div id="table-numbers" class="o-container--super">
-      <div class="o-grid m0">
-        <div class="o-grid__cell">
-          <h2 class="m0 stat-number-medium">80+</h2>
-          <h4 class="m0 mt1 stat-header-medium">under-graduate majors offered</h4>
-        </div>
-        <div class="o-grid__cell">
-          <h2 class="m0 stat-number-medium">14:1</h2>
-          <h4 class="m0 mt1 stat-header-medium">student-teacher ratio</h4>
-        </div>
-        <div class="o-grid__cell">
-          <h2 class="m0 stat-number-medium">26</h2>
-          <h4 class="m0 mt1 stat-header-medium">students, per class <span>on average</span></h4>
-        </div>
-        <div class="o-grid__cell">
-          <h2 class="m0 stat-number-medium">93%</h2>
-          <h4 class="m0 mt1 stat-header-medium">of faculty hold the highest degree possible in their field</h4>
         </div>
       </div>
     </div>
@@ -986,30 +980,76 @@ href="https://www.luc.edu/">Apply with the common app</a>
 
   <!-- FOOTER -->
   <!-- FOOTER -->
-<footer class="o-container">
-	<nav class="o-grid">
-	  <div class="o-grid__cell">
-	    <a class="o-grid-text" href="###"><span class="sm-hide xs-hide">Come </span>Visit</a>
-	    <a class="o-grid-text" href="###">Apply<span class="sm-hide xs-hide"> Now</span></a>
-	    <a class="o-grid-text" href="###"><span class="sm-hide xs-hide">Get </span>Info</a>
-	    <a class="o-grid-text" href="###"><span class="sm-hide xs-hide">Check </span>Status</a>
-	  </div>
-		<div id="social-icons" class="o-grid__cell">
-			<a target="_blank" href="###" class="icon-fb" title="Follow Us on Facebook"></a>
-			<!-- TWITTER -->
-			<a target="_blank" href="###" class="icon-tw" title="Follow Us on Twitter"></a>
-			<!-- FLICKR -->
-			<a target="_blank" href="###" class="icon-fl" title="Follow Us on Fdivckr"></a>
-			<!-- LINKEDIN -->
-			<!-- RSS -->
-			<!-- YOUTUBE -->
-			<a target="_blank" href="###" class="icon-yt" title="Follow Us on You Tube"></a>
-			<!-- PINTEREST -->
-			<!-- INSTAGRAM -->
-			<a target="_blank" href="###" class="icon-ig" title="Follow Us on Instagram"></a>
-			<!-- BLOG -->
-			<a target="_blank" href="http://blogs.luc.edu/uao/" class="icon-blog" title="Read Our Blog"></a>
-			<!-- GOOGLE+ -->
+<footer class="container-fluid">
+	<nav class="container">
+	  <!-- MODAAL -->
+	  <!-- NAME HERE -->
+<!-- Trigger/Open The Modal -->
+<div id="virtual-tour" class="modal-button">
+  <button id="myBtn"></button>
+</div>
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <!-- Modal content -->
+  <div class="modal-content">
+    <style>
+  	   #post > div.col-12.clearfix.z3[style] { display: none !important; }
+		</style>
+		<iframe class="exposure-post-embed" src="https://loyolachicago.exposure.co/categories/enrollment?embed=true" style="margin: 0; padding: 0; width: 100%; height: 1000px;">
+		</iframe>
+  </div>
+</div>
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+// When the user clicks the button, open the modal
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+	  <div class="content-columns-varied one-column-build"><!-- column-build -->
+	    <div class="grid-wrapper">
+	      <div class="grid-item col-flex">
+					<div class="nav-list">
+				    <a class="nav-item" href="###"><span class="sm-hide xs-hide">Come </span>Visit</a>
+				    <a class="nav-item" href="###">Apply<span class="sm-hide xs-hide"> Now</span></a>
+				    <a class="nav-item" href="###"><span class="sm-hide xs-hide">Get </span>Info</a>
+				    <a class="nav-item" href="###"><span class="sm-hide xs-hide">Check </span>Status</a>
+					</div>
+					<div id="social-icons">
+						<a target="_blank" href="###" class="icon-fb" title="Follow Us on Facebook"></a>
+						<!-- TWITTER -->
+						<a target="_blank" href="###" class="icon-tw" title="Follow Us on Twitter"></a>
+						<!-- FLICKR -->
+						<a target="_blank" href="###" class="icon-fl" title="Follow Us on Fdivckr"></a>
+						<!-- LINKEDIN -->
+						<!-- RSS -->
+						<!-- YOUTUBE -->
+						<a target="_blank" href="###" class="icon-yt" title="Follow Us on You Tube"></a>
+						<!-- PINTEREST -->
+						<!-- INSTAGRAM -->
+						<a target="_blank" href="###" class="icon-ig" title="Follow Us on Instagram"></a>
+						<!-- BLOG -->
+						<a target="_blank" href="http://blogs.luc.edu/uao/" class="icon-blog" title="Read Our Blog"></a>
+						<!-- GOOGLE+ -->
+					</div>
+				</div>
+			</div>
 		</div>
 	</nav>
 </footer>
@@ -1090,7 +1130,6 @@ href="https://www.luc.edu/">Apply with the common app</a>
       });
       // get all slides
       var slides = document.querySelectorAll("div.panel");
-
       // create scene for every slide
       for (var i = 0; i < slides.length; i++) {
         new ScrollMagic.Scene({
@@ -1099,11 +1138,11 @@ href="https://www.luc.edu/">Apply with the common app</a>
           .setPin(slides[i], {
             pushFollowers: false
           })
-        //  .addIndicators() add indicators (requires plugin)
+        // .addIndicators() add indicators (requires plugin)
           .addTo(controller);
       }
     });
   </script>
-  <script src="js-two/accessible-tab-panel-aria.js"></script>
+  <!-- <script src="js-two/accessible-tab-panel-aria.js"></script> -->
 </body>
 </html>

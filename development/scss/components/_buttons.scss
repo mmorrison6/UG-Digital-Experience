@@ -1,0 +1,32 @@
+/* buttons */
+.button {
+  margin: 0;
+  padding: .55em 1em !important;
+  width: 100%;
+  height: auto;
+  font-family: 'Arial Black', sans-serif !important;
+  font-weight: bold !important;
+  font-weight: 700 !important;
+  font-size: 1.25em;
+  line-height: 1.45;
+  color: #ffffff !important;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: none;
+  border-radius: .66em !important;
+  background: #8D0034 !important;
+  -webkit-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s;
+}
+
+/* buttons - color */
+.button, .button a { color: #ffffff !important; }
+.button-maroon .button { background: #8D0034 !important; }
+.button-patina .button { background: #0096A0 !important; }
+.button-gold .button { background: #FEBC18; background: #F3AD15 !important; }
+/* buttons - color - hover */
+.button-maroon .button:hover { background: #5D0024 !important; }
+.button-patina .button:hover { background: #00495C !important; }
+.button-gold .button:hover { background: #5D4B3F !important; }
