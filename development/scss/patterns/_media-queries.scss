@@ -10,6 +10,21 @@
 }
 */
 
+html {
+  scroll-behavior: smooth;
+}
+
+:target:before {
+  content: "";
+  display: block;
+  height: 300px;
+  margin: -260px 0 0;
+  @include tablet-portrait {
+    height: 500px;
+    margin: -460px 0 0;
+  }
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -43,8 +58,17 @@ section#mobile-drawers-wrapper { display: block; }
 /* drawers - mobile */
 
 .drawer-mobile {
-  padding: 40px;
+  padding: 40px 40px 40px 40px;
   background-color: $gray-light;
+  @include tablet-portrait {
+    padding: 20px 20px 20px 20px;
+  }
+}
+
+#academics-content-mobile #stat-carrousel.col-flex img {
+  @include tablet-portrait {
+    min-width: 100% !important;
+  }
 }
 
 #intramural-sports.stat-panel {
@@ -61,6 +85,9 @@ section#mobile-drawers-wrapper { display: block; }
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
+  @include phone-portrait {
+    height: 50vh;
+  }
 }
 
 #academics-image {
@@ -83,6 +110,14 @@ section#mobile-drawers-wrapper { display: block; }
   margin-top: -1em;
   width: 150px;
   height: auto;
+  @include tablet-portrait {
+    width: 100px;
+  }
+  @include phone-portrait {
+    width: 100%;
+    margin-top: 0;
+    margin: 0;
+  }
   img {
     width: 3em;
   }

@@ -49,8 +49,12 @@ a.example-tabs-tabs__link:hover {
 /* UG ADD */
 
 #admission-panel.pattern-3-bg {
+  padding: 40px;
   height: 100vh;
   z-index: 10000;
+  @include phone-portrait {
+    padding: 20px;
+  }
 }
 
 #admission-panel.pattern-3-bg .example-tabs-tabs__list {

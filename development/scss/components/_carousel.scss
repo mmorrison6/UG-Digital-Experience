@@ -259,6 +259,9 @@ kbd {
 
 /* -------------- OVERIDES FOR UG -------------- */
 
+/* all drawers - 100 wide */
+.pattern-1-drawer-content-container { width: 100%; }
+
 #stat-carrousel {
   position: relative;
   box-sizing: border-box;
@@ -268,6 +271,12 @@ kbd {
   margin: 0 20px;
   height: 100%;
   overflow: hidden;
+  @include tablet-portrait {
+    min-height: 115px;
+  }
+  @include phone-portrait {
+    margin: 0;
+  }
 }
 
 /* stat-carrousel typography */
@@ -277,6 +286,21 @@ kbd {
   font-size: 7em;
   letter-spacing: .05em;
   color: $patina;
+    @include tablet-portrait {
+      font-size: 4.5em !important;
+    }
+}
+#stat-carrousel h2.stat-text-medium {
+  font-size: 5.5em !important;
+    @include tablet-portrait {
+      font-size: 4em !important;
+    }
+}
+
+.js-carrousel, .news-carrousel, .js-carrousel__container.news-carrousel__container {
+  @include tablet-portrait {
+    min-height: 115px;
+  }
 }
 
 #stat-carrousel h2, #stat-carrousel h3,
@@ -289,9 +313,6 @@ kbd {
 #stat-carrousel h6 span { font-family: 'Antenna Light', sans-serif }
 
 #stat-carrousel h3 { text-transform: uppercase !important; }
-
-/* all drawers - 100 wide */
-.pattern-1-drawer-content-container { width: 100%; }
 
 /* spacing */
 .js-carrousel, .news-carrousel,
@@ -314,7 +335,18 @@ kbd {
 
 .js-carrousel__button__previous { margin-right: 0; }
 
-.js-carrousel__button__previous, .js-carrousel__button__next { width: 50px; height: 50px; }
+.js-carrousel__button__previous, .js-carrousel__button__next {
+  width: 50px;
+  height: 50px;
+  outline: none;
+  @include phone-portrait {
+    margin: 0;
+    width: 30px;
+    max-width: 30px;
+  }
+}
+
+.js-carrousel__button__next.news-carrousel__button__button img { float: right; }
 
 .news-carrousel__control__list { display: block; bottom: 0; margin-top: 1em;}
 
@@ -330,40 +362,24 @@ kbd {
   min-width: 60%;
   max-width: 60%;
   margin: 0 20%;
+  @include tablet-portrait {
+    width: 90%;
+    min-width: 90%;
+    max-width: 90%;
+    min-height: 140px;
+    margin: 0 5%;
+  }
 }
 
-/* pushes carousel away from content */
-
-/* -------------- media queries -------------- */
-
-/* 736 */
-
-@media only screen and (max-width:736px) {
-
-.js-carrousel.news-carrousel img {
-  margin-left: -50% !important;
-  width: 200%;
-  max-width: 200%;
-}
+/* carousel arrows */
 
 #main-content-wrapper-full-width .js-carrousel__button__previous.news-carrousel__button__button img {
-  margin-left: 0 !important;
-}
-
-}
-
-@media only screen and (max-width: 415px) {
-
-.js-carrousel.news-carrousel img {
-    margin-left: -100% !important;
-    width: 300%;
-    max-width: 300%;
-}
-
-#main-content-wrapper-full-width .js-carrousel__button__previous.news-carrousel__button__button img {
-  margin-left: 0 !important;
-}
-
+  @include tablet-portrait {
+    margin-left: 0 !important;
+  }
+  @include phone-portrait {
+    margin-left: 0 !important;
+  }
 }
 
 /* CSS END */

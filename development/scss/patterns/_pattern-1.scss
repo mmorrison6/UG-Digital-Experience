@@ -193,13 +193,6 @@ PATTERN 1 MODULE ====================================== */
           transform: opacity(1);
 }
 
-.drawer-footnote {
-  font-family: 'Antenna Black', sans-serif;
-  span {
-    color: $maroon;
-  }
-}
-
 /* UG OVERRIDES */
 
 /* grid backgrounds */
@@ -252,6 +245,9 @@ PATTERN 1 MODULE ====================================== */
   border-top: solid 10px $maroon;
   background: rgba(0,0,0,.7);
   align-items: center;
+  @include tablet-portrait {
+    width: 100%;
+  }
   p {
     padding: 1em;
     font-size: 1em;
@@ -271,6 +267,10 @@ PATTERN 1 MODULE ====================================== */
   border-radius: 0 0 1.5em 0;
   background: $gold;
   align-items: center;
+  @include tablet-portrait {
+    width: 100%;
+    border-radius: 0;
+  }
 }
 
 .caption-overlay p,
@@ -289,15 +289,13 @@ PATTERN 1 MODULE ====================================== */
   margin: 0 !important;
 }
 
-.drawer-footnote {
-  font-family: antenna-black;
-  position: absolute;
-  bottom: 25px;
-  left: 225px;
-}
+.drawer-footnote { font-weight: bold !important; }
 
-.drawer-footnote > span {
-  color: $maroon;
+.drawer-footnote > span > a {
+  display: inline !important;
+  width: auto;
+  font-family: 'Antenna Bold', sans-serif !important;
+  color: $maroon !important;
 }
 
 /* Media Query Breakpoints - Hero Image Section

@@ -35,13 +35,16 @@ STATISTICS SYSTEM w RESPONSIVE ================ */
 .stat-number-large {
   font-size: 5.5em;
   text-align: center;
-  font-family: Antenna Bold;
+  font-family: 'Antenna Bold', sans-serif;
   line-height: 1;
 }
 
 .stat-header-large {
   font-size: 1.25em;
   line-height: 1.5;
+  @include tablet-portrait {
+    font-size: 1em;
+  }
 }
 
 /* Stats Medium */
@@ -49,7 +52,7 @@ STATISTICS SYSTEM w RESPONSIVE ================ */
 .stat-number-medium {
   font-size: 3em;
   text-align: center;
-  font-family: Antenna Bold;
+  font-family: 'Antenna Bold', sans-serif;
   line-height: 1;
 }
 

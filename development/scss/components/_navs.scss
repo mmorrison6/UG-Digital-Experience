@@ -1,5 +1,11 @@
 nav#main-nav {
   z-index: 10001;
+  @include tablet-portrait {
+    display: none;
+  }
+}
+nav, nav ul, nav ul li, nav ul li a {
+  box-sizing: border-box;
 }
 
 nav {
@@ -15,6 +21,9 @@ nav {
   -webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.25);
   -moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.25);
   box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.25);
+  @include tablet-portrait {
+    flex-direction: column;
+  }
 }
 
 nav ul {
@@ -33,6 +42,12 @@ li.nav-item {
   height: auto;
   list-style-type: none;
   cursor: pointer;
+  @include tablet-portrait {
+    width: 25%;
+  }
+  @include phone-portrait {
+    width: 100% !important;
+  }
 }
 
 li.nav-item a {
@@ -46,16 +61,27 @@ li.nav-item a {
   line-height: 1;
   text-transform: uppercase;
   text-decoration: none;
+  border-right: solid 2px $gold-extra-dark;
   background: $gold;
   transition: .2s;
+  @include phone-portrait {
+    border-right: none;
+    border-bottom: solid 2px $gold-extra-dark;
+  }
+}
+
+li.nav-item.brand a:hover {
+  background: $gold;
 }
 
 li.nav-item a:hover {
   background: darken($gold,15%);
 }
 
-li.nav-item.brand a:hover {
-  background: $gold;
+li.nav-item.brand {
+  @include tablet-portrait {
+    display: none;
+  }
 }
 
 li img.nav-image {
@@ -71,10 +97,22 @@ footer nav {
   background: $gray-extra-dark;
 }
 
+footer li.nav-item {
+  border-right: solid 1px $gray-dark !important;
+  @include tablet-portrait {
+    width: 100%;
+    border: none;
+    border-bottom: solid 1px $gray-dark;
+  }
+  a {
+    border-bottom: none;
+  }
+}
+
 footer li.nav-item a {
   line-height: 1.35;
   color: $gray;
-  border-right: solid 1px $gray-light;
+  border-right: solid 1px $gray-dark;
   background: $gray-extra-dark;
 }
 
@@ -103,6 +141,12 @@ footer {
     flex: none;
     justify-items: right;
     align-items: center;
+    @include tablet-portrait {
+      padding: 1.5em 31%;
+    }
+    @include phone-portrait {
+      padding: 1.5em 10%;
+    }
     :hover {
       background: $patina;
     }

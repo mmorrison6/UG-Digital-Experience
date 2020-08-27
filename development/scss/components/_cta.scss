@@ -17,6 +17,7 @@
 .content-columns-varied .col-flex p,
 .content-columns-varied .col-flex p.audience-readout,
 .content-columns-varied .col-flex a {
+  box-sizing: border-box;
   display: block;
   margin: 0;
   padding: 0;
@@ -30,13 +31,19 @@
   color: #000000;
 }
 
-.content-columns-varied .col-flex h2 {
+.content-columns-varied .col-flex h2[style],
+.cta-container-fluid h2 {
   width: 100% !important;
   font-family: 'Arial Black', sans-serif;
-  font-size: 3em;
+  font-size: 3.5em !important;
   font-weight: bold;
   font-weight: 700;
+  line-height: 1.2;
   letter-spacing: -.0125em;
+  @include phone-portrait {
+    margin: 0 0 .25em;
+    font-size: 3em !important;
+  }
 }
 
 .content-columns-varied .col-flex h2 span {

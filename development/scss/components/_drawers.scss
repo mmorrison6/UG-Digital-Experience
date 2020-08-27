@@ -120,6 +120,9 @@ aside.o-drawer {
 #study-abroad-content-mobile .content-columns-varied .col-flex img {
   width: 200px !important;
   margin-right: 1em;
+  @include phone-portrait {
+    width: 30% !important;
+  }
 }
 
 #admission-panel .content-columns-varied .col-flex img {
