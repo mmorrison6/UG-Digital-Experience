@@ -147,6 +147,13 @@ h2 {
   background-color: $gold;
 }
 
+#majors-content-mobile.drawer-mobile {
+  padding: 80px;
+  @include tablet-portrait {
+    padding: 30px;
+  }
+}
+
 .drawer-mobile h2[style] {
   font-family: 'Antenna Black', sans-serif;
   font-size: 3.5em !important;

@@ -44,8 +44,14 @@ body {
 #majors-content-mobile .button {
   display: block;
   box-sizing: border-box;
-  width: 100%;
-  min-width: 100%
+  width: 30%;
+  min-width: 30%;
+  @include tablet-portrait {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    min-width: 100%;
+  }
 }
 
 .tuition-table { display: flex; }
