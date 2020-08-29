@@ -1,4 +1,15 @@
-<nav id="main-nav" class="container-fluid">
+<script>
+function topNavFunction() {
+  var x = document.getElementById("main-nav");
+  if (x.className === "top-nav") {
+    x.className += " responsive";
+  } else {
+    x.className = "top-nav";
+  }
+}
+</script>
+
+<nav id="main-nav" class="top-nav">
   <ul>
     <!--
     <li class="nav-item">
@@ -11,6 +22,11 @@
     <li class="nav-item"><a href="#study-abroad-content-mobile">Study Abroad</a></li>
     <li class="nav-item brand" style="float: right !important;">
       <a>Loyola University Chicago</a>
+    </li>
+    <li class="nav-item">
+      <a href="javascript:void(0);" class="icon" onclick="topNavFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
     </li>
     <div class="progress-container">
       <div class="progress-bar" id="progressBar"></div>

@@ -1,28 +1,33 @@
-<!-- PATTERN 3 - TABLE - ADMISSION -->
-  <div id="admission-panel" class="container-fluid pattern-3-bg">
-    <div class="content-columns-varied one-column-build"><!-- column-build -->
+<section id="mobile-drawers-wrapper">
+
+  <!-- ADMISSION CONTENT -->
+  <div id="admission-content-mobile" class="drawer-mobile">
+    <div class="content-columns-varied one-column-build">
+      <!-- column-build -->
       <div class="grid-wrapper">
         <div class="grid-item col-flex">
           <div class="loyola-experience-icon">
             <img class="inline-icon" src="images/ug-road-gears-icon.png">
           </div>
-          <h2 class="pattern-3-header mb1">ADMISSION</h2>
+          <h2 class="mt0 mb2">ADMISSION</h2>
           <!-- MODAAL -->
           @@include('./modaal-student-life-gallery.html')
+
           <div class="js-tabs" data-existing-hx="h3" data-tabs-prefix-class="example-tabs">
             <ul class="js-tablist container-fluid">
-               <li class="js-tablist__item">
-                  <a href="#id_freshman" class="js-tablist__link" data-selected="1" aria-selected="true">I am a prospective Student</a>
-               </li>
-               <li class="js-tablist__item">
-                  <a href="#id_transfer" class="js-tablist__link">I am a transfer student</a>
-               </li>
+              <li class="js-tablist__item">
+                <a href="#id_freshman" class="js-tablist__link" data-selected="1" aria-selected="true">I am a prospective Student</a>
+              </li>
+              <li class="js-tablist__item">
+                <a href="#id_transfer" class="js-tablist__link">I am a transfer student</a>
+              </li>
             </ul>
-      <!-- FRESHMAN TABLES -->
-      <!-- FRESHMAN REQUIREMENTS -->
+            <!-- FRESHMAN TABLES -->
+            <!-- FRESHMAN REQUIREMENTS -->
             <div id="id_freshman" class="js-tabcontent" style="height: 45vh;">
-              <div class="o-container" style="display: flex;">
+              <div class="o-container">
                 <div class="requirements-table">
+                  <h2>FRESHMAN</h2>
                   <p><em>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam gravida leo massa.</em></p>
                   <div class="o-container">
                     <h3>Applications requirements</h3>
@@ -115,8 +120,8 @@
                   </div>
                 </div>
               </div>
-      <!-- FRESHMAN DEADLINES -->
-              <div class="o-container" style="display: flex;">
+              <!-- FRESHMAN DEADLINES -->
+              <div class="o-container">
                 <div class="requirements-table deadlines-table">
                   <h3>Deadlines</h3>
                   <div class="c-table">
@@ -154,11 +159,12 @@
                 <p class="footnote"><sup><strong>2</strong> The application for admission is the application for merit scholarships. Students must be admitted by Feb.1 to be considered.</p>
               </div>
             </div>
-      <!-- TRANSFER TABLES -->
-      <!-- TRANSFER REQUIREMENTS -->
+            <!-- TRANSFER TABLES -->
+            <!-- TRANSFER REQUIREMENTS -->
             <div id="id_transfer" class="js-tabcontent" style="height: 45vh;">
-              <div class="o-container" style="display: flex;">
+              <div class="o-container">
                 <div class="requirements-table">
+                  <h2>TRANSFER STUDENTS</h2>
                   <p><em>Transfer students can bring a maximum of 64 credits from a two-year college.</em></p>
                   <div class="o-container">
                     <h3>Applications requirements</h3>
@@ -251,8 +257,8 @@
                   </div>
                 </div>
               </div>
-      <!-- TRANSFER DEADLINES -->
-              <div class="o-container" style="display: flex;">
+              <!-- TRANSFER DEADLINES -->
+              <div class="o-container">
                 <div class="requirements-table">
                   <h3>Deadlines</h3>
                   <div class="c-table">
@@ -290,9 +296,11 @@
                 <p class="footnote"><sup><strong>2</strong> All transfer students with 20 college credits or more completed at the time of application are automatically considered for Loyola’s Transfer Merit Scholarships. Merit awards are renewable for up to three years for undergrads. Loyola also offers Phi Theta Kappa scholarships for students transferring from two-year community colleges.</p>
               </div>
             </div>
-        <!-- close tabs - admission -->
+            <!-- close tabs - admission -->
           </div>
         </div>
       </div>
     </div>
   </div>
+
+</section>

@@ -286,12 +286,12 @@ kbd {
   font-size: 7em;
   letter-spacing: .05em;
   color: $patina;
-    @include tablet-portrait {
-      font-size: 4.5em !important;
-    }
 }
+
 #stat-carrousel h2.stat-text-medium {
+  margin: 0;
   font-size: 5.5em !important;
+  text-transform: uppercase;
     @include tablet-portrait {
       font-size: 4em !important;
     }
@@ -313,6 +313,13 @@ kbd {
 #stat-carrousel h6 span { font-family: 'Antenna Light', sans-serif }
 
 #stat-carrousel h3 { text-transform: uppercase !important; }
+
+#stat-carrousel h4 {
+  @include phone-portrait {
+    margin-top: .25em;
+    margin-bottom: 1em;
+  }
+}
 
 /* spacing */
 .js-carrousel, .news-carrousel,
@@ -343,6 +350,9 @@ kbd {
     margin: 0;
     width: 30px;
     max-width: 30px;
+  }
+  img {
+    width: 100% !important;
   }
 }
 

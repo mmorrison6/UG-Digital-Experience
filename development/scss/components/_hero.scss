@@ -77,7 +77,8 @@ HERO IMAGE SECTION ====================================== */
     overflow: scroll;
   }
   @include phone-portrait {
-    max-height: 55%;
+    max-height: 70%;
+    width: 90%;
     padding: 1.5em;
   }
 }
@@ -93,7 +94,10 @@ HERO IMAGE SECTION ====================================== */
   font-size: 1.35em;
   line-height: 1.8;
   @include tablet-portrait {
-    font-size: 1.35em
+    font-size: 1.35em;
+  }
+  @include phone-portrait {
+    font-size: 1.125em;
   }
 }
 
@@ -118,23 +122,37 @@ HERO IMAGE SECTION ====================================== */
   @include tablet-portrait {
     min-width: 12em;
   }
+  @include phone-portrait {
+    margin: 0 auto;
+    min-width: 60%;
+  }
+  }
+}
+
+#overview-overlay .loyola-experience-inset img {
+  margin-top: -1em;
+  padding: 0 20px 0 0;
+  width: 150px;
+  min-width: 20em;
+  height: auto;
+  @include tablet-portrait {
+    width: 100px;
+    min-width: 12em;
+  }
+  @include phone-portrait {
+    display: block;
+    padding: 0;
+    width: 80%;
+    min-width: 80%;
+    margin: 0 10%;
   }
 }
 
 .hero-text {
-  display: flex;
-  align-self: center;
-  width: 100% !important;
-  min-width: 100% !important;
-  @include tablet-portrait {
-    display: block;
-    position: absolute;
-    top: 10%;
-    width: 100%;
-  }
-  @include phone-portrait {
-    top: 20%;
-  }
+  display: block;
+  position: absolute;
+  top: 15%;
+  width: 100%;
 }
 
 .hero-image .hero-text h1 {

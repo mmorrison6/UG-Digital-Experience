@@ -12,7 +12,6 @@
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0,0.7); /* Black w/ opacity */
 }
-
 .modal-button button#myBtn {
   position: absolute;
   top: -7%;
@@ -33,6 +32,16 @@
     right: 2em;
     width: 150px;
     height: 150px;
+  }
+  @include phone-landscape {
+    top: -10%;
+    right: 2em;
+    width: 120px;
+    height: 120px;
+  }
+  @include phone-portrait {
+    top: 0%;
+    display: none;
   }
 }
 

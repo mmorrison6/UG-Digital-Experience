@@ -1,9 +1,12 @@
-nav#main-nav {
+nav#main-nav.top-nav {
   z-index: 10001;
+  overflow: hidden;
   @include tablet-portrait {
-    display: none;
+    display: block;
+    overflow: visible;
   }
 }
+
 nav, nav ul, nav ul li, nav ul li a {
   box-sizing: border-box;
 }
@@ -43,10 +46,13 @@ li.nav-item {
   list-style-type: none;
   cursor: pointer;
   @include tablet-portrait {
-    width: 25%;
-  }
-  @include phone-portrait {
     width: 100% !important;
+  }
+}
+
+li.nav-item.brand {
+  @include tablet-portrait {
+    display: none;
   }
 }
 
@@ -64,7 +70,7 @@ li.nav-item a {
   border-right: solid 2px $gold-extra-dark;
   background: $gold;
   transition: .2s;
-  @include phone-portrait {
+  @include tablet-portrait {
     border-right: none;
     border-bottom: solid 2px $gold-extra-dark;
   }
@@ -88,6 +94,66 @@ li img.nav-image {
   padding: 0;
   width: 30px;
   height: auto;
+}
+
+/* hamburger menu style */
+nav#main-nav.top-nav li:last-of-type a {
+  padding: .5em;
+  font-size: 2em;
+  color: white;
+  background: $patina;
+}
+
+/* hamburger menu icon */
+nav#main-nav.top-nav a.icon {
+  @include tablet-portrait {
+  display: block;
+  }
+}
+
+/* hide menu-items */
+nav#main-nav.top-nav li {
+  @include tablet-portrait {
+    display: none;
+  }
+}
+
+/* hamburger menu icon - hide and show - position */
+nav#main-nav.top-nav {
+  li:last-of-type {
+  display: none;
+  @include tablet-portrait {
+    display: block;
+    float: right;
+    border-right: none;
+    a.icon  {
+      float: right;
+      display: block;
+      border-right: none;
+      border-bottom: none;
+    }
+  }
+  }
+}
+
+nav#main-nav.top-nav.responsive {
+  @include tablet-portrait {
+  position: fixed;
+  }
+}
+nav#main-nav.top-nav.responsive a.icon {
+  @include tablet-portrait {
+  position: absolute;
+  right: 0;
+  top: 0;
+  }
+}
+nav#main-nav.top-nav.responsive li {
+  @include tablet-portrait {
+  display: block;
+  float: left;
+  text-align: left;
+  }
 }
 
 /* footer nav */

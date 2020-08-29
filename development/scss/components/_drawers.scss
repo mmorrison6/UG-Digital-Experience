@@ -108,16 +108,55 @@ aside.o-drawer {
   box-shadow: 0 -5px 5px rgba(0,0,0,1);
 }
 
+.pattern-1-drawer-content-container .content-columns-varied .col-flex img {
+  margin: 0 1em 0 0;
+  width: 20%;
+}
+
+.pattern-1-drawer-content-container h2 {
+  font-family: 'Antenna Black', sans-serif;
+}
+
+/* drawers - mobile */
+
+h2 {
+  font-family: 'Antenna Black', sans-serif;
+  font-size: 3.5em;
+  @include phone-portrait {
+    font-size: 2em;
+  }
+}
+
+.drawer-mobile,
+#first-year-content-mobile.drawer-mobile {
+  padding: 40px 40px 40px 40px;
+  background-color: $gray-light;
+  @include tablet-portrait {
+    padding: 20px 20px 20px 20px;
+  }
+}
+
+#first-year-content-mobile.drawer-mobile {
+  background: $gold;
+  @include tablet-portrait {
+    padding: 20px 20px 60px 20px;
+  }
+}
+
+#admission-content-mobile.drawer-mobile {
+  background-color: $gold;
+}
+
+.drawer-mobile h2[style] {
+  font-family: 'Antenna Black', sans-serif;
+  font-size: 3.5em !important;
+  @include phone-portrait {
+    font-size: 2.5em !important;
+  }
+}
+
 /* drawer images - svgs */
-#academics-content .content-columns-varied .col-flex img,
-#student-life-content .content-columns-varied .col-flex img,
-#learn-by-doing-content .content-columns-varied .col-flex img,
-#study-abroad-content .content-columns-varied .col-flex img,
-#admission-panel .content-columns-varied .col-flex img,
-#academics-content-mobile .content-columns-varied .col-flex img,
-#student-life-content-mobile .content-columns-varied .col-flex img,
-#learn-by-doing-content-mobile .content-columns-varied .col-flex img,
-#study-abroad-content-mobile .content-columns-varied .col-flex img {
+.content-columns-varied .col-flex img.inline-icon {
   width: 200px !important;
   margin-right: 1em;
   @include phone-portrait {
@@ -125,6 +164,9 @@ aside.o-drawer {
   }
 }
 
-#admission-panel .content-columns-varied .col-flex img {
+#admission-panel .content-columns-varied .col-flex img.inline-icon {
   margin-top: -3em;
+  @include phone-portrait {
+    min-width: 50% !important;
+  }
 }

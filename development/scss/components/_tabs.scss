@@ -11,10 +11,19 @@
 .example-tabs-tabs__list {
   margin: 0 0 1.5em 0;
   padding: 0;
+  @include tablet-portrait {
+    display: inline-block;
+    margin-bottom: .25em !important;
+    width: 100%;
+  }
 }
 .example-tabs-tabs__item {
   display: inline-flex;
   margin: 0 .5em 0 0;
+  @include tablet-portrait {
+    display: inline;
+    width: auto !important;
+  }
 }
 a.example-tabs-tabs__link {
   font-family: 'Antenna Bold', sans-serif !important;
@@ -50,10 +59,14 @@ a.example-tabs-tabs__link:hover {
 
 #admission-panel.pattern-3-bg {
   padding: 40px;
-  height: 100vh;
+  height: auto;
   z-index: 10000;
+  @include tablet-portrait {
+    height: auto;
+    z-index: +1;
+  }
   @include phone-portrait {
-    padding: 20px;
+    padding: 20px 20px 60px 20px;
   }
 }
 
@@ -86,18 +99,25 @@ a#label_id_transfer.example-tabs-tabs__link {
   margin-top: 3.5em !important;
   margin-bottom: 3em !important;
   height: 3em;
+  @include phone-portrait {
+    display: none;
+  }
 }
 
 .example-tabs-tabs__item {
-  display: inline-blockflex;
+  display: inline-flex;
   margin: 0 1.125em 0 0;
   width: 35% !important;
+  @include tablet-portrait {
+    visibility: hidden;
+  }
 }
 
 a#label_id_freshman.example-tabs-tabs__link,
 a#label_id_transfer.example-tabs-tabs__link {
   padding: 1.25em 1em;
   outline: none 0;
+  width: 100%;
 }
 
 a#label_id_freshman.example-tabs-tabs__link {

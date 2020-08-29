@@ -13,7 +13,7 @@
 html {
   scroll-behavior: smooth;
 }
-
+/*
 :target:before {
   content: "";
   display: block;
@@ -24,7 +24,7 @@ html {
     margin: -460px 0 0;
   }
 }
-
+*/
 body {
   margin: 0;
   padding: 0;
@@ -32,9 +32,28 @@ body {
 
 .leadin {
   font-family: 'Antenna Bold', sans-serif;
-  font-size: 1.125em;
+  font-size: 1em;
   text-transform: uppercase;
 }
+
+.col-100 {
+  box-sizing: border-box;
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.col-50 {
+  box-sizing: border-box;
+  display: block;
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 50%;
+}
+
+.tuition-table { display: flex; }
 
 /* general hide show classes */
 
@@ -53,22 +72,6 @@ section#mobile-drawers-wrapper { display: none; }
 @media only screen and (max-width: 992px) {
 section#drawers-wrapper { display: none; }
 section#mobile-drawers-wrapper { display: block; }
-}
-
-/* drawers - mobile */
-
-.drawer-mobile {
-  padding: 40px 40px 40px 40px;
-  background-color: $gray-light;
-  @include tablet-portrait {
-    padding: 20px 20px 20px 20px;
-  }
-}
-
-#academics-content-mobile #stat-carrousel.col-flex img {
-  @include tablet-portrait {
-    min-width: 100% !important;
-  }
 }
 
 #intramural-sports.stat-panel {
@@ -106,62 +109,14 @@ section#mobile-drawers-wrapper { display: block; }
   background-image: url(../images/pattern-1-bg-study-abroad.jpg);
 }
 
-#overview-overlay .loyola-experience-inset img {
-  margin-top: -1em;
-  width: 150px;
-  height: auto;
-  @include tablet-portrait {
-    width: 100px;
-  }
-  @include phone-portrait {
-    width: 100%;
-    margin-top: 0;
-    margin: 0;
-  }
-  img {
-    width: 3em;
-  }
-}
+/* overlay drawers */
+
 
 @media only screen and (max-width: 992px) {
-
-.example-tabs-tabs__list {
-  display: inline-block;
-  margin-bottom: .25em !important;
+.pattern-2-slidein-container {
   width: 100%;
+  position: relative;
+  left: 0;
+  top: 0;
 }
-.example-tabs-tabs__item {
-  display: inline;
-  width: auto !important;
-}
-
-.requirements-table .c-table__row,
-.requirements-table .c-table__head,
-.requirements-table .c-table__body {
-  display: block;
-  border-left: solid 1px #000000;
-}
-
-.requirements-table .c-table__cell {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  width: 100%;
-  height: auto;
-}
-
-.requirements-table h6,
-.requirements-table .c-table__cell span.key-symbol {
-  display: flex;
-  flex-direction: row;
-  align-self: stretch;
-  width: 50%;
-  height: 100%;
-  border: none;
-}
-
-.requirements-table .c-table__cell span.key-symbol {
-  border-left: solid 1px #000000;
-}
-
 }

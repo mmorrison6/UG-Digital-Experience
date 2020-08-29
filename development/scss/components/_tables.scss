@@ -105,6 +105,23 @@
   padding: 0;
   width: 100%;
   border-top: solid 1px #000000;
+  @include tablet-portrait {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    height: auto;
+  }
+}
+
+.requirements-table .c-table__row,
+.requirements-table .c-table__head,
+.requirements-table .c-table__body {
+  display: inline-flex;
+  @include tablet-portrait {
+  display: block;
+  border-left: solid 1px #000000;
+  }
 }
 
 .c-table__cell h6 {
@@ -155,6 +172,10 @@
 .requirements-table span svg {
   display: block;
   margin: 0 auto;
+  @include phone-portrait {
+  margin: 0 .5em 0 0;
+  display: inline;
+  }
 }
 
 #table-numbers h4 {
@@ -171,15 +192,27 @@
   display: flex;
   margin-bottom: 3em;
   width: 100%;
+  @include phone-portrait {
+  display: inline-block;
+  margin-bottom: 1em;
+  width: 100%;
+  }
   span.key-name {
     display: flex;
     margin: 0 2em 0 0;
     align-items: center;
+    @include phone-portrait {
+    margin-bottom: .75em;
+    }
     h5 {
       display: inline-block;
       margin: .25em 0 0 .5em;
       font-family: 'Antenna', sans-serif;
       font-size: 1em;
+      @include phone-portrait {
+      display: inline;
+      width: 100%;
+      }
     }
   }
 }
@@ -212,20 +245,42 @@
 
 .requirements-table .c-table__cell {
   height: 10em;
+  @include tablet-portrait {
+    height: auto;
+  }
 }
 
 .requirements-table.deadlines-table .c-table__cell {
   height: 8em;
+  @include tablet-portrait {
+    height: auto;
+  }
 }
 
 .requirements-table h6,
 .requirements-table.deadlines-table h6 {
+  @include tablet-portrait {
   box-sizing: border-box;
-  display: block;
+  display: inline;
   padding: var(--spacing-large);
   font-size: .875em;
   width: 100%;
   height: 55%;
+  }
+}
+
+.requirements-table h6,
+.requirements-table .c-table__cell span.key-symbol,
+.requirements-table.deadlines-table h6,
+.requirements-table .c-table__cell span.key-symbol h6 {
+  @include tablet-portrait {
+  display: flex;
+  flex-direction: row;
+  align-self: stretch;
+  width: 50%;
+  height: 100%;
+  border: none;
+  }
 }
 
 .requirements-table.deadlines-table h6 {
@@ -238,6 +293,9 @@
 
 .requirements-table .c-table__cell span.key-symbol {
   padding: var(--spacing-large);
+  @include tablet-portrait {
+  padding: var(--spacing-medium);
+  }
 }
 
 .requirements-table.deadlines-table .c-table__cell span.key-symbol {

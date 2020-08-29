@@ -51,9 +51,13 @@ STATISTICS SYSTEM w RESPONSIVE ================ */
 
 .stat-number-medium {
   font-size: 3em;
+  margin: 0;
   text-align: center;
   font-family: 'Antenna Bold', sans-serif;
   line-height: 1;
+  @include phone-portrait {
+    font-size: 2em;
+  }
 }
 
 .stat-header-medium {
