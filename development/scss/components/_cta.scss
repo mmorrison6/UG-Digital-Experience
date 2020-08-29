@@ -31,21 +31,6 @@
   color: #000000;
 }
 
-.cta-container-fluid .content-columns-varied .col-flex h2[style],
-.cta-container-fluid h2 {
-  width: 100% !important;
-  font-family: 'Antenna Black', sans-serif;
-  font-size: 3.5em !important;
-  font-weight: bold;
-  font-weight: 700;
-  line-height: 1.2;
-  letter-spacing: -.0125em;
-  @include phone-portrait {
-    margin: 0 0 .25em;
-    font-size: 3em !important;
-  }
-}
-
 .cta-container-fluid .content-columns-varied .col-flex h2 span {
   display: inline-block;
   font-family: 'Arial Black', sans-serif;

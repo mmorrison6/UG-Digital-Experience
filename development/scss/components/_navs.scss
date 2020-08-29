@@ -71,8 +71,21 @@ li.nav-item a {
   background: $gold;
   transition: .2s;
   @include tablet-portrait {
+    padding: .75em 1.5em;
     border-right: none;
     border-bottom: solid 2px $gold-extra-dark;
+  }
+}
+
+li#nav-image.nav-item a {
+  display: inline-block;
+  padding: 0em;
+  border-right: none !important;
+  &:hover {
+    background: none;
+  }
+  @include tablet-portrait {
+    border-bottom: none;
   }
 }
 
@@ -118,13 +131,22 @@ nav#main-nav.top-nav li {
   }
 }
 
+/* hide menu-items */
+nav#main-nav.top-nav li:first-child{
+  @include tablet-portrait {
+    display: inline;
+    width: auto !important;
+  }
+}
+
 /* hamburger menu icon - hide and show - position */
 nav#main-nav.top-nav {
   li:last-of-type {
   display: none;
   @include tablet-portrait {
-    display: block;
+    display: inline;
     float: right;
+    width: auto !important;
     border-right: none;
     a.icon  {
       float: right;

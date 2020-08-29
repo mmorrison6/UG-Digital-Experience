@@ -51,18 +51,21 @@ function topNavFunction() {
 
 <nav id="main-nav" class="top-nav">
   <ul>
-    <!--
-    <li class="nav-item">
-      <img class="nav-image" src="images/luc-logo-vertical-nav.png">
+    <li id="nav-image" class="nav-item">
+      <a href="https://www.luc.edu/undergrad"><img src="images/luc-logo-vertical-nav.png"></a>
     </li>
-    -->
-    <li class="nav-item"><a href="#academics-content-mobile">Academics</a></li>
+    <li  class="nav-item"><a href="#academics-content-mobile">Academics</a></li>
     <li class="nav-item"><a href="#student-life-content-mobile">Student Life</a></li>
     <li class="nav-item"><a href="#learn-by-doing-content-mobile">Learn By Doing</a></li>
     <li class="nav-item"><a href="#study-abroad-content-mobile">Study Abroad</a></li>
+    <li class="nav-item"><a href="#admission-content-mobile">Admission</a></li>
+    <li id="majors" class="nav-item"><a href="#majors-content-mobile">Majors</a></li>
+    <!--
     <li class="nav-item brand" style="float: right !important;">
       <a>Loyola University Chicago</a>
+      <a href="luc.edu"><img src="/images/luc-logo-vertical-nav.jpg">
     </li>
+    -->
     <li class="nav-item">
       <a href="javascript:void(0);" class="icon" onclick="topNavFunction()">
         <i class="fa fa-bars"></i>
@@ -1077,53 +1080,67 @@ window.onclick = function(event) {
   <!-- MOBILE CONTENT -->
   <!-- DRAWER CONTENT - SECTIONS -->
 
+<script>
+  $(document).on('click', 'a[href^="#"]', function(event) {
+    event.preventDefault();
+    $('html, body').animate({
+      scrollTop: $($.attr(this, 'href')).offset().top - 340
+      // 100 is the sticky nav height
+    }, 500);
+  });
+</script>
+
 <section id="mobile-drawers-wrapper">
 
-<!-- FIRST YEAR PROFILE -->
-<div id="first-year-content-mobile" class="drawer-mobile" style="position: relative;">
-  <div class="container-fluid">
-    <div class="content-columns-varied one-column-build"><!-- column-build -->
-      <div class="grid-wrapper">
-        <div class="grid-item col-flex">
-          <h2>FIRST-YEAR PROFILE</h2>
-        </div>
-      </div>
-    </div>
-    <div class="content-columns-varied two-column-build"><!-- column-build -->
-      <div class="grid-wrapper">
-        <div class="grid-item col-flex">
-          <h3>CLASS OF 2019</h3>
-          <div style="display: block;">
-            <!--
-            <img class="inline-icon" src="../images/Gold_Globe_icon_500x500.png" height="20%" width="20%" alt="" class="pl3">
-            -->
-            <p>Our diverse freshman student body, entering in Fall 2019, represents people of all faiths and ethnic backgrounds. </p>
+  <!-- FIRST YEAR PROFILE -->
+  <div id="first-year-content-mobile" class="drawer-mobile" style="position: relative;">
+    <div class="container-fluid">
+      <div class="content-columns-varied one-column-build">
+        <!-- column-build -->
+        <div class="grid-wrapper">
+          <div class="grid-item col-flex">
+            <h2>FIRST-YEAR PROFILE</h2>
           </div>
         </div>
-        <div class="grid-item col-flex">
-          <h3>47 STATES</h3>
-          <hr style="background: #272727;">
-          <h3>48 COUNTRIES</h3>
-          <hr style="background: #272727;">
+      </div>
+      <div class="content-columns-varied two-column-build">
+        <!-- column-build -->
+        <div class="grid-wrapper">
+          <div class="grid-item col-flex">
+            <h3>CLASS OF 2019</h3>
+            <div style="display: block;">
+              <!--
+            <img class="inline-icon" src="../images/Gold_Globe_icon_500x500.png" height="20%" width="20%" alt="" class="pl3">
+            -->
+              <p>Our diverse freshman student body, entering in Fall 2019, represents people of all faiths and ethnic backgrounds. </p>
+            </div>
+          </div>
+          <div class="grid-item col-flex">
+            <h3>47 STATES</h3>
+            <hr style="background: #272727;">
+            <h3>48 COUNTRIES</h3>
+            <hr style="background: #272727;">
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="container-fluid">
-    <div class="content-columns-varied one-column-build"><!-- column-build -->
-      <div class="grid-wrapper">
-        <div class="grid-item col-flex">
+    <div class="container-fluid">
+      <div class="content-columns-varied one-column-build">
+        <!-- column-build -->
+        <div class="grid-wrapper">
+          <div class="grid-item col-flex">
             <h3>FRESHMAN GPA: 3.72</h3>
             <hr style="background: #272727;">
             <h3>TEST SCORES</h3>
             <p>Middle 50 percent range</p>
           </div>
+        </div>
       </div>
-    </div>
-    <div class="content-columns-varied three-column-build"><!-- column-build -->
-      <div class="grid-wrapper">
-        <div class="grid-item col-flex">
-          <!-- Timeline  ACT-->
+      <div class="content-columns-varied three-column-build">
+        <!-- column-build -->
+        <div class="grid-wrapper">
+          <div class="grid-item col-flex">
+            <!-- Timeline  ACT-->
             <h3 style="width: 100%;">ACT</h3>
             <p>Composite</p>
             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 500 50.03" style="enable-background:new 0 0 500 50.03;" xml:space="preserve">
@@ -1135,18 +1152,21 @@ window.onclick = function(event) {
                   stroke-width: 50.0291;
                   stroke-linecap: round;
                 }
+
                 .st1 {
                   fill: none;
                   stroke: #636466;
                   stroke-width: 2.0012;
                   stroke-linecap: round;
                 }
+
                 .st2 {
                   fill: none;
                   stroke: #231F20;
                   stroke-width: 2.0012;
                   stroke-linecap: round;
                 }
+
                 .st3 {
                   clip-path: url(#SVGID_4_);
                   fill: none;
@@ -1154,6 +1174,7 @@ window.onclick = function(event) {
                   stroke-width: 37.5218;
                   stroke-linecap: round;
                 }
+
                 .st4 {
                   clip-path: url(#SVGID_4_);
                   fill: none;
@@ -1193,169 +1214,173 @@ window.onclick = function(event) {
               <p style="float: left;">0</p>
               <p style="float: right;">36</p>
             </div>
-        </div>
-        <div class="grid-item col-flex">
-        <!-- Timeline  SAT-->
-          <h3 style="width: 100%;">SAT</h3>
-          <p>Critical Reading</p>
-          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 500 50.03" style="enable-background:new 0 0 500 50.03;" xml:space="preserve">
-            <style type="text/css">
-              .st0 {
-                clip-path: url(#SVGID_2_);
-                fill: none;
-                stroke: #FFFFFF;
-                stroke-width: 50.0291;
-                stroke-linecap: round;
-              }
-              .st1 {
-                fill: none;
-                stroke: #636466;
-                stroke-width: 2.0012;
-                stroke-linecap: round;
-              }
-              .st2 {
-                fill: none;
-                stroke: #231F20;
-                stroke-width: 2.0012;
-                stroke-linecap: round;
-              }
-              .st3 {
-                clip-path: url(#SVGID_4_);
-                fill: none;
-                stroke: #08BCC1;
-                stroke-width: 37.5218;
-                stroke-linecap: round;
-              }
-              .st4 {
-                clip-path: url(#SVGID_4_);
-                fill: none;
-                stroke: #231F20;
-                stroke-width: 6.2536;
-              }
-            </style>
-            <g>
-              <defs>
-                <rect id="SVGID_1_" x="8.64" width="482.71" height="50.03" />
-              </defs>
-              <clipPath id="SVGID_2_">
-                <use xlink:href="#SVGID_1_" style="overflow:visible;" />
-              </clipPath>
-              <line class="st0" x1="33.66" y1="25.01" x2="466.34" y2="25.01" />
-            </g>
-            <line class="st1" x1="143.04" y1="15.01" x2="143.04" y2="35.02" />
-            <line class="st1" x1="76.4" y1="15.01" x2="76.4" y2="35.02" />
-            <line class="st1" x1="276.43" y1="15.01" x2="276.43" y2="35.02" />
-            <line class="st2" x1="343.18" y1="15.01" x2="343.18" y2="35.02" />
-            <line class="st1" x1="462.62" y1="15.01" x2="462.62" y2="35.02" />
-            <line class="st1" x1="209.67" y1="15.01" x2="209.67" y2="35.02" />
-            <line class="st1" x1="396.48" y1="15.01" x2="396.48" y2="35.02" />
-            <g>
-              <defs>
-                <rect id="SVGID_3_" x="8.64" width="482.71" height="50.03" />
-              </defs>
-              <clipPath id="SVGID_4_">
-                <use xlink:href="#SVGID_3_" style="overflow:visible;" />
-              </clipPath>
-              <line class="st3" x1="331.3" y1="25.01" x2="372" y2="25.01" />
-              <circle class="st4" cx="330.79" cy="25.01" r="10.01" />
-              <circle class="st4" cx="372.57" cy="25.01" r="10.01" />
-            </g>
-          </svg>
-          <div class="col-100" style="float: left;">
-            <p style="float: left;">0</p>
-            <p style="float: right;">800</p>
           </div>
-        </div>
-        <div class="grid-item col-flex">
-          <h3 style="width: 100%;">SAT</h3>
-          <p>Math</p>
-          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 500 50.03" style="enable-background:new 0 0 500 50.03;" xml:space="preserve">
-            <style type="text/css">
-              .st0 {
-                clip-path: url(#SVGID_2_);
-                fill: none;
-                stroke: #FFFFFF;
-                stroke-width: 50.0291;
-                stroke-linecap: round;
-              }
+          <div class="grid-item col-flex">
+            <!-- Timeline  SAT-->
+            <h3 style="width: 100%;">SAT</h3>
+            <p>Critical Reading</p>
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 500 50.03" style="enable-background:new 0 0 500 50.03;" xml:space="preserve">
+              <style type="text/css">
+                .st0 {
+                  clip-path: url(#SVGID_2_);
+                  fill: none;
+                  stroke: #FFFFFF;
+                  stroke-width: 50.0291;
+                  stroke-linecap: round;
+                }
 
-              .st1 {
-                fill: none;
-                stroke: #636466;
-                stroke-width: 2.0012;
-                stroke-linecap: round;
-              }
+                .st1 {
+                  fill: none;
+                  stroke: #636466;
+                  stroke-width: 2.0012;
+                  stroke-linecap: round;
+                }
 
-              .st2 {
-                fill: none;
-                stroke: #231F20;
-                stroke-width: 2.0012;
-                stroke-linecap: round;
-              }
+                .st2 {
+                  fill: none;
+                  stroke: #231F20;
+                  stroke-width: 2.0012;
+                  stroke-linecap: round;
+                }
 
-              .st3 {
-                clip-path: url(#SVGID_4_);
-                fill: none;
-                stroke: #08BCC1;
-                stroke-width: 37.5218;
-                stroke-linecap: round;
-              }
+                .st3 {
+                  clip-path: url(#SVGID_4_);
+                  fill: none;
+                  stroke: #08BCC1;
+                  stroke-width: 37.5218;
+                  stroke-linecap: round;
+                }
 
-              .st4 {
-                clip-path: url(#SVGID_4_);
-                fill: none;
-                stroke: #231F20;
-                stroke-width: 6.2536;
-              }
-            </style>
-            <g>
-              <defs>
-                <rect id="SVGID_1_" x="8.64" width="482.71" height="50.03" />
-              </defs>
-              <clipPath id="SVGID_2_">
-                <use xlink:href="#SVGID_1_" style="overflow:visible;" />
-              </clipPath>
-              <line class="st0" x1="33.66" y1="25.01" x2="466.34" y2="25.01" />
-            </g>
-            <line class="st1" x1="143.04" y1="15.01" x2="143.04" y2="35.02" />
-            <line class="st1" x1="76.4" y1="15.01" x2="76.4" y2="35.02" />
-            <line class="st1" x1="276.43" y1="15.01" x2="276.43" y2="35.02" />
-            <line class="st2" x1="343.18" y1="15.01" x2="343.18" y2="35.02" />
-            <line class="st1" x1="462.62" y1="15.01" x2="462.62" y2="35.02" />
-            <line class="st1" x1="209.67" y1="15.01" x2="209.67" y2="35.02" />
-            <line class="st1" x1="396.48" y1="15.01" x2="396.48" y2="35.02" />
-            <g>
-              <defs>
-                <rect id="SVGID_3_" x="8.64" width="482.71" height="50.03" />
-              </defs>
-              <clipPath id="SVGID_4_">
-                <use xlink:href="#SVGID_3_" style="overflow:visible;" />
-              </clipPath>
-              <line class="st3" x1="331.3" y1="25.01" x2="372" y2="25.01" />
-              <circle class="st4" cx="330.79" cy="25.01" r="10.01" />
-              <circle class="st4" cx="372.57" cy="25.01" r="10.01" />
-            </g>
-          </svg>
-          <div class="col-100" style="float: left;">
-            <p style="float: left;">0</p>
-            <p style="float: right;">800</p>
+                .st4 {
+                  clip-path: url(#SVGID_4_);
+                  fill: none;
+                  stroke: #231F20;
+                  stroke-width: 6.2536;
+                }
+              </style>
+              <g>
+                <defs>
+                  <rect id="SVGID_1_" x="8.64" width="482.71" height="50.03" />
+                </defs>
+                <clipPath id="SVGID_2_">
+                  <use xlink:href="#SVGID_1_" style="overflow:visible;" />
+                </clipPath>
+                <line class="st0" x1="33.66" y1="25.01" x2="466.34" y2="25.01" />
+              </g>
+              <line class="st1" x1="143.04" y1="15.01" x2="143.04" y2="35.02" />
+              <line class="st1" x1="76.4" y1="15.01" x2="76.4" y2="35.02" />
+              <line class="st1" x1="276.43" y1="15.01" x2="276.43" y2="35.02" />
+              <line class="st2" x1="343.18" y1="15.01" x2="343.18" y2="35.02" />
+              <line class="st1" x1="462.62" y1="15.01" x2="462.62" y2="35.02" />
+              <line class="st1" x1="209.67" y1="15.01" x2="209.67" y2="35.02" />
+              <line class="st1" x1="396.48" y1="15.01" x2="396.48" y2="35.02" />
+              <g>
+                <defs>
+                  <rect id="SVGID_3_" x="8.64" width="482.71" height="50.03" />
+                </defs>
+                <clipPath id="SVGID_4_">
+                  <use xlink:href="#SVGID_3_" style="overflow:visible;" />
+                </clipPath>
+                <line class="st3" x1="331.3" y1="25.01" x2="372" y2="25.01" />
+                <circle class="st4" cx="330.79" cy="25.01" r="10.01" />
+                <circle class="st4" cx="372.57" cy="25.01" r="10.01" />
+              </g>
+            </svg>
+            <div class="col-100" style="float: left;">
+              <p style="float: left;">0</p>
+              <p style="float: right;">800</p>
+            </div>
+          </div>
+          <div class="grid-item col-flex">
+            <h3 style="width: 100%;">SAT</h3>
+            <p>Math</p>
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 500 50.03" style="enable-background:new 0 0 500 50.03;" xml:space="preserve">
+              <style type="text/css">
+                .st0 {
+                  clip-path: url(#SVGID_2_);
+                  fill: none;
+                  stroke: #FFFFFF;
+                  stroke-width: 50.0291;
+                  stroke-linecap: round;
+                }
+
+                .st1 {
+                  fill: none;
+                  stroke: #636466;
+                  stroke-width: 2.0012;
+                  stroke-linecap: round;
+                }
+
+                .st2 {
+                  fill: none;
+                  stroke: #231F20;
+                  stroke-width: 2.0012;
+                  stroke-linecap: round;
+                }
+
+                .st3 {
+                  clip-path: url(#SVGID_4_);
+                  fill: none;
+                  stroke: #08BCC1;
+                  stroke-width: 37.5218;
+                  stroke-linecap: round;
+                }
+
+                .st4 {
+                  clip-path: url(#SVGID_4_);
+                  fill: none;
+                  stroke: #231F20;
+                  stroke-width: 6.2536;
+                }
+              </style>
+              <g>
+                <defs>
+                  <rect id="SVGID_1_" x="8.64" width="482.71" height="50.03" />
+                </defs>
+                <clipPath id="SVGID_2_">
+                  <use xlink:href="#SVGID_1_" style="overflow:visible;" />
+                </clipPath>
+                <line class="st0" x1="33.66" y1="25.01" x2="466.34" y2="25.01" />
+              </g>
+              <line class="st1" x1="143.04" y1="15.01" x2="143.04" y2="35.02" />
+              <line class="st1" x1="76.4" y1="15.01" x2="76.4" y2="35.02" />
+              <line class="st1" x1="276.43" y1="15.01" x2="276.43" y2="35.02" />
+              <line class="st2" x1="343.18" y1="15.01" x2="343.18" y2="35.02" />
+              <line class="st1" x1="462.62" y1="15.01" x2="462.62" y2="35.02" />
+              <line class="st1" x1="209.67" y1="15.01" x2="209.67" y2="35.02" />
+              <line class="st1" x1="396.48" y1="15.01" x2="396.48" y2="35.02" />
+              <g>
+                <defs>
+                  <rect id="SVGID_3_" x="8.64" width="482.71" height="50.03" />
+                </defs>
+                <clipPath id="SVGID_4_">
+                  <use xlink:href="#SVGID_3_" style="overflow:visible;" />
+                </clipPath>
+                <line class="st3" x1="331.3" y1="25.01" x2="372" y2="25.01" />
+                <circle class="st4" cx="330.79" cy="25.01" r="10.01" />
+                <circle class="st4" cx="372.57" cy="25.01" r="10.01" />
+              </g>
+            </svg>
+            <div class="col-100" style="float: left;">
+              <p style="float: left;">0</p>
+              <p style="float: right;">800</p>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-</div>
 
-<div id="academics-image">
-  <div class="caption-overlay-mobile-wrapper">
-    <div class="caption-overlay-mobile">
-      <p class="m0">The student-run Biodiesel Program is the first school operation licensed to sell reclaimed fuel in the U.S.</p>
+  <div id="academics-image">
+    <div class="caption-overlay-mobile-wrapper">
+      <div class="caption-overlay-mobile">
+        <p class="m0">The student-run Biodiesel Program is the first school operation licensed to sell reclaimed fuel in the U.S.</p>
+      </div>
     </div>
   </div>
-</div>
-<div id="academics-content-mobile" class="drawer-mobile" style="position: relative;">
-  <!-- MODAAL -->
-  <!-- STUDENT LIFE -->
+  <div id="academics-content-mobile" class="drawer-mobile" style="position: relative;">
+    <!-- MODAAL -->
+    <!-- STUDENT LIFE -->
 <script>
 // Get the modal
 var modal = document.getElementById("myModal");
@@ -1394,84 +1419,83 @@ window.onclick = function(event) {
   </div>
 </div>
 
-  <div class="container-fluid">
-    <div class="content-columns-varied eight-column-four-column-build"><!-- column-build -->
-      <div class="grid-wrapper">
-        <div class="grid-item col-flex">
-          <h2 class="mt0 mb2">ACADEMICS</h2>
-          <div style="display: inline;">
-            <img class="inline-icon" src="../images/Gold-open-book-with-logo_icon-500x500.png" height="20%" width="20%" class="mr2" alt="">
-            <p><span style="font-family: 'Antenna Bold', sans-serif;">At Loyola,</span> you’ll dig deeply into what interests you and make your own discoveries. Our academic programs will challenge you to do more and be more. You’ll also have the option of further professional development with a dual degree, double major, or five-year joint bachelor’s and master’s degree.
-            </p>
-            <p class="drawer-footnote"><span><a href="luc.edu/academics">LEARN MORE</a></span> LUC.edu/academics</p>
+    <div class="container-fluid">
+      <div class="content-columns-varied eight-column-four-column-build">
+        <!-- column-build -->
+        <div class="grid-wrapper">
+          <div class="grid-item col-flex">
+            <h2 class="mt0 mb2">ACADEMICS</h2>
+            <div style="display: inline;">
+              <img class="inline-icon" src="../images/Gold-open-book-with-logo_icon-500x500.png" height="20%" width="20%" class="mr2" alt="">
+              <p><span style="font-family: 'Antenna Bold', sans-serif;">At Loyola,</span> you’ll dig deeply into what interests you and make your own discoveries. Our academic programs will challenge you to do more and be more. You’ll also have the
+                option of further professional development with a dual degree, double major, or five-year joint bachelor’s and master’s degree.
+              </p>
+              <p class="drawer-footnote"><span><a href="luc.edu/academics">LEARN MORE</a></span> LUC.edu/academics</p>
+            </div>
+          </div>
+          <div id="stat-carrousel" class="grid-item col-flex">
+            <img style="display: block; margin: 0; padding: 0; width: 100%; height: auto;" src="http://via.placeholder.com/1600x900">
           </div>
         </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- STAT PANEL -->
+  <div id="intramural-sports" class="stat-panel">
+    <div class="container-fluid">
+      <div class="content-columns-varied eight-column-four-column-build">
+        <!-- column-build -->
         <div id="stat-carrousel" class="grid-item col-flex">
-          <img style="display: block; margin: 0; padding: 0; width: 100%; height: auto;" src="http://via.placeholder.com/1600x900">
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- STAT PANEL -->
-<div id="intramural-sports" class="stat-panel">
-  <div class="container-fluid">
-    <div class="content-columns-varied eight-column-four-column-build"><!-- column-build -->
-      <div id="stat-carrousel" class="grid-item col-flex">
-        <div class="stat-overlay bg-gold">
-          <h2 class="stat-number-large m0 mr1">#1</h2>
-          <h6 class="m0">College for intramural sports - bestcolleges.com</h6>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- STUDENT LIFE CONTENT -->
-<div id="student-life-image">
-  <div class="caption-overlay-mobile-wrapper">
-    <div class="caption-overlay-mobile">
-      <p class="m0">Students participate in activities at the Loyola University Retreat and Ecology Campus (LUREC).</p>
-    </div>
-  </div>
-</div>
-<div id="student-life-content-mobile" class="drawer-mobile">
-  <div class="container-fluid">
-    <div class="content-columns-varied eight-column-four-column-build"><!-- column-build -->
-      <div class="grid-wrapper">
-        <div class="grid-item col-flex">
-          <h2 class="mt0 mb2">STUDENT LIFE</h2>
-          <div style="display: inline;">
-            <img class="inline-icon" src="../images/alarm-clock_icon_500x500.png" alt="" height="20%" width="20%" class="mr2">
-            <p><span style="font-family: 'Antenna Bold', sans-serif;">There's always something</span> to do and somewhere to be— volunteer, advocate, or enjoy a NCAA Division 1 Rambler game. The Loyola Experience is about finding your place and connecting with new friends. With more than 250 student organizations to choose from, you’re sure to find something that interests you.</p>
-            <p class="drawer-footnote"><span><a href="luc.edu/academics">LEARN MORE</a></span> LUC.edu/studentlife</p>
+          <div class="stat-overlay bg-gold">
+            <h2 class="stat-number-large m0 mr1">#1</h2>
+            <h6 class="m0">College for intramural sports - bestcolleges.com</h6>
           </div>
         </div>
-        <div class="grid-item col-flex">
-          <div id="stat-carrousel" class="grid-item col-flex">
-            <div class="js-carrousel">
-              <div class="js-carrousel__container" style="text-align: center;"
-                data-carrousel-prefix-class="news"
-                data-carrousel-transition="fade"
-                data-carrousel-hx="h2"
-                data-carrousel-span-text="Panneau"
-                data-carousel-hide-arrows-focus="false"
-                data-carrousel-btn-previous-img="images/ui-arrow-carrousel-previous-maroon.png"
-                data-carrousel-btn-next-img="images/ui-arrow-carrousel-next-maroon.png"
-                data-carrousel-btn-previous-text="See previous content"
-                data-carrousel-btn-next-text="See next content">
-                <div class="js-carrousel__content">
-                  <h2 class="stat-number-large m0">23</h2>
-                  <h3 class="stat-header-large m0">Residence Halls</h3>
-                </div>
-                <div class="js-carrousel__content">
-                  <h2 class="stat-number-large m0">13</h2>
-                  <h3 class="stat-header-large m0">MEN’S AND WOMEN’SNCAA D1 ATHLETIC PROGRAMS</h3>
-                </div>
-                <div class="js-carrousel__content">
-                  <h2 class="stat-number-large m0">20</h2>
-                  <h3 class="stat-header-large m0">SORORITIES AND FRATERNITIES</h3>
+      </div>
+    </div>
+  </div>
+
+  <!-- STUDENT LIFE CONTENT -->
+  <div id="student-life-image">
+    <div class="caption-overlay-mobile-wrapper">
+      <div class="caption-overlay-mobile">
+        <p class="m0">Students participate in activities at the Loyola University Retreat and Ecology Campus (LUREC).</p>
+      </div>
+    </div>
+  </div>
+  <div id="student-life-content-mobile" class="drawer-mobile">
+    <div class="container-fluid">
+      <div class="content-columns-varied eight-column-four-column-build">
+        <!-- column-build -->
+        <div class="grid-wrapper">
+          <div class="grid-item col-flex">
+            <h2 class="mt0 mb2">STUDENT LIFE</h2>
+            <div style="display: inline;">
+              <img class="inline-icon" src="../images/alarm-clock_icon_500x500.png" alt="" height="20%" width="20%" class="mr2">
+              <p><span style="font-family: 'Antenna Bold', sans-serif;">There's always something</span> to do and somewhere to be— volunteer, advocate, or enjoy a NCAA Division 1 Rambler game. The Loyola Experience is about finding your place and
+                connecting with new friends. With more than 250 student organizations to choose from, you’re sure to find something that interests you.</p>
+              <p class="drawer-footnote"><span><a href="luc.edu/academics">LEARN MORE</a></span> LUC.edu/studentlife</p>
+            </div>
+          </div>
+          <div class="grid-item col-flex">
+            <div id="stat-carrousel" class="grid-item col-flex">
+              <div class="js-carrousel">
+                <div class="js-carrousel__container" style="text-align: center;" data-carrousel-prefix-class="news" data-carrousel-transition="fade" data-carrousel-hx="h2" data-carrousel-span-text="Panneau" data-carousel-hide-arrows-focus="false"
+                  data-carrousel-btn-previous-img="images/ui-arrow-carrousel-previous-maroon.png" data-carrousel-btn-next-img="images/ui-arrow-carrousel-next-maroon.png" data-carrousel-btn-previous-text="See previous content"
+                  data-carrousel-btn-next-text="See next content">
+                  <div class="js-carrousel__content">
+                    <h2 class="stat-number-large m0">23</h2>
+                    <h3 class="stat-header-large m0">Residence Halls</h3>
+                  </div>
+                  <div class="js-carrousel__content">
+                    <h2 class="stat-number-large m0">13</h2>
+                    <h3 class="stat-header-large m0">MEN’S AND WOMEN’SNCAA D1 ATHLETIC PROGRAMS</h3>
+                  </div>
+                  <div class="js-carrousel__content">
+                    <h2 class="stat-number-large m0">20</h2>
+                    <h3 class="stat-header-large m0">SORORITIES AND FRATERNITIES</h3>
+                  </div>
                 </div>
               </div>
             </div>
@@ -1480,55 +1504,50 @@ window.onclick = function(event) {
       </div>
     </div>
   </div>
-</div>
 
-<!-- LEARN BY DOING CONTENT -->
-<div id="learn-by-doing-image">
-  <div class="caption-overlay-mobile-wrapper">
-    <div class="caption-overlay-mobile">
-      <p class="m0">Internship sites include Chicago Bulls, WXRT Radio, the Environmental Protection Agency, and Deloitte.</p>
+  <!-- LEARN BY DOING CONTENT -->
+  <div id="learn-by-doing-image">
+    <div class="caption-overlay-mobile-wrapper">
+      <div class="caption-overlay-mobile">
+        <p class="m0">Internship sites include Chicago Bulls, WXRT Radio, the Environmental Protection Agency, and Deloitte.</p>
+      </div>
     </div>
   </div>
-</div>
-<div id="learn-by-doing-content-mobile" class="drawer-mobile">
-  <div class="container-fluid">
-    <div class="content-columns-varied eight-column-four-column-build"><!-- column-build -->
-      <div class="grid-wrapper">
-        <div class="grid-item col-flex">
-          <h2 class="mt0 mb2">LEARN BY DOING</h2>
-          <div style="display: inline;">
-            <img class="inline-icon" src="../images/gold-fill-lightbulb_icon_500x500.png" alt="" height="20%" width="20%" class="mr1">
-            <p><span style="font-family: 'Antenna Bold', sans-serif;">Loyola gives you</span> exciting opportunities for hands-on learning. Internships, research, and community service get you outside the classroom, working with non-profits and Fortune 500 companies. National sports teams, pharmaceuticals, software companies— when it comes to real-world experience, Loyola has you covered.
-            </p>
-            <p class="drawer-footnote">
-              <span><a href="luc.edu/experiential">LEARN MORE</a></span> LUC.edu/experiential • LUC.edu/career
-            </p>
+  <div id="learn-by-doing-content-mobile" class="drawer-mobile">
+    <div class="container-fluid">
+      <div class="content-columns-varied eight-column-four-column-build">
+        <!-- column-build -->
+        <div class="grid-wrapper">
+          <div class="grid-item col-flex">
+            <h2 class="mt0 mb2">LEARN BY DOING</h2>
+            <div style="display: inline;">
+              <img class="inline-icon" src="../images/gold-fill-lightbulb_icon_500x500.png" alt="" height="20%" width="20%" class="mr1">
+              <p><span style="font-family: 'Antenna Bold', sans-serif;">Loyola gives you</span> exciting opportunities for hands-on learning. Internships, research, and community service get you outside the classroom, working with non-profits and
+                Fortune 500 companies. National sports teams, pharmaceuticals, software companies— when it comes to real-world experience, Loyola has you covered.
+              </p>
+              <p class="drawer-footnote">
+                <span><a href="luc.edu/experiential">LEARN MORE</a></span> LUC.edu/experiential • LUC.edu/career
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="grid-item col-flex">
-          <div id="stat-carrousel" class="grid-item col-flex">
-            <div class="js-carrousel">
-              <div class="js-carrousel__container" style="text-align: center;"
-                data-carrousel-prefix-class="news"
-                data-carrousel-transition="fade"
-                data-carrousel-hx="h2"
-                data-carrousel-span-text="Panneau"
-                data-carousel-hide-arrows-focus="false"
-                data-carrousel-btn-previous-img="images/ui-arrow-carrousel-previous-maroon.png"
-                data-carrousel-btn-next-img="images/ui-arrow-carrousel-next-maroon.png"
-                data-carrousel-btn-previous-text="See previous content"
-                data-carrousel-btn-next-text="See next content">
-                <div class="js-carrousel__content">
-                  <h2 class="stat-number-large m0">892</h2>
-                  <h3 class="stat-header-large m0">ORGANIZATIONS HOSTED STUDENTS FOR ACADEMIC INTERNSHIPS, SERVICELEARNING, AND RESEARCH</h3>
-                </div>
-                <div class="js-carrousel__content">
-                  <h2 class="stat-number-large m0">14:1</h2>
-                  <h3 class="stat-header-large m0">Student-teacher ratio</h3>
-                </div>
-                <div class="js-carrousel__content">
-                  <h2 class="stat-number-large m0">26</h2>
-                  <h3 class="stat-header-large m0">Students, per class <span>- on average</span></h3>
+          <div class="grid-item col-flex">
+            <div id="stat-carrousel" class="grid-item col-flex">
+              <div class="js-carrousel">
+                <div class="js-carrousel__container" style="text-align: center;" data-carrousel-prefix-class="news" data-carrousel-transition="fade" data-carrousel-hx="h2" data-carrousel-span-text="Panneau" data-carousel-hide-arrows-focus="false"
+                  data-carrousel-btn-previous-img="images/ui-arrow-carrousel-previous-maroon.png" data-carrousel-btn-next-img="images/ui-arrow-carrousel-next-maroon.png" data-carrousel-btn-previous-text="See previous content"
+                  data-carrousel-btn-next-text="See next content">
+                  <div class="js-carrousel__content">
+                    <h2 class="stat-number-large m0">892</h2>
+                    <h3 class="stat-header-large m0">ORGANIZATIONS HOSTED STUDENTS FOR ACADEMIC INTERNSHIPS, SERVICELEARNING, AND RESEARCH</h3>
+                  </div>
+                  <div class="js-carrousel__content">
+                    <h2 class="stat-number-large m0">14:1</h2>
+                    <h3 class="stat-header-large m0">Student-teacher ratio</h3>
+                  </div>
+                  <div class="js-carrousel__content">
+                    <h2 class="stat-number-large m0">26</h2>
+                    <h3 class="stat-header-large m0">Students, per class <span>- on average</span></h3>
+                  </div>
                 </div>
               </div>
             </div>
@@ -1537,55 +1556,50 @@ window.onclick = function(event) {
       </div>
     </div>
   </div>
-</div>
 
-<!-- STUDY ABROAD CONTENT -->
-<div id="study-abroad-image">
-  <div class="caption-overlay-mobile-wrapper">
-    <div class="caption-overlay-mobile">
-      <p class="m0">Students can tour the historical sites of Rome, Italy in onsite classes.</p>
+  <!-- STUDY ABROAD CONTENT -->
+  <div id="study-abroad-image">
+    <div class="caption-overlay-mobile-wrapper">
+      <div class="caption-overlay-mobile">
+        <p class="m0">Students can tour the historical sites of Rome, Italy in onsite classes.</p>
+      </div>
     </div>
   </div>
-</div>
-<div id="study-abroad-content-mobile" class="drawer-mobile">
-  <div class="container-fluid">
-    <div class="content-columns-varied eight-column-four-column-build"><!-- column-build -->
-      <div class="grid-wrapper">
-        <div class="grid-item col-flex">
-          <h2 class="mt0 mb2">STUDY ABROAD</h2>
-          <div style="display: inline;">
-            <img class="inline-icon" src="../images/patina-fill-world_icon_500x500.png" alt="" height="18%" width="18%" class="mr3">
-            <p><span style="font-family: 'Antenna Bold', sans-serif;">Whether you travel far</span> or stay close to our Chicago home, you will have plenty of opportunities to expand your horizons in over 150 study abroad programs in 60 countries. Semester, summer, and academic year-long programs are available.
-            </p>
-            <p class="drawer-footnote">
-              <p class="drawer-footnote"><span><a href="luc.edu/romestart">LEARN MORE</a> LUC.edu/romestart • LUC.edu/studyabroad
-            </p>
+  <div id="study-abroad-content-mobile" class="drawer-mobile">
+    <div class="container-fluid">
+      <div class="content-columns-varied eight-column-four-column-build">
+        <!-- column-build -->
+        <div class="grid-wrapper">
+          <div class="grid-item col-flex">
+            <h2 class="mt0 mb2">STUDY ABROAD</h2>
+            <div style="display: inline;">
+              <img class="inline-icon" src="../images/patina-fill-world_icon_500x500.png" alt="" height="18%" width="18%" class="mr3">
+              <p><span style="font-family: 'Antenna Bold', sans-serif;">Whether you travel far</span> or stay close to our Chicago home, you will have plenty of opportunities to expand your horizons in over 150 study abroad programs in 60 countries.
+                Semester, summer, and academic year-long programs are available.
+              </p>
+              <p class="drawer-footnote">
+                <p class="drawer-footnote"><span><a href="luc.edu/romestart">LEARN MORE</a> LUC.edu/romestart • LUC.edu/studyabroad
+                </p>
+            </div>
           </div>
-        </div>
-        <div class="grid-item col-flex">
-          <div id="stat-carrousel" class="grid-item col-flex">
-            <div class="js-carrousel">
-              <div class="js-carrousel__container" style="text-align: center;"
-                data-carrousel-prefix-class="news"
-                data-carrousel-transition="fade"
-                data-carrousel-hx="h2"
-                data-carrousel-span-text="Panneau"
-                data-carousel-hide-arrows-focus="false"
-                data-carrousel-btn-previous-img="images/ui-arrow-carrousel-previous-maroon.png"
-                data-carrousel-btn-next-img="images/ui-arrow-carrousel-next-maroon.png"
-                data-carrousel-btn-previous-text="See previous content"
-                data-carrousel-btn-next-text="See next content">
-                <div class="js-carrousel__content">
-                  <h2 class="stat-number-large m0">80+</h2>
-                  <h3 class="stat-header-large m0">Undergraduate majors offered</h3>
-                </div>
-                <div class="js-carrousel__content">
-                  <h2 class="stat-number-large m0">14:1</h2>
-                  <h3 class="stat-header-large m0">Student-teacher ratio</h3>
-                </div>
-                <div class="js-carrousel__content">
-                  <h2 class="stat-number-large m0">26</h2>
-                  <h3 class="stat-header-large m0">Students, per class <span>- on average</span></h3>
+          <div class="grid-item col-flex">
+            <div id="stat-carrousel" class="grid-item col-flex">
+              <div class="js-carrousel">
+                <div class="js-carrousel__container" style="text-align: center;" data-carrousel-prefix-class="news" data-carrousel-transition="fade" data-carrousel-hx="h2" data-carrousel-span-text="Panneau" data-carousel-hide-arrows-focus="false"
+                  data-carrousel-btn-previous-img="images/ui-arrow-carrousel-previous-maroon.png" data-carrousel-btn-next-img="images/ui-arrow-carrousel-next-maroon.png" data-carrousel-btn-previous-text="See previous content"
+                  data-carrousel-btn-next-text="See next content">
+                  <div class="js-carrousel__content">
+                    <h2 class="stat-number-large m0">80+</h2>
+                    <h3 class="stat-header-large m0">Undergraduate majors offered</h3>
+                  </div>
+                  <div class="js-carrousel__content">
+                    <h2 class="stat-number-large m0">14:1</h2>
+                    <h3 class="stat-header-large m0">Student-teacher ratio</h3>
+                  </div>
+                  <div class="js-carrousel__content">
+                    <h2 class="stat-number-large m0">26</h2>
+                    <h3 class="stat-header-large m0">Students, per class <span>- on average</span></h3>
+                  </div>
                 </div>
               </div>
             </div>
@@ -1594,92 +1608,95 @@ window.onclick = function(event) {
       </div>
     </div>
   </div>
-</div>
 
-<!-- AFFORDABILITY -->
-<div id="first-year-content-mobile" class="drawer-mobile" style="position: relative;">
-  <div class="container-fluid">
-    <div class="content-columns-varied one-column-build"><!-- column-build -->
-      <div class="grid-wrapper">
-        <div class="grid-item col-flex">
-          <h2>AFFORDABILITY</h2>
-          <p><span class="leadin">Loyola is committed</span> to helping students through the financial aid process. In addition to merit scholarships awarded at the time of admission, Loyola offers additional scholarships based on talent and academic interest. Students may also qualify for outside scholarships, grants, loans, federal work-study, or budget payment plans.</p>
+  <!-- AFFORDABILITY -->
+  <div id="first-year-content-mobile" class="drawer-mobile" style="position: relative;">
+    <div class="container-fluid">
+      <div class="content-columns-varied one-column-build">
+        <!-- column-build -->
+        <div class="grid-wrapper">
+          <div class="grid-item col-flex">
+            <h2>AFFORDABILITY</h2>
+            <p><span class="leadin">Loyola is committed</span> to helping students through the financial aid process. In addition to merit scholarships awarded at the time of admission, Loyola offers additional scholarships based on talent and
+              academic interest. Students may also qualify for outside scholarships, grants, loans, federal work-study, or budget payment plans.</p>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="content-columns-varied one-column-build"><!-- column-build -->
-      <div class="grid-wrapper">
-        <div class="grid-item col-flex">
-          <div class="o-container u-center-block" style="display: flex;">
-            <div class="tuition-table">
-              <div class="c-table">
-                <div class="c-table__row">
-                  <div class="c-table__cell" style="border: none; height: 2em;">
-                    <h6 style="font-family: antenna-black; font-size: 1em; color: black;" class="m0">2020-21 TUITION</h6>
+      <div class="content-columns-varied one-column-build">
+        <!-- column-build -->
+        <div class="grid-wrapper">
+          <div class="grid-item col-flex">
+            <div class="o-container u-center-block" style="display: flex;">
+              <div class="tuition-table">
+                <div class="c-table">
+                  <div class="c-table__row">
+                    <div class="c-table__cell" style="border: none; height: 2em;">
+                      <h6 style="font-family: antenna-black; font-size: 1em; color: black;" class="m0">2020-21 TUITION</h6>
+                    </div>
+                    <div class="c-table__cell" style="background-color: #daa439; border: none; border-radius: 8px 0 0 0; display: block; height: 2em; overflow: hidden;">
+                      <h6 class="m0" style="font-family: antenna-black; font-size: 1em;">FULL-TIME</h6>
+                    </div>
+                    <div class="c-table__cell" style="background-color: #0096a0; border: none; border-radius: 0 8px 0 0; display: block; height: 2em;">
+                      <h6 class="m0" style="color: black; font-family: antenna-black; font-size: 1em; overflow: hidden;">PART-TIME</h6>
+                    </div>
                   </div>
-                  <div class="c-table__cell" style="background-color: #daa439; border: none; border-radius: 8px 0 0 0; display: block; height: 2em; overflow: hidden;">
-                    <h6 class="m0" style="font-family: antenna-black; font-size: 1em;">FULL-TIME</h6>
-                  </div>
-                  <div class="c-table__cell" style="background-color: #0096a0; border: none; border-radius: 0 8px 0 0; display: block; height: 2em;">
-                    <h6 class="m0" style="color: black; font-family: antenna-black; font-size: 1em; overflow: hidden;">PART-TIME</h6>
-                  </div>
-                </div>
-                <div class="c-table__row c-table__row--heading cell-heading-border" style="height: 55px; border-bottom: 1px solid black;">
-                  <span class="c-table__cell" style="border-right: solid 1px black;">
-                    <h6 class="m0" style="color: black;">TUITION</h6>
-                  </span>
-                  <span class="c-table__cell" style="border-right: solid 1px black;">
-                    <h6 class="m0" style="color: black;">$ 45,500</h6>
-                  </span>
-                  <span class="c-table__cell no-border-right">
-                    <h6 class="m0" style="color: black;">$ 840/ credit hour</h6>
-                  </span>
-                </div>
-                <div class="c-table__row" style="height: 70px; border-bottom: solid 1px black;">
-                  <span class="c-table__cell" style="border-right: solid 1px black;">
-                    <h6 class="m0" style="color: black;">NURSING TUITION</h6>
-                  </span>
-                  <span class="c-table__cell" style="border-right: solid 1px black;">
-                    <h6 class="m0" style="color: black;">$ 46,500</h6>
-                  </span>
-                  <span class="c-table__cell no-border-right" style="border-right: solid 1px black;">
+                  <div class="c-table__row c-table__row--heading cell-heading-border" style="height: 55px; border-bottom: 1px solid black;">
+                    <span class="c-table__cell" style="border-right: solid 1px black;">
+                      <h6 class="m0" style="color: black;">TUITION</h6>
+                    </span>
+                    <span class="c-table__cell" style="border-right: solid 1px black;">
+                      <h6 class="m0" style="color: black;">$ 45,500</h6>
+                    </span>
                     <span class="c-table__cell no-border-right">
-                      <h6 class="m0" style="color: black;">$ 940/ credit hour</h6>
+                      <h6 class="m0" style="color: black;">$ 840/ credit hour</h6>
                     </span>
-                  </span>
-                </div>
-                <div class="c-table__row" style="height: 90px; border-bottom: solid 1px black;">
-                  <span class="c-table__cell" style="border-right: solid 1px black;">
-                    <h6 class="m0" style="color: black;">ROOM AND BOARD (Average double-size, freshman room)</h6>
-                  </span>
-                  <span class="c-table__cell" style="border-right: solid 1px black;">
-                    <h6 class="m0" style="color: black;">$ 14,580</h6>
+                  </div>
+                  <div class="c-table__row" style="height: 70px; border-bottom: solid 1px black;">
+                    <span class="c-table__cell" style="border-right: solid 1px black;">
+                      <h6 class="m0" style="color: black;">NURSING TUITION</h6>
+                    </span>
+                    <span class="c-table__cell" style="border-right: solid 1px black;">
+                      <h6 class="m0" style="color: black;">$ 46,500</h6>
+                    </span>
                     <span class="c-table__cell no-border-right" style="border-right: solid 1px black;">
+                      <span class="c-table__cell no-border-right">
+                        <h6 class="m0" style="color: black;">$ 940/ credit hour</h6>
+                      </span>
                     </span>
-                  </span>
-                  <span class="c-table__cell no-border-right">
-                  </span>
+                  </div>
+                  <div class="c-table__row" style="height: 90px; border-bottom: solid 1px black;">
+                    <span class="c-table__cell" style="border-right: solid 1px black;">
+                      <h6 class="m0" style="color: black;">ROOM AND BOARD (Average double-size, freshman room)</h6>
+                    </span>
+                    <span class="c-table__cell" style="border-right: solid 1px black;">
+                      <h6 class="m0" style="color: black;">$ 14,580</h6>
+                      <span class="c-table__cell no-border-right" style="border-right: solid 1px black;">
+                      </span>
+                    </span>
+                    <span class="c-table__cell no-border-right">
+                    </span>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="content-columns-varied one-column-build"><!-- column-build -->
-      <div class="grid-wrapper">
-        <div class="grid-item col-flex">
-          <h2>$27,700</h2>
-          <h3>AVERAGE FINANCIAL ASSISTANCE AWARD</h3>
-          <h6 class="m0">Freshman class, 2019</h6>
-          <hr style="background: #272727;">
-          <h3>NET PRICE CALCULATOR</h3>
-          <p>Check out our <a class="cta" href="">Net Price Calculator</a>, which provides an early approximation of what a new first-year, undergraduate student can expect to pay to attend Loyola.</p>
+      <div class="content-columns-varied one-column-build">
+        <!-- column-build -->
+        <div class="grid-wrapper">
+          <div class="grid-item col-flex">
+            <h2>$27,700</h2>
+            <h3>AVERAGE FINANCIAL ASSISTANCE AWARD</h3>
+            <h6 class="m0">Freshman class, 2019</h6>
+            <hr style="background: #272727;">
+            <h3>NET PRICE CALCULATOR</h3>
+            <p>Check out our <a class="cta" href="">Net Price Calculator</a>, which provides an early approximation of what a new first-year, undergraduate student can expect to pay to attend Loyola.</p>
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
 
 </section>
 
@@ -2029,9 +2046,26 @@ window.onclick = function(event) {
 
 </section>
 
+  <!-- MOBILE CONTENT-MAJORS -->
+  <!-- MAJORS CONTENT -->
+<div id="majors-content-mobile" class="drawer-mobile">
+  <div class="content-columns-varied one-column-build">
+    <!-- column-build -->
+    <div class="grid-wrapper">
+      <div class="grid-item col-flex">
+        <h2 class="mt0 mb2">UNDERGRADUATE MAJORS</h2>
+        <p>You can choose from more than 80 college majors and more than 80 minors, and that's not including our interdisciplinary programs and five-year bachelor's/master's degree programs.</p>
+        <div class="button-patina">
+          <a class="button" title="title-here" href="https://www.luc.edu/undergrad/academics/majors/">Find your major</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
   <!-- CTA -->
   <!-- CTA WITH OVERLAY -->
-<div class="cta-container-fluid" style="position: relative;">
+<div id="cta-content" class="cta-container-fluid" style="position: relative;">
   <!-- MODAAL -->
   <!-- VIRTUAL TOUR -->
 <script>
@@ -2083,18 +2117,15 @@ window.onclick = function(event) {
   <div class="content-columns-varied three-column-build"><!-- column-build -->
     <div class="grid-wrapper">
       <div class="grid-item col-flex button-patina">
-        <a class="button"title="title-here"
-href="https://www.luc.edu/">Come visit</a>
+        <a class="button"title="title-here" href="https://www.luc.edu/">Come visit</a>
         <p class="audience-readout">Lorem ipsum hereum</p>
       </div>
       <div class="grid-item col-flex button-patina">
-        <a class="button"title="title-here"
-href="https://www.luc.edu/">Apply online</a>
+        <a class="button"title="title-here" href="https://www.luc.edu/">Apply online</a>
         <p class="audience-readout">Lorem ipsum hereum</p>
       </div>
       <div class="grid-item col-flex button-patina">
-        <a class="button"title="title-here"
-href="https://www.luc.edu/">Use the common app</a>
+        <a class="button"title="title-here" href="https://www.luc.edu/">Use the common app</a>
         <p class="audience-readout">Lorem ipsum hereum</p>
       </div>
     </div>

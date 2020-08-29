@@ -13,18 +13,7 @@
 html {
   scroll-behavior: smooth;
 }
-/*
-:target:before {
-  content: "";
-  display: block;
-  height: 300px;
-  margin: -260px 0 0;
-  @include tablet-portrait {
-    height: 500px;
-    margin: -460px 0 0;
-  }
-}
-*/
+
 body {
   margin: 0;
   padding: 0;
@@ -36,21 +25,12 @@ body {
   text-transform: uppercase;
 }
 
-.col-100 {
-  box-sizing: border-box;
+#majors-content-mobile .button-maroon,
+#majors-content-mobile .button {
   display: block;
-  margin: 0;
-  padding: 0;
+  box-sizing: border-box;
   width: 100%;
-}
-
-.col-50 {
-  box-sizing: border-box;
-  display: block;
-  float: left;
-  margin: 0;
-  padding: 0;
-  width: 50%;
+  min-width: 100%
 }
 
 .tuition-table { display: flex; }
