@@ -442,7 +442,7 @@ function topNavFunction() {
 
   <!-- DRAWER CONTENT - ACADEMICS -->
   <div class="pattern-1-drawer-container u-highest" id="reveal1">
-    <div class="pattern-1-drawer-content-container p4" id="academics-content" style="display: inline-flex;">
+    <div class="pattern-1-drawer-content-container mx4 pt3" id="academics-content" style="display: inline-flex;">
       <div class="container-fluid">
         <div class="content-columns-varied eight-column-four-column-build"><!-- column-build -->
           <div class="grid-wrapper">
@@ -495,7 +495,7 @@ function topNavFunction() {
 
   <!-- STUDENT LIFE DRAWER CONTENT - PATTERN 1 -->
   <div class="pattern-1-drawer-container-no-bg hidden" id="student-life-content">
-    <div class="pattern-1-drawer-content-container p4" style="display: inline-flex;">
+    <div class="pattern-1-drawer-content-container mx4" style="display: inline-flex;">
       <div class="container-fluid">
         <div class="content-columns-varied eight-column-four-column-build"><!-- column-build -->
           <div class="grid-wrapper">
@@ -548,7 +548,7 @@ function topNavFunction() {
 
   <!-- LEARN BY DOING DRAWER CONTENT - PATTERN 1 -->
   <div class="pattern-1-drawer-container-no-bg hidden" id="learn-by-doing-content">
-    <div class="pattern-1-drawer-content-container p4" style="display: inline-flex;">
+    <div class="pattern-1-drawer-content-container mx4" style="display: inline-flex;">
       <div class="container-fluid">
         <div class="content-columns-varied eight-column-four-column-build"><!-- column-build -->
           <div class="grid-wrapper">
@@ -601,7 +601,7 @@ function topNavFunction() {
 
   <!-- STUDY ABROAD DRAWER CONTENT - PATTERN 1 -->
   <div class="pattern-1-drawer-container-no-bg hidden" id="study-abroad-content">
-    <div class="pattern-1-drawer-content-container p4" style="display: inline-flex;">
+    <div class="pattern-1-drawer-content-container mx4" style="display: inline-flex;">
       <div class="container-fluid">
         <div class="content-columns-varied eight-column-four-column-build"><!-- column-build -->
           <div class="grid-wrapper">
@@ -1054,15 +1054,15 @@ window.onclick = function(event) {
         </div>
       </div>
       <div class="mt4"></div>
-      <div class="p2" style="display: inline-flex; width: 90%; margin: 0 auto;">
+      <div class="p2" style="display: flex; width: 95%; margin: auto;">
         <div class="" style="width: 100%">
           <h2 class="m0 stat-number-medium light-text" style="color: #ffffff;">$27,700</h2>
-          <h3 class="m0 affordability-header-medium">AVERAGE FINANCIAL</h3>
-          <h3 class="m0 affordability-header-medium">ASSISTANCE AWARD</h3>
-          <h6 class="m0">Freshman class, 2019</h6>
+          <h3 class="m0 pl2 pt2 affordability-header-medium">AVERAGE FINANCIAL</h3>
+          <h3 class="m0 pl2 affordability-header-medium">ASSISTANCE AWARD</h3>
+          <h6 class="mt2 pl2" style="color: white;">Freshman class, 2019</h6>
         </div>
-        <div class="p2" style="width: 100%">
-          <h3 class="m0 mb2 affordability-header-medium">NET PRICE CALCULATOR</h3>
+        <div class="px2" style="width: 100%">
+          <h3 class="mt0 mb2 affordability-header-medium">NET PRICE CALCULATOR</h3>
           <h6 class="m0" style="color: white; line-height: 1.5;">
             Check out our Net Price Calculator, which provides an early approximation of what a new first-year, undergraduate student can expect to pay to attend Loyola.
           </h6>
@@ -2203,7 +2203,7 @@ window.onclick = function(event) {
   offset: 800, // move trigger to center of element
 })
 		.setClassToggle("#student-life-content", "active") // add class toggle
-		.addIndicators() // add indicators (requires plugin)
+	//	.addIndicators() add indicators (requires plugin)
 		.addTo(controller);
     new ScrollMagic.Scene({triggerElement: "#content-toggle-hide",
     triggerHook: 0.9, // show, when scrolled 10% into view
@@ -2211,7 +2211,7 @@ window.onclick = function(event) {
     offset: 800, // move trigger to center of element
   })
   		.setClassToggle("#academics-content", "hidden") // add class toggle
-  		.addIndicators() // add indicators (requires plugin)
+  	//	.addIndicators() add indicators (requires plugin)
   		.addTo(controller);
 	new ScrollMagic.Scene({triggerElement: "#content-toggle-2",
   triggerHook: 0.9, // show, when scrolled 10% into view
@@ -2219,7 +2219,7 @@ window.onclick = function(event) {
   offset: 800, // move trigger to center of element
 })
 		.setClassToggle("#learn-by-doing-content", "active") // add class toggle
-		.addIndicators() // add indicators (requires plugin)
+	//	.addIndicators() add indicators (requires plugin)
 		.addTo(controller);
 	new ScrollMagic.Scene({triggerElement: "#content-toggle-3",
   triggerHook: 0.9, // show, when scrolled 10% into view
@@ -2227,7 +2227,7 @@ window.onclick = function(event) {
   offset: 800, // move trigger to center of element
 })
 		.setClassToggle("#study-abroad-content", "active") // add class toggle
-		.addIndicators() // add indicators (requires plugin)
+	//	.addIndicators() add indicators (requires plugin)
 		.addTo(controller);
   </script>
   <script>
@@ -2247,11 +2247,11 @@ window.onclick = function(event) {
     new ScrollMagic.Scene({
         triggerElement: "#scroll-initiator-1",
         triggerHook: 0.9, // show, when scrolled 10% into view
-        duration: "6640px", // hide 10% before exiting view (80% + 10% from bottom)
+        duration: "6000px", // hide 10% before exiting view (80% + 10% from bottom)
         offset: 800, // move trigger to center of element
       })
       .setClassToggle("#reveal1", "visible") // add class to reveal
-    .addIndicators() // add indicators (requires plugin)
+  //  .addIndicators() add indicators (requires plugin)
       .addTo(controller);
   </script>
   <script>
