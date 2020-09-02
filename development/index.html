@@ -110,6 +110,7 @@
       easing: 'spring(1, 80, 50, 0)'
     });
   </script>
+
   <script>
     // init controller
     var controller = new ScrollMagic.Controller();
@@ -124,6 +125,22 @@
   //  .addIndicators() add indicators (requires plugin)
       .addTo(controller);
   </script>
+
+  <script>
+    // init controller
+    var controller = new ScrollMagic.Controller();
+    // build scene
+    new ScrollMagic.Scene({
+        triggerElement: "#disable-point",
+        triggerHook: 0.9, // show, when scrolled 10% into view
+        duration: "6000px", // hide 10% before exiting view (80% + 10% from bottom)
+        offset: 800, // move trigger to center of element
+      })
+      .setClassToggle("#pin-container", "disable") // add class to reveal
+  //  .addIndicators() add indicators (requires plugin)
+      .addTo(controller);
+  </script>
+
   <script>
     $(function() { // wait for document ready
       // init

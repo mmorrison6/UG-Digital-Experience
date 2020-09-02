@@ -163,6 +163,7 @@ PATTERN 1 MODULE ====================================== */
 
 .hidden {
   opacity: 0;
+  z-index: 0;
 }
 
 #student-life-content,
@@ -190,6 +191,7 @@ PATTERN 1 MODULE ====================================== */
       -ms-transform: opacity(1);
        -o-transform: opacity(1);
           transform: opacity(1);
+    z-index: 5000;
 }
 
 /* UG OVERRIDES */

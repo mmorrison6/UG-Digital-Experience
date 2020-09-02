@@ -87,7 +87,12 @@ aside.o-drawer {
 
   &.o-drawer--visible {
     visibility: visible;
+    z-index: 5000;
   }
+}
+
+.disable {
+    transform: scale(0);
 }
 
 /* UG OVERRIDES */
