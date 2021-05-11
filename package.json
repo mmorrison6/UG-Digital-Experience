@@ -22,7 +22,7 @@
     "gulp-useref": "^4.0.1",
     "is-stream": "^2.0.0",
     "jquery": "^3.5.1",
-    "lodash": "^4.17.19",
+    "lodash": "^4.17.21",
     "npm": "^6.14.6",
     "require-dir": "^1.2.0",
     "scrollmagic": "^2.0.7",
