@@ -29,7 +29,7 @@
     "sudo": "^1.0.3"
   },
   "devDependencies": {
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.2",
     "gulp-jshint": "^2.1.0",
     "gulp-resolve-url": "0.0.2",
     "jshint": "^2.11.1"
